@@ -1,0 +1,44 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7eadfc;
+}
+
+/* WhatsApp */
+.styles-module_whatsappButton__tVits {
+  display: block;
+  position: relative;
+  background-color: transparent;
+  bottom: -0.2rem;
+  right: 1rem;
+  box-shadow: none;
+}
+
+.styles-module_whatsappButton__tVits::after {
+  animation: none;
+}
+
+.styles-module_whatsappButton__tVits svg {
+  padding: 12px;
+}
+
+.styles-module_whatsappButton__tVits svg:hover {
+  fill: #7eadfc;
+}
+
+.styles-module_notificationIndicator__gVmjV {
+  display: none;
+}
+
+.styles-module_chatHeader__gaeOA {
+  background-color: #7eadfc;
+}
