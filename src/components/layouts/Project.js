@@ -1,19 +1,5 @@
-import {
-    PaddingContainer,
-    Heading,
-    FlexContainer,
-    ParaText,
-    IconContainer,
-    ButtonAlt,
-} from '../styled-components/Global.styled';
-
-import {
-    ProjectContentContainer,
-    ProjectImageContainer,
-    TechStackCard,
-    ProjectImage,
-} from '../styled-components/MyProjects.styled';
-
+import {PaddingContainer,Heading,FlexContainer,ParaText,IconContainer,ButtonAlt2,} from '../styled-components/Global.styled';
+import {ProjectContentContainer,ProjectImageContainer,TechStackCard,ProjectImage,} from '../styled-components/MyProjects.styled';
 import { FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants';
@@ -46,10 +32,10 @@ const Project = ({ project, rowReverse }) => {
                         <ParaText top="1rem" responsivealign="center">{project.description}</ParaText> :
                         null
                 }
-                <ButtonAlt href={project.source_code} target='_blank' setMXAuto style={{ marginTop:"1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
+                <ButtonAlt2 href={project.source_code} target='_blank' setMXAuto style={{ marginTop:"1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                     Source Code
                     <IconContainer color="blue" size="1rem"><FaGithub /></IconContainer>
-                </ButtonAlt>
+                </ButtonAlt2>
             </ProjectContentContainer>
             <ProjectImageContainer
                 justify={rowReverse ? "flex-start" : "flex-end"}

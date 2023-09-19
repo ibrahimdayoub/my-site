@@ -15,30 +15,30 @@
 
 /* WhatsApp */
 .styles-module_whatsappButton__tVits {
-  display: block;
-  position: relative;
-  background-color: transparent;
-  bottom: -0.2rem;
-  right: 1rem;
-  box-shadow: none;
+  display: block !important;
+  position: relative !important;
+  background-color: transparent !important;
+  bottom: -0.2rem !important;
+  right: 1rem !important;
+  box-shadow: none !important;
 }
 
 .styles-module_whatsappButton__tVits::after {
-  animation: none;
+  animation: none !important;
 }
 
 .styles-module_whatsappButton__tVits svg {
-  padding: 12px;
+  padding: 12px !important;
 }
 
 .styles-module_whatsappButton__tVits svg:hover {
-  fill: #7eadfc;
+  fill: #7eadfc !important;
 }
 
 .styles-module_notificationIndicator__gVmjV {
-  display: none;
+  display: none !important;
 }
 
 .styles-module_chatHeader__gaeOA {
-  background-color: #7eadfc;
+  background-color: #7eadfc !important;
 }

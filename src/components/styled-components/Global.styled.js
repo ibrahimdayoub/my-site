@@ -223,3 +223,27 @@ export const ButtonAlt = styled.button`
     padding: 0.25rem 0.5rem;
   }
 `
+
+export const ButtonAlt2 = styled.a`
+  display: inline-block;
+  font-size:16px;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.primary_light};
+  border: 1px solid ${({ theme }) => theme.colors.gray};
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+
+  &:hover{
+    color: ${({ theme }) => theme.colors.primary_light};
+    background-color: ${({ theme }) => theme.colors.white};
+  }
+
+  @media ${({ theme }) => theme.breakpoints.mobile}{
+    margin: 0 ${({ setMXAuto }) => setMXAuto ? 'auto' : 0};
+    padding: 0.25rem 0.5rem;
+    font-size:14px;
+  }
+`
