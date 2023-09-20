@@ -15,7 +15,7 @@ const Showcase = () => {
         <PaddingContainer left="1%" right="1%" responsiveLeft="1rem" responsiveRight="1rem">
             <FlexContainerAlt responsivealign="center" fullWidthChild>
                 <motion.div variants={fadeInLeftVariant} initial="hidden" whileInView="visible">
-                    <Heading as="h4" size="h4" responsivealign="center">Hello!</Heading>
+                    <Heading as="h4" size="h4" top="0.25rem" bottom="0.5rem" responsivealign="center">Hello!</Heading>
                     <Heading as="h2" size="h2" top="0.25rem" bottom="1rem" responsivealign="center">
                         I'm <BlueText>Ibrahim Dayoub</BlueText>
                     </Heading>
@@ -46,8 +46,8 @@ const Showcase = () => {
                         with teams. I am constantly evolving and always strive for excellence
                         and success.
                     </ParaText>
-                    <FlexContainer responsiveFlex justify="space-between" align="center">
-                        <FlexContainer gap="20px" responsiveFlex>
+                    <FlexContainer responsiveFlex justify="space-between" align="center" gap="5px">
+                        <FlexContainer gap="20px" responsivegap2="5px"  responsiveFlex>
                             <IconContainerAlt
                                 href='https://linkedin.com/in/ibrahimdayoub'
                                 target='_blank'
@@ -85,6 +85,7 @@ const Showcase = () => {
                             download={"Ibrahim Dayoub Resume"}
                             href={Resume}
                             style={{ display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}
+                            responsivepadding2="0.25rem 0.5rem"
                         >
                             Download Resume
                             <IconContainer color="blue" size="1.5rem"><FaCloudDownloadAlt /></IconContainer>

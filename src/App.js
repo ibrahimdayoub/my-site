@@ -16,6 +16,8 @@ import "./App.css"
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [matches, setMatches] = useState(window.matchMedia("(max-width: 350px)").matches)
+
   const toggleVisibility = () => {
     if (window.scrollY > 250) {
       setIsVisible(true);
@@ -40,6 +42,12 @@ function App() {
     setIsLoading(false)
   }, 2500);
 
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 350px)")
+      .addEventListener('change', e => setMatches(e.matches));
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <MainBody>
@@ -60,9 +68,9 @@ function App() {
                 <Button
                   style={{
                     visibility: isVisible ? 'visible' : 'hidden',
-                    padding: "10px",
-                    width: "50px",
-                    height: "50px",
+                    padding: matches ?  "5px" :"10px",
+                    width: matches ? "30px" : "50px",
+                    height: matches ? "30px" : "50px",
                     borderRadius: "100%",
                     position: "fixed",
                     bottom: "50px",
@@ -74,7 +82,7 @@ function App() {
                   }}
                   onClick={scrollToTop}
                 >
-                  <IconContainer color="blue" size="1.5rem"><FaArrowUp /></IconContainer>
+                  <IconContainer color="blue" size="1.5rem" responsivesize2="1rem"><FaArrowUp /></IconContainer>
                 </Button>
               </Container>
               <SpaceParent />

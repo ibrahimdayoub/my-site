@@ -37,6 +37,11 @@ export const FlexContainer = styled.div`
     display: ${({ responsiveFlex }) => responsiveFlex ? 'flex' : 'block'};
     flex-direction: ${({ responsiveDirection }) => responsiveDirection};
     justify-content: ${(props) => props.responsivejustify || ''};
+    // gap: ${({ responsivegap }) => responsivegap};
+  }
+
+  @media(max-width: 350px) {  
+    gap: ${({ responsivegap2 }) => responsivegap2};    
   }
 `
 
@@ -112,6 +117,27 @@ export const Heading = styled(PaddingContainer)`
         return;
     }
   }};
+
+  @media(max-width: 350px) {
+    font-size: ${({ size }) => {
+    switch (size) {
+      case 'h1':
+        return '2.25rem';
+
+      case 'h2':
+        return '1.5rem';
+
+      case 'h3':
+        return '1.25rem';
+
+      case 'h4':
+        return '0.5625rem';
+
+      default:
+        return;
+    }
+  }};
+  }
   }
 `
 
@@ -158,6 +184,10 @@ export const IconContainer = styled.div`
         }
     }};
     font-size: ${({ size }) => size};
+
+    @media(max-width: 350px) {
+    font-size: ${({ responsivesize2 }) => responsivesize2};
+  }
 `
 
 export const IconContainerAlt = styled.div`
@@ -199,6 +229,11 @@ export const Button = styled.a`
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
     margin: 0 ${({ setMXAuto }) => setMXAuto ? 'auto' : 0};
+  }
+
+  @media(max-width: 350px) {
+    padding: ${({ responsivepadding2 }) => responsivepadding2}; 
+    font-size: 14px;
   }
 `
 

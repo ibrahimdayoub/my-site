@@ -17,6 +17,16 @@ export const SkillsCardContainer = styled.div`
 	margin: 0px auto;
 	margin-top: 25px;
 	}
+
+	@media(max-width: 350px) {
+	// grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 75px 75px 75px;
+	grid-template-rows: 75px 75px 75px 75px ;
+	grid-gap: 0.5rem;
+	justify-content:center;
+	margin: 0px auto;
+	margin-top: 25px;
+  	}
 `;
 
 export const SkillsCard = styled.div`

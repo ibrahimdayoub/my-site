@@ -7,7 +7,7 @@ const Footer = () => {
         <PaddingContainer>
             <FooterElement>
                 <Contact>
-                    <FaPhoneAlt style={{ fontSize: "24px" }} />
+                    <FaPhoneAlt style={{ fontSize: "20px" }} />
                     <a
                         href="tel:+963997791807"
                         style={{
@@ -19,7 +19,7 @@ const Footer = () => {
                     </a>
                 </Contact>
                 <Contact>
-                    <FaEnvelope style={{ fontSize: "24px" }} />
+                    <FaEnvelope style={{ fontSize: "20px" }} />
                     <a
                         href="mailto:ibrahimdayoub@gmail.com"
                         style={{

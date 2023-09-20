@@ -11,6 +11,10 @@ export const Footer = styled.footer`
   @media ${({ theme }) => theme.breakpoints.mobile}{
       padding:10px;
   }
+
+  @media(max-width: 350px) {
+  padding:5px;
+  }
 `
 export const Contact = styled.div`
   display:flex;
@@ -22,5 +26,10 @@ export const Contact = styled.div`
   @media ${({ theme }) => theme.breakpoints.mobile}{
     background:${props => props.display === "flex" ? "#131c31" : "none"};
     font-size:12px;
+  }
+
+  @media(max-width: 350px) {
+      font-size:10px;
+      gap:2px;
   }
 `

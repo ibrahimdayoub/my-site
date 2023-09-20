@@ -11,7 +11,7 @@ export const ProjectImageContainer = styled.div`
 
 export const TechStackCard = styled.span`
   display: inline-block;
-
+  margin:0.1rem;
   background-color: ${({ theme }) => theme.colors.secondary};
   color: #fff;
   padding: 0.5rem 1rem;
@@ -20,6 +20,10 @@ export const TechStackCard = styled.span`
   @media ${({ theme }) => theme.breakpoints.mobile}{
     font-size:14px;
     padding: 0.25rem 0.5rem;
+  }
+
+  @media(max-width: 350px) {
+    margin:0.05rem;
   }
 `
 

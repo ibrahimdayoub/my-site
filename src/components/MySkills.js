@@ -16,7 +16,7 @@ const MySkills = () => {
         >
           {Skills.map((skill) => (
             <SkillsCard key={skill.id}>
-              <IconContainer size="2.5rem" color="blue">
+              <IconContainer size="2.5rem" responsivesize2="1.5rem" color="blue">
                 {skill.icon}
               </IconContainer>
               <Heading as="h4" size="h4">{skill.tech}</Heading>
