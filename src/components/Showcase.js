@@ -33,7 +33,7 @@ const Showcase = () => {
                                         1000,
                                     ]}
                                     wrapper="span"
-                                    speed={25}
+                                    speed={20}
                                     repeat={Infinity}
                                 />
                             </BlueText>
@@ -87,7 +87,7 @@ const Showcase = () => {
                             style={{ display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}
                             responsivepadding2="0.25rem 0.5rem"
                         >
-                            Download Resume
+                            <span style={{marginRight:"5px"}}>Download Resume</span>
                             <IconContainer color="blue" size="1.5rem"><FaCloudDownloadAlt /></IconContainer>
                         </Button>
                     </FlexContainer>

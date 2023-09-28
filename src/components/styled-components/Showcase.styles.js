@@ -36,13 +36,13 @@ export const IconContainerAlt = styled.a`
   color: #fff;
   transition: all 0.2s ease;
   cursor: pointer;
-  // margin:0 0.5rem;
+  margin:0 0.25rem;
   
   &:hover{
       color: ${({ theme }) => theme.colors.secondary};
   }
 
   @media(max-width: 350px) {
-    // margin:0 0.25rem;
+    margin:0 0.125rem;
   }
 `

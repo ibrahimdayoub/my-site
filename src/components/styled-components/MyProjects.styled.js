@@ -33,10 +33,11 @@ export const ProjectImage = styled.img`
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
-  opacity:0.8;
+  opacity:0.9;
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
     width: 100%;
+    margin:0 auto;
     margin-top: 2rem;
   }
 `

@@ -56,7 +56,7 @@ export const NavLink = styled.a`
 `
 
 export const Logo = styled.img`
-  width: 100px;
+  width: 75px;
   margin-left: 15px;
   margin-top: -10px;
 

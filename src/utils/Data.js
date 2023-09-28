@@ -169,10 +169,10 @@ export const MoreProjects = [
         tools: [
             "ReactJs",
             "NextJs",
-            "TailwindCss",
-            "NodeJs",
-            "PostgreSql",
-            "Prisma"
+            "TailwindCss",    
+            "Prisma",
+            "MySql",
+            "Stripe"
         ],
         source_code: "https://github.com/ibrahimdayoub/freelance-2",
         image: Project7,
