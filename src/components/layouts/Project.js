@@ -33,7 +33,7 @@ const Project = ({ project, rowReverse }) => {
                         null
                 }
                 <ButtonAlt2 href={project.source_code} target='_blank' setMXAuto style={{ marginTop:"1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
-                    Source Code
+                    <span style={{ marginRight: "5px" }}>Source Code</span>
                     <IconContainer color="blue" size="1rem"><FaGithub /></IconContainer>
                 </ButtonAlt2>
             </ProjectContentContainer>

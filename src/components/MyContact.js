@@ -102,7 +102,7 @@ const MyContact = () => {
             }
             <FlexContainer justify="center" responsiveFlex>
               <ButtonAlt type='submit' style={{ display: "flex", gap: "5px", alignItems: "center", padding:"10px" }}>
-                Send Message
+                <span style={{ marginRight: "5px" }}>Send Message</span>
                 <IconContainer color="blue" size="1rem"><FaPaperPlane /></IconContainer>
               </ButtonAlt>
             </FlexContainer>
