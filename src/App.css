@@ -1,0 +1,57 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7eadfc;
+}
+
+/* WhatsApp */
+.styles-module_floatingWhatsapp__yWF5K {
+  width: 30px !important;
+  height: 30px !important;
+  text-align: start !important;
+  position: relative !important;
+}
+
+.styles-module_whatsappButton__tVits {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+  bottom: 0rem !important;
+  right: 0rem !important;
+  cursor: pointer !important;
+  background-color: transparent !important;
+  border-radius: 0% !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  box-shadow: none !important;
+  z-index: 0 !important;
+}
+
+.styles-module_whatsappButton__tVits::after {
+  animation: none !important;
+}
+
+.styles-module_whatsappButton__tVits svg {
+  padding: 0px !important;
+}
+
+.styles-module_whatsappButton__tVits svg:hover {
+  fill: #7eadfc !important;
+}
+
+.styles-module_notificationIndicator__gVmjV {
+  display: none !important;
+}
+
+.styles-module_chatHeader__gaeOA {
+  background-color: #7eadfc !important;
+}
