@@ -1,16 +1,18 @@
 import { FaReact, FaPhp, FaLaravel, FaNodeJs, FaBootstrap } from 'react-icons/fa';
-import { SiExpress, SiMongodb, SiPrisma, SiTailwindcss } from 'react-icons/si';
+import { SiExpress, SiMongodb, SiStrapi, SiTailwindcss } from 'react-icons/si';
 import { TbBrandJavascript, TbBrandMysql, TbBrandNextjs } from 'react-icons/tb';
 
-import p1 from '../assets/p1.png';
-import p2 from '../assets/p2.png';
-import p3 from '../assets/p3.png';
-import p4 from '../assets/p4.png';
-import p5 from '../assets/p5.png';
-import p6 from '../assets/p6.png';
-import p7 from '../assets/p7.png';
-import p8 from '../assets/p8.png';
-import p9 from '../assets/p9.png';
+import oab from '../assets/oab.png';
+import deebaaj from '../assets/deebaaj.png';
+import eyeengineer from '../assets/eyeengineer.png';
+import germac from '../assets/germac.png';
+import osum from '../assets/osum.png';
+import compastudent from '../assets/compastudent.png';
+import chat from '../assets/chat.png';
+import blog from '../assets/blog.png';
+import weather from '../assets/weather.png';
+import gym from '../assets/gym.png';
+import resturant from '../assets/resturant.png';
 
 export const Skills = [
     {
@@ -60,8 +62,8 @@ export const Skills = [
     },
     {
         id: 9,
-        tech: 'Prisma',
-        icon: <SiPrisma />
+        tech: 'Strapi',
+        icon: <SiStrapi />
     },
     {
         id: 10,
@@ -78,195 +80,174 @@ export const Skills = [
 export const TopProjects = [
     {
         id: 0,
-        name: "Website for engineering",
-        tools: [
-            "ReactJs",
-            "Redux Toolkit",
-            "TailwindCss",
-            "Laravel",
-            "MySql",
-        ],
-        description: "Eyeengineer (Engineer's Eye): To assist in understanding engineering, provide educational resources, and advertise engineering offices.",
+        name: "ATM Interfaces",
+        tools: ["HTML", "CSS", "JavaScript"],
+        description: "OAB: Developed interactive and user-friendly ATM interfaces for Oman Arab Bank to enhance customer experience.",
         source_code: null,
-        live_link:"https://eyeengineer.com",
-        image: p1,
-        role:"Full-stack Developer"
-    },
-    {
-        id: 1,
-        name: "Website for Medical Consultations",
-        tools: [
-            "Laravel",
-            "TailwindCss",
-            "MySql",
-        ],
-        description: "Germac (German Academy): To assist in providing medical consultations, communicating with doctors, and attending medical courses.",
-        source_code: null,
-        live_link: "https://germ-ac.com",
-        image: p2,
+        live_link: null,
+        image: oab,
         role: "Front-end Developer"
     },
     {
+        id: 1,
+        name: "Marketing Consultation Website",
+        tools: ["Laravel", "Strapi"],
+        description: "Deebaaj: Built a dynamic website to provide marketing consultation services and support business growth.",
+        source_code: null,
+        live_link: "https://deebaajmc.com",
+        image: deebaaj,
+        role: "Full-stack Developer"
+    },
+    {
         id: 2,
-        name: "Website for employment and freelance",
-        tools: [
-            "ReactJs",
-            "Redux Toolkit",
-            "TailwindCss",
-            "NodeJs",
-            "ExpressJs",
-            "SocketIO",
-            "Mongoose",
-            "MongoDB"
-        ],
-        description: "OSUM (One Step Unlimited Miles): To assist with employment and remote freelance work, and to address the issue that work requires experience and experience requires work, it is suitable for both recent graduates and experienced.",
-        source_code: "https://github.com/ibrahimdayoub/osum",
-        live_link: null,
-        image: p3,
+        name: "Educational Engineering Platform",
+        tools: ["ReactJS", "Redux Toolkit", "TailwindCSS", "Laravel", "MySQL"],
+        description: "Eye-Engineer: Developed a platform to provide engineering resources, educational materials, and promote engineering offices.",
+        source_code: null,
+        live_link: "https://eyeengineer.com",
+        image: eyeengineer,
         role: "Full-stack Developer"
     },
     {
         id: 3,
-        name: "Website for scheduling lectures and reserving classrooms",
-        tools: [
-            "ReactJs",
-            "Bootstrap",
-            "Laravel",
-            "MySql",
-        ],
-        description: "CompaStudent (Student's Compass): To assist in determining the correct timing of lectures and the availability of classrooms, along with the ability to reschedule appointments.",
-        source_code: "https://github.com/ibrahimdayoub/compastudent",
-        live_link: null,
-        image: p4,
+        name: "Medical Consultation Platform",
+        tools: ["Laravel", "TailwindCSS", "MySQL"],
+        description: "Germ-Ac: Created a platform to facilitate medical consultations, connect with doctors, and offer medical courses.",
+        source_code: null,
+        live_link: "https://germ-ac.com",
+        image: germac,
         role: "Full-stack Developer"
     },
-]
+    {
+        id: 4,
+        name: "Employment & Freelancing Platform",
+        tools: [
+            "ReactJS",
+            "Redux Toolkit",
+            "TailwindCSS",
+            "NodeJS",
+            "ExpressJS",
+            "Socket.IO",
+            "Mongoose",
+            "MongoDB"
+        ],
+        description: "OSUM: Developed a platform to connect job seekers and freelancers, addressing the gap between experience and work opportunities.",
+        source_code: "https://github.com/ibrahimdayoub/osum",
+        live_link: null,
+        image: osum,
+        role: "Full-stack Developer"
+    },
+    {
+        id: 5,
+        name: "Lecture Scheduling System",
+        tools: ["ReactJS", "Bootstrap", "Laravel", "MySQL"],
+        description: "CompaStudent: Designed a system to manage lecture schedules, book classrooms, and reschedule appointments efficiently.",
+        source_code: "https://github.com/ibrahimdayoub/compastudent",
+        live_link: null,
+        image: compastudent,
+        role: "Full-stack Developer"
+    },
+];
 
 export const MoreProjects = [
     {
         id: 0,
-        name: "Application for elevator maintenance service",
-        tools: [
-            "Laravel",
-            "MySql",
-            "Restful Api"
-        ],
+        name: "Laravel Multilingual Library",
+        tools: ["PHP", "Laravel", "Composer"],
+        description: "Initvel: Developed a Laravel library to manage multilingual applications with ease.",
+        source_code: null,
+        live_link: "https://packagist.org/packages/devs/initvel",
+        image: null,
+        role: "Developer"
+    },
+    {
+        id: 1,
+        name: "Elevator Maintenance Application",
+        tools: ["Laravel", "MySQL", "RESTful API"],
+        description: "Sham-Lift: Designed an application to manage elevator maintenance services efficiently.",
         source_code: null,
         live_link: "https://play.google.com/store/apps/details?id=com.rareweb.shamlift",
         image: null,
         role: "Back-end Developer"
     },
     {
-        id: 1,
-        name: "Website for individual and group chats in real time",
-        tools: [
-            "ReactJs",
-            "Chakra UI",
-            "NodeJs",
-            "ExpressJs",
-            "SocketIO",
-            "Mongoose",
-            "MongoDB"
-        ],
+        id: 2,
+        name: "Real-Time Chat Application",
+        tools: ["ReactJS", "Chakra UI", "NodeJS", "ExpressJS", "Socket.IO", "Mongoose", "MongoDB"],
+        description: "Sky-Msg: Built a website for individual and group real-time chats with modern UI.",
         source_code: "https://github.com/ibrahimdayoub/sky-msg",
         live_link: null,
-        image: p5,
-        role: "Full-stack Developer"
-    },
-    {
-        id: 2,
-        name: "Website for blog posts",
-        tools: [
-            "ReactJs",
-            "NodeJs",
-            "ExpressJs",
-            "Mongoose",
-            "MongoDB"
-        ],
-        source_code: "https://github.com/ibrahimdayoub/my-blog",
-        live_link: null,
-        image: p6,
+        image: chat,
         role: "Full-stack Developer"
     },
     {
         id: 3,
-        name: "Website for displaying weather conditions and forecasts",
-        tools: [
-            "ReactJs",
-            "Rapid Api",
-            "OpenWeather Api",
-        ],
-        source_code: "https://github.com/ibrahimdayoub/its-weather",
+        name: "Blog Post Platform",
+        tools: ["ReactJS", "NodeJS", "ExpressJS", "Mongoose", "MongoDB"],
+        description: "My-Blog: Developed a platform to create and share blog posts efficiently.",
+        source_code: "https://github.com/ibrahimdayoub/my-blog",
         live_link: null,
-        image: p7,
-        role: "Front-end Developer"
+        image: blog,
+        role: "Full-stack Developer"
     },
     {
         id: 4,
-        name: "Website for a gym focusing on health and fitnes",
-        tools: [
-            "ReactJs",
-            "Material UI",
-            "Rapid Api",
-        ],
-        source_code: "https://github.com/ibrahimdayoub/freelance-1",
+        name: "Weather Forecast Website",
+        tools: ["ReactJS", "Rapid API", "OpenWeather API"],
+        description: "Its-Weather: Designed a website to display real-time weather conditions and forecasts.",
+        source_code: "https://github.com/ibrahimdayoub/its-weather",
         live_link: null,
-        image: p8,
+        image: weather,
         role: "Front-end Developer"
     },
     {
         id: 5,
-        name: "Websit for food ordering and restaurant showcasing",
-        tools: [
-            "ReactJs",
-            "NextJs",
-            "TailwindCss",    
-            "Prisma",
-            "MySql",
-            "Stripe"
-        ],
-        source_code: "https://github.com/ibrahimdayoub/freelance-2",
+        name: "Gym and Fitness Website",
+        tools: ["ReactJS", "Material UI", "Rapid API"],
+        description: "Freelance-1: Created a gym-focused website to promote health and fitness.",
+        source_code: "https://github.com/ibrahimdayoub/freelance-1",
         live_link: null,
-        image: p9,
-        role: "Full-stack Developer"
+        image: gym,
+        role: "Front-end Developer"
     },
     {
         id: 6,
-        name: "Website for a library and book borrowing",
-        tools: [
-            "Laravel",
-            "MySql",
-            "Restful Api"
-        ],
+        name: "Food Ordering and Restaurant Website",
+        tools: ["ReactJS", "NextJS", "TailwindCSS", "Prisma", "MySQL", "Stripe"],
+        description: "Freelance-2: Developed a platform for food ordering and showcasing restaurants with online payment integration.",
+        source_code: "https://github.com/ibrahimdayoub/freelance-2",
+        live_link: null,
+        image: resturant,
+        role: "Full-stack Developer"
+    },
+    {
+        id: 7,
+        name: "Library Management System",
+        tools: ["Laravel", "MySQL", "RESTful API"],
+        description: "Freelance-3: Built a system for managing library books and borrowing processes.",
         source_code: "https://github.com/ibrahimdayoub/freelance-3",
         live_link: null,
         image: null,
         role: "Back-end Developer"
     },
     {
-        id: 7,
-        name: "Website for a store to display and sell clothing",
-        tools: [
-            "Laravel",
-            "MySql",
-            "Restful Api"
-        ],
+        id: 8,
+        name: "Clothing Store Platform",
+        tools: ["Laravel", "MySQL", "RESTful API"],
+        description: "Freelance-4: Developed a website for displaying and selling clothing items effectively.",
         source_code: "https://github.com/ibrahimdayoub/freelance-4",
         live_link: null,
         image: null,
         role: "Back-end Developer"
     },
     {
-        id: 8,
-        name: "Website for university housing and accommodation management",
-        tools: [
-            "Laravel",
-            "MySql",
-            "Restful Api"
-        ],
+        id: 9,
+        name: "University Housing Management System",
+        tools: ["Laravel", "MySQL", "RESTful API"],
+        description: "Freelance-5: Created a platform to manage university housing and accommodation services.",
         source_code: "https://github.com/ibrahimdayoub/freelance-5",
         live_link: null,
         image: null,
         role: "Back-end Developer"
     },
-]
+];

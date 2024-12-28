@@ -14,7 +14,7 @@ const Project = ({ project, rowReverse }) => {
                 whileInView="visible"
             >
                 <FlexContainer>
-                    <Heading as="h3" size="h3" bottom="0.5rem" responsivealign="center">{project.id + 1}- {project.name}</Heading>
+                    <Heading as="h3" size="h3" bottom="0.5rem" responsivealign="center">{project.id + 1}. {project.name}</Heading>
                 </FlexContainer>
                 {
                     project.description ?

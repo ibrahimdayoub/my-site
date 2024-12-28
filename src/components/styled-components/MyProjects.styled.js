@@ -31,7 +31,7 @@ export const ProjectImage = styled.img`
   border: 1px solid #fff;
   width: 80%;
   height: 300px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 8px;
   opacity:0.75;
   padding:2px;

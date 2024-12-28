@@ -120,7 +120,7 @@ export const MainBody = styled.div`
   `
 
 export const Container = styled.div`
-  max-width: 1280px;
+  max-width: 1200px;
   margin: auto;
 `
 
