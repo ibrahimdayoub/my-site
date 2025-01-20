@@ -86,7 +86,8 @@ export const TopProjects = [
         source_code: null,
         live_link: null,
         image: oab,
-        role: "Front-end Developer"
+        role: "Front-end Developer",
+        is_secret: true
     },
     {
         id: 1,
@@ -96,7 +97,8 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://deebaajmc.com",
         image: deebaaj,
-        role: "Full-stack Developer"
+        role: "Full-stack Developer",
+        is_secret: false
     },
     {
         id: 2,
@@ -106,7 +108,8 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://eyeengineer.com",
         image: eyeengineer,
-        role: "Full-stack Developer"
+        role: "Full-stack Developer",
+        is_secret: false
     },
     {
         id: 3,
@@ -116,7 +119,8 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://germ-ac.com",
         image: germac,
-        role: "Full-stack Developer"
+        role: "Full-stack Developer",
+        is_secret: false
     },
     {
         id: 4,
@@ -135,7 +139,8 @@ export const TopProjects = [
         source_code: "https://github.com/ibrahimdayoub/osum",
         live_link: null,
         image: osum,
-        role: "Full-stack Developer"
+        role: "Full-stack Developer",
+        is_secret: false
     },
     {
         id: 5,
@@ -145,7 +150,8 @@ export const TopProjects = [
         source_code: "https://github.com/ibrahimdayoub/compastudent",
         live_link: null,
         image: compastudent,
-        role: "Full-stack Developer"
+        role: "Full-stack Developer",
+        is_secret: false
     },
 ];
 
@@ -158,7 +164,8 @@ export const MoreProjects = [
         source_code: null,
         live_link: "https://packagist.org/packages/devs/initvel",
         image: null,
-        role: "Developer"
+        role: "Developer",
+        is_secret: false
     },
     {
         id: 1,
@@ -168,7 +175,8 @@ export const MoreProjects = [
         source_code: null,
         live_link: "https://play.google.com/store/apps/details?id=com.rareweb.shamlift",
         image: null,
-        role: "Back-end Developer"
+        role: "Back-end Developer",
+        is_secret: false
     },
     {
         id: 2,
@@ -178,7 +186,8 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/sky-msg",
         live_link: null,
         image: chat,
-        role: "Full-stack Developer"
+        role: "Full-stack Developer",
+        is_secret: false
     },
     {
         id: 3,
@@ -188,7 +197,8 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/my-blog",
         live_link: null,
         image: blog,
-        role: "Full-stack Developer"
+        role: "Full-stack Developer",
+        is_secret: false
     },
     {
         id: 4,
@@ -198,7 +208,8 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/its-weather",
         live_link: null,
         image: weather,
-        role: "Front-end Developer"
+        role: "Front-end Developer",
+        is_secret: false
     },
     {
         id: 5,
@@ -208,7 +219,8 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-1",
         live_link: null,
         image: gym,
-        role: "Front-end Developer"
+        role: "Front-end Developer",
+        is_secret: false
     },
     {
         id: 6,
@@ -218,7 +230,8 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-2",
         live_link: null,
         image: resturant,
-        role: "Full-stack Developer"
+        role: "Full-stack Developer",
+        is_secret: false
     },
     {
         id: 7,
@@ -228,7 +241,8 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-3",
         live_link: null,
         image: null,
-        role: "Back-end Developer"
+        role: "Back-end Developer",
+        is_secret: false
     },
     {
         id: 8,
@@ -238,7 +252,8 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-4",
         live_link: null,
         image: null,
-        role: "Back-end Developer"
+        role: "Back-end Developer",
+        is_secret: false
     },
     {
         id: 9,
@@ -248,6 +263,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-5",
         live_link: null,
         image: null,
-        role: "Back-end Developer"
+        role: "Back-end Developer",
+        is_secret: false
     },
 ];

@@ -63,7 +63,7 @@ const Project = ({ project, rowReverse }) => {
                         initial="hidden"
                         whileInView="visible"
                     >
-                        <ProjectImage src={project.image} alt="project" />
+                        <ProjectImage src={project.image} alt="project" secret={project.is_secret}/>
                     </ProjectImageContainer> :
                     null
             }

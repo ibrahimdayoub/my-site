@@ -31,10 +31,12 @@ export const ProjectImage = styled.img`
   border: 1px solid #fff;
   width: 80%;
   height: 300px;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 8px;
   opacity:0.75;
-  padding:2px;
+  padding:1px;
+
+  filter: ${({ secret }) => secret?'blur(2px)':'none'};
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
     width: 100%;
