@@ -4,7 +4,7 @@ import { FaGithub, FaLink, FaPenAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants';
 
-const Project = ({ project, rowReverse }) => {
+const Project = ({ project, index, rowReverse }) => {
     return (
         <FlexContainer rowReverse={rowReverse ? true : false} fullWidthChild>
             <ProjectContentContainer
@@ -14,13 +14,21 @@ const Project = ({ project, rowReverse }) => {
                 whileInView="visible"
             >
                 <FlexContainer>
-                    <Heading as="h3" size="h3" bottom="0.5rem" responsivealign="center">{project.id + 1}. {project.name}</Heading>
+                    <Heading as="h3" size="h3" bottom="0.5rem" responsivealign="center">{index + 1}. {project.name}</Heading>
                 </FlexContainer>
                 {
                     project.description ?
-                        <ParaText bottom="0.5rem" responsivealign="center">{project.description}</ParaText> :
+                        <ParaText bottom="0.5rem" responsivealign="center"
+                            dangerouslySetInnerHTML={{ __html: project.description }}
+                        />
+                        :
                         null
                 }
+                {/* {
+                    project.description ?
+                        <ParaText bottom="0.5rem" responsivealign="center">{project.description}</ParaText> :
+                        null
+                } */}
                 <FlexContainer>
                     <Heading as="h4" size="h4" top="0.75rem" bottom="0.5" responsivealign="center" style={{ color: "#7eadfc" }}> <FaPenAlt style={{ marginRight: "5px" }} /> {project.role}</Heading>
                 </FlexContainer>
@@ -63,7 +71,7 @@ const Project = ({ project, rowReverse }) => {
                         initial="hidden"
                         whileInView="visible"
                     >
-                        <ProjectImage src={project.image} alt="project" secret={project.is_secret}/>
+                        <ProjectImage src={project.image} alt="project" secret={project.is_secret} />
                     </ProjectImageContainer> :
                     null
             }

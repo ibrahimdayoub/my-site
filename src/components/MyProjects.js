@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import {PaddingContainer,Heading,BlueText} from './styled-components/Global.styled';
+import { PaddingContainer, Heading, BlueText } from './styled-components/Global.styled';
 import { fadeInBottomVariant, fadeInTopVariant } from '../utils/Variants';
 import { TopProjects, MoreProjects } from "../utils/Data"
 import { FaChevronDown } from 'react-icons/fa';
@@ -34,10 +34,10 @@ const MyProjects = () => {
                     <BlueText>I have built <span style={{ fontSize: "16px" }}>({TopProjects.length})</span></BlueText>
                 </motion.p>
             </Heading>
-            {TopProjects.map((project, idx) => {
+            {TopProjects.map((project, index) => {
                 return (
                     <PaddingContainer top="2.5rem" bottom="2.5rem">
-                        <Project project={project} rowReverse={idx % 2 === 0 ? true : false} />
+                        <Project project={project} index={index} rowReverse={index % 2 === 0 ? true : false} />
                     </PaddingContainer>
                 )
             })}
@@ -49,7 +49,7 @@ const MyProjects = () => {
                 size="h2"
                 top="0.5rem"
                 responsivealign="center"
-                onClick={()=>setOpenMore(!openMore)}
+                onClick={() => setOpenMore(!openMore)}
             >
                 Click to
                 <motion.p style={{ display: "inline", marginLeft: "10px" }} variants={fadeInBottomVariant} initial="hidden" whileInView="visible">
@@ -64,10 +64,10 @@ const MyProjects = () => {
                     </BlueText>
                 </motion.p>
             </Heading>
-            {openMore && MoreProjects.map((project, idx) => {
+            {openMore && MoreProjects.map((project, index) => {
                 return (
                     <PaddingContainer top="2.5rem" bottom="2.5rem">
-                        <Project project={project} rowReverse={idx % 2 === 1 ? true : false} />
+                        <Project project={project} index={index} rowReverse={index % 2 === 1 ? true : false} />
                     </PaddingContainer>
                 )
             })}

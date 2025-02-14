@@ -6,7 +6,7 @@ export const ProjectContentContainer = styled.div`
 
 export const ProjectImageContainer = styled.div`
   display: flex;
-  justify-content: ${({ justify }) => justify };
+  justify-content: ${({ justify }) => justify};
 `;
 
 export const TechStackCard = styled.span`
@@ -28,15 +28,14 @@ export const TechStackCard = styled.span`
 `
 
 export const ProjectImage = styled.img`
-  border: 1px solid #fff;
   width: 80%;
   height: 300px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 7.5px;
   opacity:0.75;
-  padding:1px;
+  box-shadow: 1px 1px 5px #ddd;
 
-  filter: ${({ secret }) => secret?'blur(2px)':'none'};
+  filter: ${({ secret }) => secret ? 'blur(2.5px)' : 'none'};
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
     width: 100%;
