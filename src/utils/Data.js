@@ -2,6 +2,7 @@ import { FaReact, FaPhp, FaLaravel, FaNodeJs, FaBootstrap } from 'react-icons/fa
 import { SiExpress, SiMongodb, SiStrapi, SiTailwindcss } from 'react-icons/si';
 import { TbBrandJavascript, TbBrandMysql, TbBrandNextjs } from 'react-icons/tb';
 
+import nia from '../assets/nia.png';
 import deebaaj from '../assets/deebaaj.png';
 import oab from '../assets/oab.png';
 import tmc from '../assets/tmc.png';
@@ -80,6 +81,16 @@ export const Skills = [
 
 export const TopProjects = [
     {
+        name: "General Trading Website",
+        tools: ["ReactJS", "Tailwind CSS","Strapi"],
+        description: "NIA: At <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>, developed a commercial platform to showcase global brands offering household and electrical appliances.",
+        source_code: null,
+        live_link: "https://nia.me",
+        image: nia,
+        role: "Full-stack Developer",
+        is_secret: false
+    },
+    {
         name: "Marketing Consultation Website",
         tools: ["Laravel", "Strapi"],
         description: "Deebaaj: At <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>, built a dynamic website to provide marketing consultation services and support business growth.",
@@ -101,7 +112,7 @@ export const TopProjects = [
     },
     {
         name: "Medical Equipment Store",
-        tools: ["ReactJS", "Redux Toolkit", "TailwindCSS", "Laravel", "MySQL"],
+        tools: ["ReactJS", "Redux Toolkit", "Tailwind CSS", "Laravel", "MySQL"],
         description: "TMC: At <b><u><a href='https://wmktech.net' target='_blank'>WMK Tech</a></u></b>, developed an e-commerce platform for selling and managing medical equipment, ensuring smooth user experience and efficient order processing.",
         source_code: null,
         live_link: "https://tmc-iraq.com",
@@ -111,7 +122,7 @@ export const TopProjects = [
     },
     {
         name: "Educational Engineering Platform",
-        tools: ["ReactJS", "Redux Toolkit", "TailwindCSS", "Laravel", "MySQL"],
+        tools: ["ReactJS", "Redux Toolkit", "Tailwind CSS", "Laravel", "MySQL"],
         description: "Eye-Engineer: At <b><u><a href='http://rare-web.com' target='_blank'>Rare Web</a></u></b>, developed a platform to provide engineering resources, educational materials, and promote engineering offices.",
         source_code: null,
         live_link: "https://eyeengineer.com",
@@ -121,7 +132,7 @@ export const TopProjects = [
     },
     {
         name: "Medical Consultation Platform",
-        tools: ["Laravel", "TailwindCSS", "MySQL"],
+        tools: ["Laravel", "Tailwind CSS", "MySQL"],
         description: "Germ-Ac: At <b><u><a href='http://rare-web.com' target='_blank'>Rare Web</a></u></b>, created a platform to facilitate medical consultations, connect with doctors, and offer medical courses.",
         source_code: null,
         live_link: "https://germ-ac.com",
@@ -131,7 +142,7 @@ export const TopProjects = [
     },
     {
         name: "Employment & Freelancing Platform",
-        tools: ["ReactJS", "Redux Toolkit", "TailwindCSS", "NodeJS", "ExpressJS", "Socket.IO", "Mongoose", "MongoDB"],
+        tools: ["ReactJS", "Redux Toolkit", "Tailwind CSS", "NodeJS", "ExpressJS", "Socket.IO", "Mongoose", "MongoDB"],
         description: "OSUM: Developed a platform to connect job seekers and freelancers, addressing the gap between experience and work opportunities.",
         source_code: "https://github.com/ibrahimdayoub/osum",
         live_link: null,
@@ -214,7 +225,7 @@ export const MoreProjects = [
     },
     {
         name: "Food Ordering and Restaurant Website",
-        tools: ["ReactJS", "NextJS", "TailwindCSS", "Prisma", "MySQL", "Stripe"],
+        tools: ["ReactJS", "NextJS", "Tailwind CSS", "Prisma", "MySQL", "Stripe"],
         description: "Freelance-2: Developed a platform for food ordering and showcasing restaurants with online payment integration.",
         source_code: "https://github.com/ibrahimdayoub/freelance-2",
         live_link: null,

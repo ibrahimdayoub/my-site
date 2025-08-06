@@ -32,10 +32,10 @@ export const ProjectImage = styled.img`
   height: 300px;
   object-fit: cover;
   border-radius: 7.5px;
-  opacity:0.75;
+  opacity:0.5;
   box-shadow: 1px 1px 5px #ddd;
 
-  filter: ${({ secret }) => secret ? 'blur(2.5px)' : 'none'};
+  // filter: ${({ secret }) => secret ? 'blur(2.5px)' : 'none'};
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
     width: 100%;
