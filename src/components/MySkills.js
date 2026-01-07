@@ -16,10 +16,10 @@ const MySkills = () => {
         >
           {Skills.map((skill) => (
             <SkillsCard key={skill.id}>
-              <IconContainer size="2.5rem" responsivesize2="1.5rem" color="blue">
+              <IconContainer size="2rem" responsivesize2="1.5rem" color="blue">
                 {skill.icon}
               </IconContainer>
-              <Heading as="h4" size="h4">{skill.tech}</Heading>
+              <Heading as="h5" size="h5" weight="300">{skill.tech}</Heading>
             </SkillsCard>
           ))}
         </SkillsCardContainer>
@@ -31,8 +31,12 @@ const MySkills = () => {
               <BlueText>I can do</BlueText>
             </motion.p>
           </Heading>
-          <ParaText top="2rem" bottom="1.5rem" responsivealign="center">As a developer, I have extensive experience in front-end web development. I am skilled in JavaScript and ReactJs. My strong experience in building responsive and dynamic user interfaces using Redux and CSS frameworks like Bootstrap has allowed me to create attractive and interactive web applications.</ParaText>
-          <ParaText responsivealign="center">Also, I have extensive experience in back-end web development. I am skilled in NodeJs and Laravel, and I have knowledge of both relational and non-relational databases. I can build and develop web servers, create APIs, and efficiently manage databases.</ParaText>
+          <ParaText top="2rem" bottom="1.5rem" responsivealign="center">
+            As a <b>Full-stack Developer</b>, I specialize in crafting high-performance front-end experiences. By leveraging <b>JavaScript</b> and <b>React.js</b>, I build responsive, dynamic user interfaces that are as functional as they are visually compelling. With a deep mastery of <b>Redux</b> and modern <b>CSS frameworks</b>, I transform complex designs into interactive, fluid web applications.
+          </ParaText>
+          <ParaText responsivealign="center">
+            On the server side, I architect robust back-end systems using <b>Node.js</b> and <b>Laravel</b>. My expertise spans both <b>Relational</b> and <b>NoSQL</b> databases, enabling me to design efficient schemas, build secure APIs, and manage data workflows that scale. I don’t just write code; I build the digital backbone that powers seamless user experiences.
+          </ParaText>
         </motion.div>
       </FlexContainer>
     </PaddingContainer>

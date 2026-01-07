@@ -2,16 +2,12 @@ import styled from "styled-components";
 
 export const SkillsCardContainer = styled.div`
 	display: grid;
-	// grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-columns: 125px 125px 125px 125px;
-	grid-template-rows: 125px 125px 125px;
-	grid-gap: 1rem;
-	margin-right: 25px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 0.5rem;
+	margin-right: 50px;
 
 	@media ${({ theme }) => theme.breakpoints.mobile}{
-	// grid-template-columns: 1fr 1fr 1fr;
-	grid-template-columns: 100px 100px 100px;
-	grid-template-rows: 100px 100px 100px 100px ;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 0.5rem;
 	justify-content:center;
 	margin: 0px auto;
@@ -19,9 +15,7 @@ export const SkillsCardContainer = styled.div`
 	}
 
 	@media(max-width: 350px) {
-	// grid-template-columns: 1fr 1fr 1fr;
-	grid-template-columns: 75px 75px 75px;
-	grid-template-rows: 75px 75px 75px 75px ;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 0.5rem;
 	justify-content:center;
 	margin: 0px auto;
@@ -35,6 +29,7 @@ export const SkillsCard = styled.div`
 	border-radius: 0.5rem;
 	display: flex;
 	flex-direction: column;
+	justify-content:center;
 	align-items: center;
 	background-color: ${({ theme }) => theme.colors.primary_light};
 

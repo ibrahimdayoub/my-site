@@ -200,6 +200,7 @@ export const Heading = styled(PaddingContainer)`
         return;
     }
   }};
+  font-weight: ${({ weight }) => weight || 'normal'};
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
     text-align: ${({ responsivealign }) => responsivealign};
