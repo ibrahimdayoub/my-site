@@ -16,9 +16,9 @@ export const TechStackCard = styled.span`
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  font-size: 14px;
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
-    font-size:14px;
     padding: 0.25rem 0.5rem;
   }
 
@@ -27,19 +27,28 @@ export const TechStackCard = styled.span`
   }
 `
 
-export const ProjectImage = styled.img`
+export const ProjectImageLink = styled.a`
   width: 80%;
   height: 300px;
-  object-fit: cover;
+  cursor: pointer;
+  overflow:hidden;
   border-radius: 7.5px;
   opacity:0.75;
   box-shadow: 1px 1px 5px #ddd;
+	background-color: ${({ theme }) => theme.colors.secondary};
 
   filter: ${({ secret }) => secret ? 'blur(2px)' : 'none'};
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
     width: 100%;
+    height: 250px;
     margin:0 auto;
     margin-top: 2rem;
   }
+`
+
+export const ProjectImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `

@@ -276,7 +276,10 @@ export const Particle = styled.img`
 `
 
 export const IconContainer = styled.div`
-    color: ${({ color, theme }) => {
+  display:flex;
+  align-items:center;
+
+  color: ${({ color, theme }) => {
     switch (color) {
       case 'white':
         return theme.colors.white;
@@ -288,9 +291,10 @@ export const IconContainer = styled.div`
         return;
     }
   }};
-    font-size: ${({ size }) => size};
+  
+  font-size: ${({ size }) => size};
 
-    @media(max-width: 350px) {
+  @media(max-width: 350px) {
     font-size: ${({ responsivesize2 }) => responsivesize2};
   }
 `
@@ -375,6 +379,7 @@ export const ButtonAlt2 = styled.a`
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease; 
+  font-size: 14px;
 
   &:hover{
     color: ${({ theme }) => theme.colors.primary_light};

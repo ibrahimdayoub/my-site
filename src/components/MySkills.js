@@ -1,28 +1,89 @@
-import { motion } from 'framer-motion'
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion'
 import { FlexContainer, Heading, PaddingContainer, IconContainer, ParaText, BlueText } from './styled-components/Global.styled'
-import { SkillsCardContainer, SkillsCard } from './styled-components/MySkills.styled'
+import { SkillsCardContainer, SkillsCard, SkillsTabsContainer, SkillsTabButton } from './styled-components/MySkills.styled'
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
-import { Skills } from '../utils/Data'
+import { FrontSkills, BackSkills, DatabaseSkills, ToolSkills } from '../utils/Data'
+
+import { HiCode, HiDatabase, HiTerminal, HiLightningBolt, HiCog, HiAcademicCap, HiColorSwatch, HiPuzzle } from 'react-icons/hi';
 
 const MySkills = () => {
+  const [activeTab, setActiveTab] = useState('Frontend')
+
+  const data = [
+    {
+      title: 'Frontend',
+      icon: <HiCode />
+    },
+    {
+      title: 'Backend',
+      icon: <HiLightningBolt />
+    },
+    {
+      title: 'Databases',
+      icon: <HiDatabase />
+    },
+    {
+      title: 'Tools',
+      icon: <HiPuzzle />
+    }
+  ];
+
+  const getActiveData = () => {
+    switch (activeTab) {
+      case 'Frontend': return FrontSkills;
+      case 'Backend': return BackSkills;
+      case 'Databases': return DatabaseSkills;
+      case 'Tools': return ToolSkills;
+      default: return FrontSkills;
+    }
+  };
+
   return (
     <PaddingContainer id="my-skills" left="1%" right="1%" responsiveLeft="1rem" responsiveRight="1rem">
       <FlexContainer responsiveDirection="column-reverse" responsiveFlex fullWidthChild>
-        <SkillsCardContainer
-          as={motion.div}
-          variants={fadeInLeftVariant}
-          initial="hidden"
-          whileInView="visible"
-        >
-          {Skills.map((skill) => (
-            <SkillsCard key={skill.id}>
-              <IconContainer size="2rem" responsivesize2="1.5rem" color="blue">
-                {skill.icon}
-              </IconContainer>
-              <Heading as="h5" size="h5" weight="300">{skill.tech}</Heading>
-            </SkillsCard>
-          ))}
-        </SkillsCardContainer>
+        <div >
+          <SkillsTabsContainer as={motion.div} variants={fadeInLeftVariant} initial="hidden" whileInView="visible">
+            {data.map((tab) => (
+              <SkillsTabButton
+                key={tab.title}
+                active={activeTab === tab.title}
+                onClick={() => setActiveTab(tab.title)}
+                title={tab.title}
+              >
+                {tab.icon}
+                <span className='title'>{tab.title}</span>
+              </SkillsTabButton>
+            ))}
+          </SkillsTabsContainer>
+
+          <SkillsCardContainer
+            as={motion.div}
+            layout
+            variants={fadeInLeftVariant}
+            initial="hidden"
+            whileInView="visible"
+          >
+            <AnimatePresence mode='wait'>
+              {getActiveData().map((skill) => (
+                <SkillsCard
+                  key={skill.tech}
+                  as={motion.div}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.2 }}
+                  title={skill.tech}
+                >
+                  <IconContainer size="1.5rem" responsivesize2="1.5rem" color="blue">
+                    {skill.icon}
+                  </IconContainer>
+                  <Heading as="h5" size="h5" weight="300">{skill.tech}</Heading>
+                </SkillsCard>
+              ))}
+            </AnimatePresence>
+          </SkillsCardContainer>
+        </div>
         <motion.div variants={fadeInRightVariant} initial="hidden" whileInView="visible">
           <Heading as="h4" size="h4" responsivealign="center">MY SKILLS</Heading>
           <Heading as="h2" size="h2" top="0.5rem" responsivealign="center">

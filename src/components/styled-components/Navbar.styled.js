@@ -57,18 +57,13 @@ export const NavLink = styled.a`
 `
 
 export const Logo = styled.img`
-  width: 50px;
+  width: 75px;
+  margin-top: -7.5px;
   margin-left: 15px;
-  margin-top: 0px;
 
   @media (min-width: 768px) {    
-    width: 100px;
-    margin-bottom:-50px;
-    margin-top: -50px;
-  }
-
-  @media (min-width: 1300px) {    
-    margin-left:10px;
+    width: 150px;
+    margin-top: 50px;
   }
 `
 

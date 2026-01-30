@@ -15,19 +15,19 @@ const Footer = () => {
                             color: "white"
                         }}
                     >
-                        +963997791807
+                        +963 997 791 807
                     </a>
                 </Contact>
                 <Contact>
                     <FaEnvelope style={{ fontSize: "16px", marginRight: "5px" }} />
                     <a
-                        href="mailto:ibrahimdayoub@gmail.com"
+                        href="mailto:ibrahimdayoub619@gmail.com"
                         style={{
                             textDecoration: "none",
                             color: "white"
                         }}
                     >
-                        ibrahimdayoub@gmail.com
+                        Ibrahimdayoub619@gmail.com
                     </a>
                 </Contact>
             </FooterElement>

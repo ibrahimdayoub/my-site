@@ -1,5 +1,5 @@
 import { PaddingContainer, Heading, FlexContainer, ParaText, IconContainer, ButtonAlt2, } from '../styled-components/Global.styled';
-import { ProjectContentContainer, ProjectImageContainer, TechStackCard, ProjectImage, } from '../styled-components/MyProjects.styled';
+import { ProjectContentContainer, ProjectImageContainer, TechStackCard, ProjectImage, ProjectImageLink, } from '../styled-components/MyProjects.styled';
 import { FaGithub, FaLink, FaPenAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants';
@@ -30,7 +30,7 @@ const Project = ({ project, index, rowReverse }) => {
                         null
                 } */}
                 <FlexContainer>
-                    <Heading as="h4" size="h4" top="0.75rem" bottom="0.5" responsivealign="center" style={{ color: "#7eadfc" }}> <FaPenAlt style={{ marginRight: "5px" }} /> {project.role}</Heading>
+                    <Heading as="h4" size="h4" top="0.75rem" bottom="0.5rem" responsivealign="center" style={{ color: "#7eadfc" }}> <FaPenAlt style={{ marginRight: "5px" }} /> {project.role}</Heading>
                 </FlexContainer>
                 <PaddingContainer top="0.5rem">
                     <FlexContainer gap="0.5rem" responsiveFlex responsivejustify="center" style={{ flexWrap: "wrap" }}>
@@ -46,7 +46,7 @@ const Project = ({ project, index, rowReverse }) => {
                 <FlexContainer gap="0.5rem" responsiveFlex responsivejustify="center" style={{ flexWrap: "wrap" }}>
                     {
                         project.source_code ?
-                            <ButtonAlt2 href={project.source_code} target='_blank' setMXAuto style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
+                            <ButtonAlt2 href={project.source_code} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                                 <span style={{ marginRight: "5px" }}>Code</span>
                                 <IconContainer color="blue" size="1rem"><FaGithub /></IconContainer>
                             </ButtonAlt2> :
@@ -54,7 +54,7 @@ const Project = ({ project, index, rowReverse }) => {
                     }
                     {
                         project.live_link ?
-                            <ButtonAlt2 href={project.live_link} target='_blank' setMXAuto style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
+                            <ButtonAlt2 href={project.live_link} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                                 <span style={{ marginRight: "5px" }}>Link</span>
                                 <IconContainer color="blue" size="1rem"><FaLink /></IconContainer>
                             </ButtonAlt2> :
@@ -71,7 +71,13 @@ const Project = ({ project, index, rowReverse }) => {
                         initial="hidden"
                         whileInView="visible"
                     >
-                        <ProjectImage src={project.image} alt="project" secret={project.is_secret} />
+                        <ProjectImageLink href={project.image} download={`Ibrahim Dayoub - ${project.name}`}>
+                            <ProjectImage
+                                src={project.image}
+                                alt={project.image?.split("/")[3]?.split(".")[0]}
+                                secret={project.is_secret}
+                            />
+                        </ProjectImageLink>
                     </ProjectImageContainer> :
                     null
             }
