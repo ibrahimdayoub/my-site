@@ -1,9 +1,9 @@
 import { FaFigma, FaGitAlt } from 'react-icons/fa';
 import { SiBootstrap, SiCss3, SiDirectus, SiExpo, SiExpress, SiGithub, SiHtml5, SiJavascript, SiLaravel, SiMongodb, SiNestjs, SiNextdotjs, SiNodedotjs, SiPhp, SiPostgresql, SiPostman, SiPrisma, SiReact, SiSqlite, SiStrapi, SiTailwindcss, SiTypescript } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
-import { DiMysql} from "react-icons/di";
+import { DiMysql } from "react-icons/di";
 
-
+import beroTalker from '../assets/bero-talker.png';
 import beroTasker from '../assets/bero-tasker.png';
 import reimagined from '../assets/reimagined.png';
 import nia from '../assets/nia.png';
@@ -63,11 +63,23 @@ export const ToolSkills = [
 
 export const TopProjects = [
     {
+        name: "Real-Time Chat Application",
+        tools: ["Typescript", "NextJs", "React Query", "Zustand", "Nativewind Css", "Socket.IO", "NestJs", "PostgreSQL", "Prisma"],
+        description: "Developed Bero Talker: A sleek real-time chat app with instant messaging, modern UI, and secure authentication.",
+        source_code: "https://github.com/ibrahimdayoub/talker-frontend",
+        live_link: null,
+        demo_link: "https://youtu.be/dWa0VzdyeFo",
+        image: beroTalker,
+        role: "Full-stack Developer",
+        is_secret: false
+    },
+    {
         name: "Productivity Suite",
         tools: ["Typescript", "React Native", "Expo", "Nativewind Css", "Clerk", "NodeJs", "ExpressJs", "MongoDB", "Mongoose"],
         description: "Developed Bero Tasker: A modern, high-performance mobile application for managing tasks and notes, featuring a seamless user interface and secure authentication.",
         source_code: "https://github.com/ibrahimdayoub/tasker-frontend",
         live_link: "https://expo.dev/accounts/ibrahimdayoub/projects/bero-tasker/builds/2d2ff135-72da-48cd-8a09-99e785887c1f",
+        demo_link: "https://youtu.be/BExEKLQOeNY",
         image: beroTasker,
         role: "Full-stack Developer",
         is_secret: false

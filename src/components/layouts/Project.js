@@ -1,6 +1,6 @@
 import { PaddingContainer, Heading, FlexContainer, ParaText, IconContainer, ButtonAlt2, } from '../styled-components/Global.styled';
 import { ProjectContentContainer, ProjectImageContainer, TechStackCard, ProjectImage, ProjectImageLink, } from '../styled-components/MyProjects.styled';
-import { FaGithub, FaLink, FaPenAlt } from 'react-icons/fa';
+import { FaGithub, FaLink, FaPenAlt, FaPlay, FaVideo } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants';
 
@@ -57,6 +57,14 @@ const Project = ({ project, index, rowReverse }) => {
                             <ButtonAlt2 href={project.live_link} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                                 <span style={{ marginRight: "5px" }}>Link</span>
                                 <IconContainer color="blue" size="1rem"><FaLink /></IconContainer>
+                            </ButtonAlt2> :
+                            null
+                    }
+                    {
+                        project.demo_link ?
+                            <ButtonAlt2 href={project.demo_link} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
+                                <span style={{ marginRight: "5px" }}>Demo</span>
+                                <IconContainer color="blue" size="1rem"><FaPlay /></IconContainer>
                             </ButtonAlt2> :
                             null
                     }

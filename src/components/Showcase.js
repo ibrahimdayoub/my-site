@@ -40,7 +40,7 @@ const Showcase = () => {
                         </motion.p>
                     </Heading>
                     <ParaText as="p" top="1.5rem" bottom="2.5rem" responsivealign="center">
-                    With over two years of experience across freelance and corporate environments, I’ve mastered the art of building scalable web and mobile solutions. I specialize in turning complex requirements into seamless digital experiences through fast-paced research and a deep understanding of modern frameworks. I thrive in collaborative teams, consistently pushing the boundaries of my growth to deliver nothing less than excellence.
+                    With over three years of experience across freelance and corporate environments, I’ve mastered the art of building scalable web and mobile solutions. I specialize in turning complex requirements into seamless digital experiences through fast-paced research and a deep understanding of modern frameworks. I thrive in collaborative teams, consistently pushing the boundaries of my growth to deliver nothing less than excellence.
                     </ParaText>
                     <FlexContainer responsiveFlex justify="space-between" align="center" gap="5px">
                         <FlexContainer gap="20px" responsivegap2="5px" responsiveFlex>
