@@ -25,16 +25,16 @@ const Achievement = ({ achievement, rowReverse }) => {
                         null
                 }
                 <Container>
-                    <Heading as="h4" size="h4" top="0.25rem" bottom="0.25rem" responsivealign="center" style={{ color: "#7eadfc" }}> <FaAward style={{ marginRight: "5px" }} /> {achievement.issuer}</Heading>
-                    <Heading as="h4" size="h4" top="0.25rem" bottom="0.25rem" responsivealign="center" style={{ color: "#7eadfc" }}> <FaCalendarAlt style={{ marginRight: "5px" }} /> {achievement.date}</Heading>
-                    <Heading as="h4" size="h4" top="0.25rem" bottom="0.25rem" responsivealign="center" style={{ color: "#7eadfc" }}> <FaIdCard style={{ marginRight: "5px" }} /> {achievement.credentialId}</Heading>
+                    <Heading as="h5" size="h5" top="0.25rem" bottom="0.25rem" responsivealign="center" style={{ color: "#7eadfc", textTransform: "uppercase" }}> <FaCalendarAlt style={{ marginRight: "5px" }} /> {achievement.date}</Heading>
+                    <Heading as="h5" size="h5" top="0.25rem" bottom="0.25rem" responsivealign="center" style={{ color: "#7eadfc", textTransform: "uppercase" }}> <FaIdCard style={{ marginRight: "5px" }} /> {achievement.credentialId}</Heading>
+                    <Heading as="h5" size="h5" top="0.25rem" bottom="0.25rem" responsivealign="center" style={{ color: "#7eadfc", textTransform: "uppercase" }}> <FaAward style={{ marginRight: "5px" }} /> {achievement.issuer}</Heading>
                 </Container>
                 <PaddingContainer top="0.5rem">
                     <FlexContainer gap="0.5rem" responsiveFlex responsivejustify="center" style={{ flexWrap: "wrap" }}>
                         {
-                            achievement.skills.map((tool) => {
+                            achievement.skills.map((tool,index) => {
                                 return (
-                                    <SkillCard>{tool}</SkillCard>
+                                    <SkillCard key={index}>{tool}</SkillCard>
                                 )
                             })
                         }
@@ -54,6 +54,7 @@ const Achievement = ({ achievement, rowReverse }) => {
                             <AchievementImage
                                 src={achievement.image}
                                 alt={achievement.image?.split("/")[3]?.split(".")[0]}
+                                loading="lazy"
                             />
                         </AchievementImageLink>
                     </AchievementImageContainer> :

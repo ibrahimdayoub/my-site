@@ -3,24 +3,26 @@ import { SiBootstrap, SiCss3, SiDirectus, SiExpo, SiExpress, SiGithub, SiHtml5, 
 import { TbBrandReactNative } from 'react-icons/tb';
 import { DiMysql } from "react-icons/di";
 
-import beroTalker from '../assets/bero-talker.png';
-import beroTasker from '../assets/bero-tasker.png';
-import reimagined from '../assets/reimagined.png';
-import nia from '../assets/nia.png';
-import deebaaj from '../assets/deebaaj.png';
-import oab from '../assets/oab.png';
-import tmc from '../assets/tmc.png';
-import eyeengineer from '../assets/eyeengineer.png';
-import germac from '../assets/germac.png';
-import osum from '../assets/osum.png';
-import compastudent from '../assets/compastudent.png';
-import chat from '../assets/chat.png';
-import blog from '../assets/blog.png';
-import weather from '../assets/weather.png';
-import gym from '../assets/gym.png';
-import resturant from '../assets/resturant.png';
+import beroTalker from '../assets/projects/bero-talker.webp';
+import beroTasker from '../assets/projects/bero-tasker.webp';
+import reimagined from '../assets/projects/reimagined.webp';
+import nia from '../assets/projects/nia.webp';
+import deebaaj from '../assets/projects/deebaaj.webp';
+import oab from '../assets/projects/oab.webp';
+import tmc from '../assets/projects/tmc.webp';
+import eyeengineer from '../assets/projects/eyeengineer.webp';
+import germac from '../assets/projects/germac.webp';
+import osum from '../assets/projects/osum.webp';
+import compastudent from '../assets/projects/compastudent.webp';
+import initvel from '../assets/projects/initvel.webp';
+import shamLifts from '../assets/projects/sham-lifts.webp';
+import chat from '../assets/projects/chat.webp';
+import blog from '../assets/projects/blog.webp';
+import weather from '../assets/projects/weather.webp';
+import gym from '../assets/projects/gym.webp';
+import resturant from '../assets/projects/resturant.webp';
 
-import odoo from '../assets/odoo.png';
+import odoo from '../assets/achievements/odoo.webp';
 
 export const FrontSkills = [
     { tech: 'HTML', icon: <SiHtml5 /> },
@@ -72,7 +74,7 @@ export const TopProjects = [
         live_link: null,
         demo_link: "https://youtu.be/dWa0VzdyeFo",
         image: beroTalker,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
     {
@@ -83,7 +85,7 @@ export const TopProjects = [
         live_link: "https://drive.google.com/file/d/16V3vBjXSdRQ_WNSWVS6MouE8Lj_NfSq4/view?usp=sharing",
         demo_link: "https://youtu.be/BExEKLQOeNY",
         image: beroTasker,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
     {
@@ -104,7 +106,7 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://nia.me",
         image: nia,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
     {
@@ -114,7 +116,7 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://deebaajmc.com",
         image: deebaaj,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
     {
@@ -124,7 +126,7 @@ export const TopProjects = [
         source_code: null,
         live_link: null,
         image: oab,
-        role: "Front-end Developer",
+        role: "Front End Developer",
         is_secret: false
     },
     {
@@ -134,7 +136,7 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://tmc-iraq.com",
         image: tmc,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
     {
@@ -144,7 +146,7 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://eyeengineer.com",
         image: eyeengineer,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
     {
@@ -154,7 +156,7 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://germ-ac.com",
         image: germac,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
     {
@@ -164,7 +166,7 @@ export const TopProjects = [
         source_code: "https://github.com/ibrahimdayoub/osum",
         live_link: null,
         image: osum,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
     {
@@ -174,7 +176,7 @@ export const TopProjects = [
         source_code: "https://github.com/ibrahimdayoub/compastudent",
         live_link: null,
         image: compastudent,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
 ];
@@ -186,7 +188,7 @@ export const MoreProjects = [
         description: "Developed Initvel at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: A specialized Laravel library designed to manage and streamline multilingual application support with ease.",
         source_code: "https://github.com/ibrahimdayoub/devs-initvel",
         live_link: "https://packagist.org/packages/devs/initvel",
-        image: null,
+        image: initvel,
         role: "Developer",
         is_secret: false
     },
@@ -196,8 +198,8 @@ export const MoreProjects = [
         description: "Designed Sham-Lift at <b><u><a href='http://rare-web.com' target='_blank'>Rare Web</a></u></b>: A management application built to streamline elevator maintenance services and track technical operations efficiently.",
         source_code: null,
         live_link: "https://play.google.com/store/apps/details?id=com.rareweb.shamlift",
-        image: null,
-        role: "Back-end Developer",
+        image: shamLifts,
+        role: "Back End Developer",
         is_secret: false
     },
     {
@@ -207,7 +209,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/sky-msg",
         live_link: null,
         image: chat,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
     {
@@ -217,7 +219,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/my-blog",
         live_link: null,
         image: blog,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
     {
@@ -227,7 +229,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/its-weather",
         live_link: null,
         image: weather,
-        role: "Front-end Developer",
+        role: "Front End Developer",
         is_secret: false
     },
     {
@@ -237,7 +239,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-1",
         live_link: null,
         image: gym,
-        role: "Front-end Developer",
+        role: "Front End Developer",
         is_secret: false
     },
     {
@@ -247,7 +249,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-2",
         live_link: null,
         image: resturant,
-        role: "Full-stack Developer",
+        role: "Full Stack Developer",
         is_secret: false
     },
     {
@@ -257,7 +259,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-3",
         live_link: null,
         image: null,
-        role: "Back-end Developer",
+        role: "Back End Developer",
         is_secret: false
     },
     {
@@ -267,7 +269,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-4",
         live_link: null,
         image: null,
-        role: "Back-end Developer",
+        role: "Back End Developer",
         is_secret: false
     },
     {
@@ -277,7 +279,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-5",
         live_link: null,
         image: null,
-        role: "Back-end Developer",
+        role: "Back End Developer",
         is_secret: false
     },
 ];

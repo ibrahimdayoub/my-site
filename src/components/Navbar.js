@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { IconContainerAlt } from './styled-components/Global.styled'
 import { Bar, Logo, MainNav, NavBarToggle, NavLi, NavLink } from './styled-components/Navbar.styled';
 import { FaBars, FaCubes, FaDumbbell, FaEnvelope, FaTimes } from 'react-icons/fa';
-import MyLogo from "../assets/logo.png"
+import MyLogo from "../assets/logo.webp"
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)

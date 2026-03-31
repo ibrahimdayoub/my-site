@@ -6,8 +6,8 @@ import { ShowcaseImageCard, ShowcaseParticleContainer, IconContainerAlt } from '
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
-import ShowcaseImg from '../assets/showcase-img.png';
-import ParticleImg from '../assets/particle.png';
+import ShowcaseImg from '../assets/showcase-img.webp';
+import ParticleImg from '../assets/particle.webp';
 // import Resume from "../assets/Ibrahim-Dayoub-Software-Engineer.pdf.pdf"
 
 const Showcase = () => {
@@ -93,7 +93,7 @@ const Showcase = () => {
                 <FlexContainer justify="flex-end">
                     <ShowcaseParticleContainer as={motion.div} variants={fadeInRightVariant} initial="hidden" whileInView="visible">
                         <ShowcaseImageCard background={ShowcaseImg}>
-                            <img src={ShowcaseImg} alt="showcase" />
+                            <img src={ShowcaseImg} alt="showcase" loading="lazy" />
                         </ShowcaseImageCard>
                         <Particle src={ParticleImg} initialTop="-40px" initialLeft="20px" rotate="60deg" delay="-1" />
                         <Particle src={ParticleImg} initialTop="120px" initialRight="-80px" rotate="40deg" delay="-2" />

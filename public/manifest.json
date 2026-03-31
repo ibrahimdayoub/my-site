@@ -1,7 +1,7 @@
 {
     "short_name": "Ibrahim Dayoub",
-    "name": "Ibrahim Dayoub | Software Engineer & Odoo Expert",
-    "description": "Portfolio of Ibrahim Dayoub - Software Engineer specializing in Odoo, React.js, Next.js, and Full-Stack Development.",
+    "name": "Ibrahim Dayoub | Full-Stack Software Engineer",
+    "description": "Portfolio of Ibrahim Dayoub: Full-Stack Developer specializing in React.js, Next.js, React Native/Expo, Express.js, Nest.js, Laravel, and Odoo ERP.",
     "icons": [
         {
             "src": "favicon.ico",
@@ -21,8 +21,8 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#111827",
-    "background_color": "#111827",
+    "theme_color": "#11182d",
+    "background_color": "#11182d",
     "orientation": "portrait",
     "scope": "/",
     "lang": "en-US",

@@ -32,7 +32,7 @@ const MyAchievements = () => {
                 </motion.p>
             </Heading>
             {Achievements.map((achievement, index) => (
-                <PaddingContainer top="2.5rem" bottom="2.5rem">
+                <PaddingContainer key={index} top="2.5rem" bottom="2.5rem">
                     <Achievement achievement={achievement} rowReverse={index % 2 === 0 ? true : false} />
                 </PaddingContainer>
             ))}

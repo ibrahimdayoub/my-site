@@ -1,5 +1,5 @@
 import { LoaderLogo, LoaderParent, LoadingBar } from './styled-components/Loader.styled'
-import MyLogo from "../assets/logo.png"
+import MyLogo from "../assets/logo.webp"
 
 const Loader = () => {
   return (

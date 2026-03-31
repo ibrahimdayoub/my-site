@@ -36,7 +36,7 @@ const MyProjects = () => {
             </Heading>
             {TopProjects.map((project, index) => {
                 return (
-                    <PaddingContainer top="2.5rem" bottom="2.5rem">
+                    <PaddingContainer key={index} top="2.5rem" bottom="2.5rem">
                         <Project project={project} index={index} rowReverse={index % 2 === 0 ? true : false} />
                     </PaddingContainer>
                 )
@@ -50,6 +50,7 @@ const MyProjects = () => {
                 top="0.5rem"
                 responsivealign="center"
                 onClick={() => setOpenMore(!openMore)}
+                style={{ cursor: "pointer" }}
             >
                 Click to
                 <motion.p style={{ display: "inline", marginLeft: "10px" }} variants={fadeInBottomVariant} initial="hidden" whileInView="visible">
@@ -66,7 +67,7 @@ const MyProjects = () => {
             </Heading>
             {openMore && MoreProjects.map((project, index) => {
                 return (
-                    <PaddingContainer top="2.5rem" bottom="2.5rem">
+                    <PaddingContainer key={index} top="2.5rem" bottom="2.5rem">
                         <Project project={project} index={index} rowReverse={index % 2 === 1 ? true : false} />
                     </PaddingContainer>
                 )

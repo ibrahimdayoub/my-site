@@ -25,14 +25,14 @@ const Project = ({ project, index, rowReverse }) => {
                         null
                 }
                 <FlexContainer>
-                    <Heading as="h4" size="h4" top="0.75rem" bottom="0.5rem" responsivealign="center" style={{ color: "#7eadfc" }}> <FaPenAlt style={{ marginRight: "5px" }} /> {project.role}</Heading>
+                    <Heading as="h5" size="h5" top="0.5rem" bottom="0.5rem" responsivealign="center" style={{ color: "#7eadfc", textTransform: "uppercase" }}> <FaPenAlt style={{ margin: "0px 5px -2px 0px" }} /> {project.role}</Heading>
                 </FlexContainer>
                 <PaddingContainer top="0.5rem">
                     <FlexContainer gap="0.5rem" responsiveFlex responsivejustify="center" style={{ flexWrap: "wrap" }}>
                         {
-                            project.tools.map((tool) => {
+                            project.tools.map((tool, index) => {
                                 return (
-                                    <TechStackCard>{tool}</TechStackCard>
+                                    <TechStackCard key={index}>{tool}</TechStackCard>
                                 )
                             })
                         }
@@ -86,6 +86,7 @@ const Project = ({ project, index, rowReverse }) => {
                             <ProjectImage
                                 src={project.image}
                                 alt={project.image?.split("/")[3]?.split(".")[0]}
+                                loading="lazy"
                                 secret={project.is_secret}
                             />
                         </ProjectImageLink>
