@@ -20,6 +20,8 @@ import weather from '../assets/weather.png';
 import gym from '../assets/gym.png';
 import resturant from '../assets/resturant.png';
 
+import odoo from '../assets/odoo.png';
+
 export const FrontSkills = [
     { tech: 'HTML', icon: <SiHtml5 /> },
     { tech: 'CSS3', icon: <SiCss3 /> },
@@ -78,7 +80,7 @@ export const TopProjects = [
         tools: ["Typescript", "React Native", "Expo", "Nativewind Css", "Clerk", "NodeJs", "ExpressJs", "MongoDB", "Mongoose"],
         description: "Developed Bero Tasker: A modern, high-performance mobile application for managing tasks and notes, featuring a seamless user interface and secure authentication.",
         source_code: "https://github.com/ibrahimdayoub/tasker-frontend",
-        live_link: "https://expo.dev/accounts/ibrahimdayoub/projects/bero-tasker/builds/2d2ff135-72da-48cd-8a09-99e785887c1f",
+        live_link: "https://drive.google.com/file/d/16V3vBjXSdRQ_WNSWVS6MouE8Lj_NfSq4/view?usp=sharing",
         demo_link: "https://youtu.be/BExEKLQOeNY",
         image: beroTasker,
         role: "Full-stack Developer",
@@ -90,13 +92,14 @@ export const TopProjects = [
         description: "Built Reimagined at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: A specialized platform for digital art exhibitions and a comprehensive management system for annual Art Residency programs.",
         source_code: null,
         live_link: "https://reimagined.art",
+        related_link: "https://github.com/ibrahimdayoub/nextjs-directus-page-builder",
         image: reimagined,
         role: "Backend Developer",
         is_secret: false
     },
     {
         name: "General Trading Website",
-        tools: ["ReactJS", "Redux Toolkit", "Tailwind CSS", "Strapi"],
+        tools: ["Javascript", "ReactJS", "Redux Toolkit", "Tailwind CSS", "Strapi"],
         description: "Developed NIA at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: A robust commercial platform designed to showcase global brands and high-end household and electrical appliances.",
         source_code: null,
         live_link: "https://nia.me",
@@ -116,7 +119,7 @@ export const TopProjects = [
     },
     {
         name: "ATM Interfaces",
-        tools: ["HTML", "CSS", "JavaScript"],
+        tools: ["HTML", "CSS", "Javascript"],
         description: "Developed OAB at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: Interactive and highly intuitive ATM user interfaces for Oman Arab Bank to elevate the overall customer banking experience.",
         source_code: null,
         live_link: null,
@@ -126,7 +129,7 @@ export const TopProjects = [
     },
     {
         name: "Medical Equipment Store",
-        tools: ["ReactJS", "Redux Toolkit", "Tailwind CSS", "Laravel", "MySQL"],
+        tools: ["JavaScript", "ReactJS", "Redux Toolkit", "Tailwind CSS", "Laravel", "MySQL"],
         description: "Developed TMC at <b><u><a href='https://wmktech.net' target='_blank'>WMK Tech</a></u></b>: An integrated e-commerce platform for medical equipment, ensuring smooth user navigation and efficient order processing workflows.",
         source_code: null,
         live_link: "https://tmc-iraq.com",
@@ -136,7 +139,7 @@ export const TopProjects = [
     },
     {
         name: "Educational Engineering Platform",
-        tools: ["ReactJS", "Redux Toolkit", "Tailwind CSS", "Laravel", "MySQL"],
+        tools: ["JavaScript", "ReactJS", "Redux Toolkit", "Tailwind CSS", "Laravel", "MySQL"],
         description: "Developed Eye-Engineer at <b><u><a href='http://rare-web.com' target='_blank'>Rare Web</a></u></b>: A comprehensive portal providing engineering resources, educational materials, and professional promotion for engineering firms.",
         source_code: null,
         live_link: "https://eyeengineer.com",
@@ -156,7 +159,7 @@ export const TopProjects = [
     },
     {
         name: "Employment & Freelancing Platform",
-        tools: ["ReactJS", "Redux Toolkit", "Tailwind CSS", "NodeJS", "ExpressJS", "Socket.IO", "Mongoose", "MongoDB"],
+        tools: ["JavaScript", "ReactJS", "Redux Toolkit", "Tailwind CSS", "NodeJS", "ExpressJS", "Socket.IO", "Mongoose", "MongoDB"],
         description: "Developed OSUM: A professional networking platform built to connect job seekers with freelancers, bridging the gap between talent and market opportunities.",
         source_code: "https://github.com/ibrahimdayoub/osum",
         live_link: null,
@@ -166,7 +169,7 @@ export const TopProjects = [
     },
     {
         name: "Lecture Scheduling System",
-        tools: ["ReactJS", "Bootstrap", "Laravel", "MySQL"],
+        tools: ["JavaScript", "ReactJS", "Bootstrap", "Laravel", "MySQL"],
         description: "Designed CompaStudent: A management system for academic scheduling, classroom bookings, and efficient rescheduling of university appointments.",
         source_code: "https://github.com/ibrahimdayoub/compastudent",
         live_link: null,
@@ -189,7 +192,7 @@ export const MoreProjects = [
     },
     {
         name: "Elevator Maintenance Application",
-        tools: ["Laravel", "MySQL", "RESTful API"],
+        tools: ["Laravel", "MySQL", "Restful API"],
         description: "Designed Sham-Lift at <b><u><a href='http://rare-web.com' target='_blank'>Rare Web</a></u></b>: A management application built to streamline elevator maintenance services and track technical operations efficiently.",
         source_code: null,
         live_link: "https://play.google.com/store/apps/details?id=com.rareweb.shamlift",
@@ -199,7 +202,7 @@ export const MoreProjects = [
     },
     {
         name: "Real-Time Chat Application",
-        tools: ["ReactJS", "Chakra UI", "NodeJS", "ExpressJS", "Socket.IO", "Mongoose", "MongoDB"],
+        tools: ["JavaScript", "ReactJS", "Chakra UI", "NodeJS", "ExpressJS", "Socket.IO", "Mongoose", "MongoDB"],
         description: "Built Sky-Msg: A modern web application for individual and group real-time communication featuring a contemporary user interface.",
         source_code: "https://github.com/ibrahimdayoub/sky-msg",
         live_link: null,
@@ -209,7 +212,7 @@ export const MoreProjects = [
     },
     {
         name: "Blog Post Platform",
-        tools: ["ReactJS", "NodeJS", "ExpressJS", "Mongoose", "MongoDB"],
+        tools: ["JavaScript", "ReactJS", "NodeJS", "ExpressJS", "Mongoose", "MongoDB"],
         description: "Developed My-Blog: A feature-rich platform designed for creating, sharing, and managing blog posts with high efficiency.",
         source_code: "https://github.com/ibrahimdayoub/my-blog",
         live_link: null,
@@ -219,7 +222,7 @@ export const MoreProjects = [
     },
     {
         name: "Weather Forecast Website",
-        tools: ["ReactJS", "Rapid API", "OpenWeather API"],
+        tools: ["JavaScript", "ReactJS", "Rapid API", "OpenWeather API"],
         description: "Designed Its-Weather: A responsive dashboard for displaying real-time global weather conditions and accurate atmospheric forecasts.",
         source_code: "https://github.com/ibrahimdayoub/its-weather",
         live_link: null,
@@ -229,7 +232,7 @@ export const MoreProjects = [
     },
     {
         name: "Gym and Fitness Website",
-        tools: ["ReactJS", "Material UI", "Rapid API"],
+        tools: ["JavaScript", "ReactJS", "Material UI", "Rapid API"],
         description: "Created Freelance-1: A fitness-centric website designed to promote health awareness and showcase gym-related services.",
         source_code: "https://github.com/ibrahimdayoub/freelance-1",
         live_link: null,
@@ -239,7 +242,7 @@ export const MoreProjects = [
     },
     {
         name: "Food Ordering and Restaurant Website",
-        tools: ["ReactJS", "NextJS", "Tailwind CSS", "Prisma", "MySQL", "Stripe"],
+        tools: ["JavaScript", "ReactJS", "NextJS", "Tailwind CSS", "Prisma", "MySQL", "Stripe"],
         description: "Developed Freelance-2: A comprehensive platform for food ordering and restaurant promotion, featuring secure online payment integration.",
         source_code: "https://github.com/ibrahimdayoub/freelance-2",
         live_link: null,
@@ -249,7 +252,7 @@ export const MoreProjects = [
     },
     {
         name: "Library Management System",
-        tools: ["Laravel", "MySQL", "RESTful API"],
+        tools: ["Laravel", "MySQL", "Restful API"],
         description: "Built Freelance-3: A dedicated backend system for managing library databases, book catalogs, and automated borrowing processes.",
         source_code: "https://github.com/ibrahimdayoub/freelance-3",
         live_link: null,
@@ -259,7 +262,7 @@ export const MoreProjects = [
     },
     {
         name: "Clothing Store Platform",
-        tools: ["Laravel", "MySQL", "RESTful API"],
+        tools: ["Laravel", "MySQL", "Restful API"],
         description: "Developed Freelance-4: A specialized e-commerce platform designed for effectively displaying and selling clothing inventory.",
         source_code: "https://github.com/ibrahimdayoub/freelance-4",
         live_link: null,
@@ -269,7 +272,7 @@ export const MoreProjects = [
     },
     {
         name: "University Housing Management System",
-        tools: ["Laravel", "MySQL", "RESTful API"],
+        tools: ["Laravel", "MySQL", "Restful API"],
         description: "Created Freelance-5: A management solution designed to streamline university housing operations and student accommodation services.",
         source_code: "https://github.com/ibrahimdayoub/freelance-5",
         live_link: null,
@@ -277,4 +280,19 @@ export const MoreProjects = [
         role: "Back-end Developer",
         is_secret: false
     },
+];
+
+export const Achievements = [
+    {
+        id: 1,
+        title: "Odoo Certification",
+        description: "Recently earned my Odoo certification — a solid step into the world of business application development. This journey introduced me to building custom modules, working with PostgreSQL, and understanding how real business systems come together. Still at the beginning of the road, but excited to keep learning and growing.",
+        image: odoo,
+        file: "./Ibrahim-Dayoub-Odoo-19-Certificate.pdf",
+        date: "March 2026",
+        issuer: "Odoo S.A",
+        credentialId: "0001071460",
+        skills: ["Odoo Development", "Javascript", "Python", "PostgreSQL"],
+        bg: "#724f6b40"
+    }
 ];

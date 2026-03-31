@@ -9,9 +9,10 @@ import Navbar from './components/Navbar';
 import Showcase from './components/Showcase';
 import MySkills from './components/MySkills';
 import MyProjects from './components/MyProjects';
+import MyAchievements from './components/MyAchievements';
 import MyContact from './components/MyContact';
 import Footer from './components/Footer';
-import "./App.css"
+import "./App.css";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -64,11 +65,13 @@ function App() {
                 <SpaceParent />
                 <MyProjects />
                 <SpaceParent />
+                <MyAchievements />
+                <SpaceParent />
                 <MyContact />
                 <Button
                   style={{
                     visibility: isVisible ? 'visible' : 'hidden',
-                    padding: matches ?  "5px" :"10px",
+                    padding: matches ? "5px" : "10px",
                     width: matches ? "30px" : "50px",
                     height: matches ? "30px" : "50px",
                     borderRadius: "100%",

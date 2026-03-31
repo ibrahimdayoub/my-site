@@ -8,9 +8,11 @@ import { FaCloudDownloadAlt } from 'react-icons/fa';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import ShowcaseImg from '../assets/showcase-img.png';
 import ParticleImg from '../assets/particle.png';
-import Resume from "../assets/resume.pdf"
+// import Resume from "../assets/Ibrahim-Dayoub-Software-Engineer.pdf.pdf"
 
 const Showcase = () => {
+    const Resume = "./Ibrahim-Dayoub-Software-Engineer.pdf";
+
     return (
         <PaddingContainer left="1%" right="1%" responsiveLeft="1rem" responsiveRight="1rem">
             <FlexContainerAlt responsivealign="center" fullWidthChild>
@@ -40,7 +42,7 @@ const Showcase = () => {
                         </motion.p>
                     </Heading>
                     <ParaText as="p" top="1.5rem" bottom="2.5rem" responsivealign="center">
-                    With over three years of experience across freelance and corporate environments, I’ve mastered the art of building scalable web and mobile solutions. I specialize in turning complex requirements into seamless digital experiences through fast-paced research and a deep understanding of modern frameworks. I thrive in collaborative teams, consistently pushing the boundaries of my growth to deliver nothing less than excellence.
+                        With over three years of experience across freelance and corporate environments, I’ve mastered the art of building scalable web and mobile solutions. I specialize in turning complex requirements into seamless digital experiences through fast-paced research and a deep understanding of modern frameworks. I thrive in collaborative teams, consistently pushing the boundaries of my growth to deliver nothing less than excellence.
                     </ParaText>
                     <FlexContainer responsiveFlex justify="space-between" align="center" gap="5px">
                         <FlexContainer gap="20px" responsivegap2="5px" responsiveFlex>
@@ -78,7 +80,7 @@ const Showcase = () => {
                             />
                         </FlexContainer>
                         <Button
-                            download={"Ibrahim Dayoub Resume"}
+                            download
                             href={Resume}
                             style={{ display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}
                             responsivepadding2="0.25rem 0.5rem"

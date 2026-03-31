@@ -31,7 +31,7 @@ const MyProjects = () => {
             >
                 What
                 <motion.p style={{ display: "inline", marginLeft: "10px" }} variants={fadeInBottomVariant} initial="hidden" whileInView="visible">
-                    <BlueText>I have built <span style={{ fontSize: "16px" }}>({TopProjects.length})</span></BlueText>
+                    <BlueText>I've built <span style={{ fontSize: "16px" }}>({TopProjects.length})</span></BlueText>
                 </motion.p>
             </Heading>
             {TopProjects.map((project, index) => {
