@@ -12,7 +12,8 @@ export const AchievementImageContainer = styled.div`
 export const SkillCard = styled.span`
   display: inline-block;
   margin:0.1rem;
-  background-color: ${({ theme }) => theme.colors.gray};
+  // background-color: ${({ theme }) => theme.colors.gray}; 
+  background-color: ${(props) => props.bg || props.theme.colors.gray}; 
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -33,7 +34,7 @@ export const AchievementImageLink = styled.a`
   cursor: pointer;
   overflow:hidden;
   border-radius: 7.5px;
-  opacity:0.75;
+  // opacity:0.75;
   box-shadow: 1px 1px 5px #ddd;
   background-color: ${({ theme }) => theme.colors.secondary};
   @media ${({ theme }) => theme.breakpoints.mobile}{

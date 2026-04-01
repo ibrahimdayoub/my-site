@@ -6,7 +6,7 @@ import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants';
 
 const Achievement = ({ achievement, rowReverse }) => {
     return (
-        <FlexContainer rowReverse={rowReverse ? true : false} fullWidthChild bg={achievement.bg}>
+        <FlexContainer rowReverse={rowReverse ? true : false} fullWidthChild hasBg>
             <AchievementContentContainer
                 as={motion.div}
                 variants={rowReverse ? fadeInRightVariant : fadeInLeftVariant}
@@ -34,7 +34,7 @@ const Achievement = ({ achievement, rowReverse }) => {
                         {
                             achievement.skills.map((tool,index) => {
                                 return (
-                                    <SkillCard key={index}>{tool}</SkillCard>
+                                    <SkillCard key={index} bg={achievement.color}>{tool}</SkillCard>
                                 )
                             })
                         }

@@ -131,9 +131,9 @@ export const FlexContainer = styled.div`
   margin-right: ${(props) => props.mRight || 0};
   gap: ${({ gap }) => gap};
   flex-direction: ${({ rowReverse }) => rowReverse ? 'row-reverse' : 'row'};
-  background: ${({ bg }) => bg ? /*bg*/ "#6363631a" : null};
-  padding: ${({ bg }) => bg ? '25px' : null};
-  border-radius: ${({ bg }) => bg ? '10px' : null};
+  background: ${({ hasBg }) => hasBg ? "#7eacfc1a" : null};
+  padding: ${({ hasBg }) => hasBg ? '25px' : null};
+  border-radius: ${({ hasBg }) => hasBg ? '10px' : null};
 
   & > div {
     flex: ${({ fullWidthChild }) => fullWidthChild && 1};
@@ -145,7 +145,7 @@ export const FlexContainer = styled.div`
     flex-direction: ${({ responsiveDirection }) => responsiveDirection};
     justify-content: ${(props) => props.responsivejustify || ''};
     gap: ${({ responsivegap }) => responsivegap};
-      padding: ${({ bg }) => bg ? '25px 10px 10px 10px' : null};
+      padding: ${({ hasBg }) => hasBg ? '25px 10px 10px 10px' : null};
   }
 
   @media(max-width: 350px) {  

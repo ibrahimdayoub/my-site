@@ -295,6 +295,6 @@ export const Achievements = [
         issuer: "Odoo S.A",
         credentialId: "0001071460",
         skills: ["Odoo Development", "Javascript", "Python", "PostgreSQL"],
-        bg: "#724f6b40"
+        color: "#7b5475"
     }
 ];
