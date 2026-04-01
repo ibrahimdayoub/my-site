@@ -1,73 +1,39 @@
-# Getting Started with Create React App
+# Hi there, I'm Ibrahim Dayoub! 👋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🚀 Full-Stack Software Engineer | Lead Solution Architect
+I am a passionate Software Engineer with 3+ years of experience in building scalable web and mobile solutions. My expertise spans across modern JavaScript frameworks, robust backend systems, and enterprise ERP implementations.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### 🛠️ Technical Stack
 
-### `npm start`
+| Category | Technologies |
+| :--- | :--- |
+| **Frontend** | React, Next.js, TypeScript, Tailwind CSS |
+| **Mobile** | React Native, Expo |
+| **Backend** | Node.js, Express, Nest.js, Laravel (PHP) |
+| **ERP** | Odoo Enterprise Expert |
+| **Tools** | Git, GitHub, GitLab, Docker, Render |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🌟 Featured Projects
 
-### `npm test`
+#### 💬 [Bero Talker](https://github.com/ibrahimdayoub/talker-frontend)
+A modern, responsive front-end for Bero Talker. Built with Next.js, featuring real-time messaging via Socket.io, powered by React Query and Tailwind CSS for a seamless experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 📱 [Bero Tasker](https://github.com/ibrahimdayoub/tasker-frontend)
+A mobile frontend for Bero Tasker application, a comprehensive productivity app for managing tasks and notes, built with React Native, Expo, and Clerk.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📫 Connect with me:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Portfolio:** [ibrahimdayoub.onrender.com](https://ibrahimdayoub.onrender.com/)
+- **LinkedIn:** [linkedin.com/in/ibrahimdayoub](https://www.linkedin.com/in/ibrahimdayoub/)
+- **Email:** [ibrahimdayoub619@gmail.com](mailto:ibrahimdayoub619@gmail.com)
+- **WhatsApp:** [+963997791807](https://wa.me/963997791807)
+  
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-https://youtu.be/Fg_2gGxI72U?si=o7Mt-xy1H174343D
+*"Building scalable solutions that bridge the gap between business needs and high-performance technology."*
