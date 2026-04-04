@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PaddingContainer, Heading, BlueText } from './styled-components/Global.styled';
-import { fadeInBottomVariant, fadeInTopVariant } from '../utils/Variants';
+import { fadeInTopVariant, fadeInBottomVariant } from '../utils/Variants';
 import { TopProjects, MoreProjects } from "../utils/Data"
 import { FaChevronDown } from 'react-icons/fa';
 import Project from './layouts/Project';
@@ -15,6 +15,7 @@ const MyProjects = () => {
                 variants={fadeInTopVariant}
                 initial="hidden"
                 whileInView="visible"
+                viewport={{ once: true, amount: 0.35 }}
                 size="h4"
                 responsivealign="center"
             >
@@ -22,17 +23,16 @@ const MyProjects = () => {
             </Heading>
             <Heading
                 as={motion.h4}
-                variants={fadeInTopVariant}
+                variants={fadeInBottomVariant}
                 initial="hidden"
                 whileInView="visible"
+                viewport={{ once: true, amount: 0.35 }}
                 size="h2"
                 top="0.5rem"
                 responsivealign="center"
             >
                 What
-                <motion.p style={{ display: "inline", marginLeft: "10px" }} variants={fadeInBottomVariant} initial="hidden" whileInView="visible">
-                    <BlueText>I've built <span style={{ fontSize: "16px" }}>({TopProjects.length})</span></BlueText>
-                </motion.p>
+                <BlueText>I've built <span style={{ fontSize: "16px" }}>({TopProjects.length})</span></BlueText>
             </Heading>
             {TopProjects.map((project, index) => {
                 return (
@@ -46,6 +46,7 @@ const MyProjects = () => {
                 variants={fadeInTopVariant}
                 initial="hidden"
                 whileInView="visible"
+                viewport={{ once: true, amount: 0.35 }}
                 size="h2"
                 top="0.5rem"
                 responsivealign="center"
@@ -53,17 +54,15 @@ const MyProjects = () => {
                 style={{ cursor: "pointer" }}
             >
                 Click to
-                <motion.p style={{ display: "inline", marginLeft: "10px" }} variants={fadeInBottomVariant} initial="hidden" whileInView="visible">
-                    <BlueText>see {openMore ? "less" : "more"}
-                        <span style={{ fontSize: "16px", marginLeft: "5px" }}>
-                            {
-                                openMore ?
-                                    `(${MoreProjects.length})` :
-                                    <FaChevronDown />
-                            }
-                        </span>
-                    </BlueText>
-                </motion.p>
+                <BlueText> see {openMore ? "less" : "more"}
+                    <span style={{ fontSize: "16px", marginLeft: "5px" }}>
+                        {
+                            openMore ?
+                                `(${MoreProjects.length})` :
+                                <FaChevronDown />
+                        }
+                    </span>
+                </BlueText>
             </Heading>
             {openMore && MoreProjects.map((project, index) => {
                 return (

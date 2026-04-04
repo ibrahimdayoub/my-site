@@ -17,7 +17,7 @@ export const SkillsCardContainer = styled.div`
 
 export const SkillsCard = styled.div`
 	width:20%;
-	border: 1px solid #fff;
+	border: 1px solid ${({ theme }) => theme.colors.gray};
 	padding: 1rem;
 	border-radius: 0.5rem;
 	display: flex;
@@ -65,18 +65,18 @@ export const SkillsTabsContainer = styled.div`
 
 export const SkillsTabButton = styled.button`
 	width:20%;
-	border: 1px solid ${({ active, theme }) => active ? "transparent" : theme.colors.white};
+	border: 1px solid ${({ active, theme }) => active ? "transparent" : theme.colors.gray};
 	padding: 1rem;
 	border-radius: 0.5rem;
 	display: flex;
 	flex-direction:column;
-	justify-content:center;
+	justify-content:center; 
 	align-items: center;
 	gap:5px;
 	color:white;
-	cursor:pointer;
+	cursor:pointer; 
 	transition: all 0.5s ease;
-	background-color: ${({ active, theme }) => active ? theme.colors.secondary : "transparent"};
+	background-color: ${({ active, theme }) => active ? theme.colors.secondary : theme.colors.primary_light};
 
 	&:hover {
     background-color: ${({ theme }) => theme.colors.secondary};

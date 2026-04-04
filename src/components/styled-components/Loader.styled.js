@@ -1,4 +1,4 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const loading = keyframes`   
   from {
@@ -25,21 +25,21 @@ export const LoaderLogo = styled.img`
 `
 
 export const LoadingBar = styled.div`
-  width: 50%;
+  width: 35%;
   height: 10px;
   background: #ffffff00;
   margin: 10px auto;
-  border: 2px solid #7eadfc;
-  border-radius: 4px;
+  border: 1px solid ${({ theme }) => theme.colors.secondary};
+  border-radius: 5px;
   
   & > div {
-  animation: ${loading} 2.5s linear 1;
-    background: #7eadfc;
+  animation: ${loading} 2.5s ease-in-out 1;
+    background: ${({ theme }) => theme.colors.secondary};
     height:100%;
   }
 
   @media (min-width: 768px) {    
     margin: 25px auto;
-    width: 25%;
+    width: 15%;
   }
 `

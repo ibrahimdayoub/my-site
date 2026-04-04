@@ -1,35 +1,51 @@
 import styled from "styled-components";
 
 export const Footer = styled.footer`
-  padding:20px 100px;
-  background-color: ${({ theme }) => theme.colors.secondary};
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
+  padding: 15px 50px;
+  background: ${({ theme }) => theme.colors.primary_light};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-top: 1px solid ${({ theme }) => theme.colors.gray};
 
-  @media ${({ theme }) => theme.breakpoints.mobile}{
-      padding:10px;
+  @media ${({ theme }) => theme.breakpoints.mobile} {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px 10px;
   }
+`;
 
-  @media(max-width: 350px) {
-  padding:5px;
-  }
-`
-export const Contact = styled.div`
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:5px;
-  color:${({ theme }) => theme.colors.white};
 
-  @media ${({ theme }) => theme.breakpoints.mobile}{
-    background:${props => props.display === "flex" ? "#131c31" : "none"};
-    font-size:12px;
-  }
+export const Socials = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 
-  @media(max-width: 350px) {
-      font-size:10px;
-      gap:2px;
+  a {
+    width: 35px;
+    height: 35px;
+    background: ${({ theme }) => theme.colors.secondary};
+    border: 1px solid ${({ theme }) => theme.colors.gray};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: 0.25s;
+    &:hover {
+      opacity: 0.75;
+    }
   }
-`
+`;
+
+export const Copyright = styled.div`
+  color:#fff;
+  font-size: 16px;
+
+  @media ${({ theme }) => theme.breakpoints.mobile} {
+    font-size: 14px;
+  }
+`;

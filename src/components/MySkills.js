@@ -2,10 +2,9 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion'
 import { FlexContainer, Heading, PaddingContainer, IconContainer, ParaText, BlueText } from './styled-components/Global.styled'
 import { SkillsCardContainer, SkillsCard, SkillsTabsContainer, SkillsTabButton } from './styled-components/MySkills.styled'
-import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
+import { fadeInTopVariant, fadeInBottomVariant, flipVariant } from '../utils/Variants'
 import { FrontSkills, BackSkills, DatabaseSkills, ToolSkills } from '../utils/Data'
-
-import { HiCode, HiDatabase, HiTerminal, HiLightningBolt, HiCog, HiAcademicCap, HiColorSwatch, HiPuzzle } from 'react-icons/hi';
+import { HiCode, HiDatabase, HiLightningBolt, HiPuzzle } from 'react-icons/hi';
 
 const MySkills = () => {
   const [activeTab, setActiveTab] = useState('Frontend')
@@ -42,38 +41,36 @@ const MySkills = () => {
   return (
     <PaddingContainer id="my-skills" left="1%" right="1%" responsiveLeft="1rem" responsiveRight="1rem">
       <FlexContainer responsiveDirection="column-reverse" responsiveFlex fullWidthChild>
-        <div >
-          <SkillsTabsContainer as={motion.div} variants={fadeInLeftVariant} initial="hidden" whileInView="visible">
+        <motion.div
+          variants={fadeInBottomVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.35 }}
+        >
+          <SkillsTabsContainer>
             {data.map((tab) => (
               <SkillsTabButton
                 key={tab.title}
+                title={tab.title}
                 active={activeTab === tab.title}
                 onClick={() => setActiveTab(tab.title)}
-                title={tab.title}
               >
                 {tab.icon}
                 <span className='title'>{tab.title}</span>
               </SkillsTabButton>
             ))}
           </SkillsTabsContainer>
-
-          <SkillsCardContainer
-            as={motion.div}
-            layout
-            variants={fadeInLeftVariant}
-            initial="hidden"
-            whileInView="visible"
-          >
+          <SkillsCardContainer /*layout*/>
             <AnimatePresence mode='wait'>
               {getActiveData().map((skill) => (
                 <SkillsCard
                   key={skill.tech}
-                  as={motion.div}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.2 }}
                   title={skill.tech}
+                  as={motion.div}
+                  variants={flipVariant}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.35 }}
                 >
                   <IconContainer size="1.5rem" responsivesize2="1.5rem" color="blue">
                     {skill.icon}
@@ -83,14 +80,17 @@ const MySkills = () => {
               ))}
             </AnimatePresence>
           </SkillsCardContainer>
-        </div>
-        <motion.div variants={fadeInRightVariant} initial="hidden" whileInView="visible">
+        </motion.div>
+        <motion.div
+          variants={fadeInTopVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.35 }}
+        >
           <Heading as="h4" size="h4" responsivealign="center">MY SKILLS</Heading>
           <Heading as="h2" size="h2" top="0.5rem" responsivealign="center">
             What
-            <motion.p style={{ display: "inline", marginLeft: "10px" }} variants={fadeInBottomVariant} initial="hidden" whileInView="visible">
-              <BlueText>I can do</BlueText>
-            </motion.p>
+            <BlueText> I can do</BlueText>
           </Heading>
           <ParaText top="2rem" bottom="1.5rem" responsivealign="center">
             As a <b>Full-stack Developer</b>, I specialize in crafting high-performance front-end experiences. By leveraging <b>JavaScript</b> and <b>React.js</b>, I build responsive, dynamic user interfaces that are as functional as they are visually compelling. With a deep mastery of <b>Redux</b> and modern <b>CSS frameworks</b>, I transform complex designs into interactive, fluid web applications.

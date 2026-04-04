@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Button, Container, IconContainer, MainBody } from './components/styled-components/Global.styled';
+import { Button, Container, IconContainer, MainBody, SparkleElement } from './components/styled-components/Global.styled';
 import { SpaceParent } from './components/styled-components/Space.styled';
 import { FaArrowUp } from 'react-icons/fa';
 import { theme } from './components/Theme';
@@ -13,6 +13,7 @@ import MyAchievements from './components/MyAchievements';
 import MyContact from './components/MyContact';
 import Footer from './components/Footer';
 import "./App.css";
+import Stars from './components/Stars';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -52,6 +53,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <MainBody>
+        <Stars />
         {
           isLoading ?
             <Loader /> :
@@ -68,27 +70,29 @@ function App() {
                 <MyAchievements />
                 <SpaceParent />
                 <MyContact />
+                <SpaceParent />
                 <Button
                   style={{
                     visibility: isVisible ? 'visible' : 'hidden',
-                    padding: matches ? "5px" : "10px",
-                    width: matches ? "30px" : "50px",
-                    height: matches ? "30px" : "50px",
+                    // padding: matches ? "5px" : "10px",
+                    // width: matches ? "30px" : "50px",
+                    // height: matches ? "30px" : "50px",
+                    width: "40px",
+                    height: "40px",
                     borderRadius: "100%",
                     position: "fixed",
                     bottom: "50px",
                     right: "25px",
-                    border: "1px solid #fff",
+                    border: "1px solid #607d8b",
                     display: "flex",
                     justifyContent: "center",
                     zIndex: "1000",
                   }}
                   onClick={scrollToTop}
                 >
-                  <IconContainer color="blue" size="1.5rem" responsivesize2="1rem"><FaArrowUp /></IconContainer>
+                  <IconContainer color="blue" size="1rem" responsivesize2="1rem"><FaArrowUp /></IconContainer>
                 </Button>
               </Container>
-              <SpaceParent />
               <Footer />
             </>
         }

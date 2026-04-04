@@ -35,7 +35,7 @@ export const AchievementImageLink = styled.a`
   overflow:hidden;
   border-radius: 7.5px;
   // opacity:0.75;
-  box-shadow: 1px 1px 5px #ddd;
+  box-shadow: 1px 1px 5px 1px ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => theme.colors.secondary};
   @media ${({ theme }) => theme.breakpoints.mobile}{
     width: 100%;

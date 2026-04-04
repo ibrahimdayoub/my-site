@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { PaddingContainer, Heading, BlueText } from './styled-components/Global.styled';
-import { fadeInBottomVariant, fadeInTopVariant } from '../utils/Variants';
+import { fadeInTopVariant, fadeInBottomVariant } from '../utils/Variants';
 import { Achievements } from "../utils/Data"
 import Achievement from './layouts/Achievement';
 
@@ -12,6 +12,7 @@ const MyAchievements = () => {
                 variants={fadeInTopVariant}
                 initial="hidden"
                 whileInView="visible"
+                viewport={{ once: true, amount: 0.35 }}
                 size="h4"
                 responsivealign="center"
             >
@@ -19,17 +20,16 @@ const MyAchievements = () => {
             </Heading>
             <Heading
                 as={motion.h4}
-                variants={fadeInTopVariant}
+                variants={fadeInBottomVariant}
                 initial="hidden"
                 whileInView="visible"
+                viewport={{ once: true, amount: 0.35 }}
                 size="h2"
                 top="0.5rem"
                 responsivealign="center"
             >
                 What
-                <motion.p style={{ display: "inline", marginLeft: "10px" }} variants={fadeInBottomVariant} initial="hidden" whileInView="visible">
-                    <BlueText> I've earned <span style={{ fontSize: "16px" }}>({Achievements.length})</span></BlueText>
-                </motion.p>
+                <BlueText> I've earned <span style={{ fontSize: "16px" }}>({Achievements.length})</span></BlueText>
             </Heading>
             {Achievements.map((achievement, index) => (
                 <PaddingContainer key={index} top="2.5rem" bottom="2.5rem">

@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Bar = styled.nav`
   padding-top:1rem;
   font-size: 18px;
-  background:none;
+  background: none;
   @media ${({ theme }) => theme.breakpoints.mobile}{
-    background:${props => props.display === "flex" ? "#131c31" : "none"}
+    background:${props => props.display === "flex" ? props.theme.colors.primary_light : "none"}
   }
 
   @media (min-width: 768px) {
@@ -18,7 +18,7 @@ export const Bar = styled.nav`
 `
 
 export const MainNav = styled.ul`
-  border-bottom: 1px solid #7eade840;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
   list-style-type: none;
   display: ${props => props.display};
   flex-direction: column;
@@ -44,7 +44,7 @@ export const NavLink = styled.a`
   list-style-type: none;
   display: flex;
   text-decoration: none;
-  color: #7eadfc;
+  color: ${({ theme }) => theme.colors.secondary}; 
   transition:1s;
 
   @media (min-width: 768px) {    

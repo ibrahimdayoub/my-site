@@ -2,16 +2,19 @@ import { PaddingContainer, Heading, FlexContainer, ParaText, IconContainer, Butt
 import { ProjectContentContainer, ProjectImageContainer, TechStackCard, ProjectImage, ProjectImageLink, } from '../styled-components/MyProjects.styled';
 import { FaGithub, FaLink, FaPenAlt, FaPlay, FaMagic } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants';
+import { theme } from '../Theme';
+import { zoomInVariant, blurVariant } from '../../utils/Variants';
 
 const Project = ({ project, index, rowReverse }) => {
     return (
         <FlexContainer rowReverse={rowReverse ? true : false} fullWidthChild>
             <ProjectContentContainer
                 as={motion.div}
-                variants={rowReverse ? fadeInRightVariant : fadeInLeftVariant}
+                // variants={rowReverse ? fadeInRightVariant : fadeInLeftVariant}
+                variants={zoomInVariant}
                 initial="hidden"
                 whileInView="visible"
+                viewport={{ once: true, amount: 0.35 }}
             >
                 <FlexContainer>
                     <Heading as="h3" size="h3" bottom="0.5rem" responsivealign="center">{index + 1}. {project.name}</Heading>
@@ -25,7 +28,7 @@ const Project = ({ project, index, rowReverse }) => {
                         null
                 }
                 <FlexContainer>
-                    <Heading as="h5" size="h5" top="0.5rem" bottom="0.5rem" responsivealign="center" style={{ color: "#7eadfc", textTransform: "uppercase" }}> <FaPenAlt style={{ margin: "0px 5px -2px 0px" }} /> {project.role}</Heading>
+                    <Heading as="h5" size="h5" top="0.5rem" bottom="0.5rem" responsivealign="center" style={{ color: theme.colors.secondary, textTransform: "uppercase" }}> <FaPenAlt style={{ margin: "0px 5px -2px 0px" }} /> {project.role}</Heading>
                 </FlexContainer>
                 <PaddingContainer top="0.5rem">
                     <FlexContainer gap="0.5rem" responsiveFlex responsivejustify="center" style={{ flexWrap: "wrap" }}>
@@ -78,9 +81,11 @@ const Project = ({ project, index, rowReverse }) => {
                     <ProjectImageContainer
                         justify={rowReverse ? "flex-start" : "flex-end"}
                         as={motion.div}
-                        variants={rowReverse ? fadeInLeftVariant : fadeInRightVariant}
+                        // variants={rowReverse ? fadeInLeftVariant : fadeInRightVariant}
+                        variants={blurVariant}
                         initial="hidden"
                         whileInView="visible"
+                        viewport={{ once: true, amount: 0.35 }}
                     >
                         <ProjectImageLink href={project.image} download={`Ibrahim Dayoub - ${project.name}`}>
                             <ProjectImage
@@ -97,4 +102,4 @@ const Project = ({ project, index, rowReverse }) => {
     )
 }
 
-export default Project
+export default Project;

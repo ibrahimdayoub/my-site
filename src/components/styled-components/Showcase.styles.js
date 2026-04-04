@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const ShowcaseImageCard = styled.div`
-  border: 1px solid #fff;
+  border: 1px solid #29385a;
   width: 250px;
   height: 250px;
   border-radius: 100%;
   position: relative;
   overflow: hidden;
-  background: #131c31;
+  background: #2a385b26;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -39,7 +39,7 @@ export const IconContainerAlt = styled.a`
   margin:0 0.25rem;
   
   &:hover{
-      color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.secondary};
   }
 
   @media(max-width: 350px) {

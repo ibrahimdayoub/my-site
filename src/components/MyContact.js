@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { PaddingContainer, Heading, BlueText, FlexContainer, IconContainer, ButtonAlt } from './styled-components/Global.styled'
 import { ContactForm, FormLabel, FormInput } from './styled-components/MyContact.styled'
-import { fadeInBottomVariant } from '../utils/Variants';
+import { fadeInTopVariant, fadeInBottomVariant } from '../utils/Variants';
 import { FaPaperPlane, FaSpinner } from 'react-icons/fa';
 
 const MyContact = () => {
@@ -47,9 +47,10 @@ const MyContact = () => {
     <PaddingContainer id="my-contact" left="1%" right="1%">
       <Heading
         as={motion.h4}
-        variants={fadeInBottomVariant}
+        variants={fadeInTopVariant}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true, amount: 0.35 }}
         size="h4"
         align="center"
       >
@@ -60,14 +61,13 @@ const MyContact = () => {
         variants={fadeInBottomVariant}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true, amount: 0.35 }}
         size="h2"
         align="center"
         top="0.5rem"
       >
         Contact
-        <motion.p style={{ display: "inline", marginLeft: "10px" }} variants={fadeInBottomVariant} initial="hidden" whileInView="visible">
-          <BlueText>me here</BlueText>
-        </motion.p>
+        <BlueText> me here</BlueText>
       </Heading>
       <PaddingContainer top="2.5rem">
         <FlexContainer justify="center">
@@ -76,6 +76,7 @@ const MyContact = () => {
             variants={fadeInBottomVariant}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true, amount: 0.35 }}
             onSubmit={sendEmail}
           >
             <PaddingContainer bottom="1.5rem">
@@ -97,13 +98,12 @@ const MyContact = () => {
                   variants={fadeInBottomVariant}
                   initial="hidden"
                   whileInView="visible"
+                  viewport={{ once: true, amount: 0.35 }}
                   size="h5"
                   align="center"
                   bottom="2rem"
                 >
-                  <motion.p style={{ display: "inline", marginLeft: "10px" }} variants={fadeInBottomVariant} initial="hidden" whileInView="visible">
-                    <BlueText style={{ fontWeight: "normal" }}>Your message has been successfully sent, I will respond as soon as possible, Thank!</BlueText>
-                  </motion.p>
+                  <BlueText style={{ fontWeight: "normal" }}> Your message has been successfully sent, I will respond as soon as possible, Thank!</BlueText>
                 </Heading> :
                 null
             }

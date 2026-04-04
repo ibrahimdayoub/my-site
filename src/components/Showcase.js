@@ -16,30 +16,34 @@ const Showcase = () => {
     return (
         <PaddingContainer left="1%" right="1%" responsiveLeft="1rem" responsiveRight="1rem">
             <FlexContainerAlt responsivealign="center" fullWidthChild>
-                <motion.div variants={fadeInLeftVariant} initial="hidden" whileInView="visible">
+                <motion.div
+                    variants={fadeInLeftVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.35 }}
+                >
                     <Heading as="h4" size="h4" top="0.25rem" bottom="0.5rem" responsivealign="center">Hello!</Heading>
                     <Heading as="h2" size="h2" top="0.25rem" bottom="1rem" responsivealign="center">
                         I'm <BlueText>Ibrahim Dayoub</BlueText>
                     </Heading>
                     <Heading as="h3" size="h3" responsivealign="center">
                         I'm a
-                        <motion.p style={{ display: "inline", marginLeft: "10px" }} variants={fadeInBottomVariant} initial="hidden" whileInView="visible">
-                            <BlueText>
-                                <TypeAnimation
-                                    sequence={[
-                                        'Software Engineer',
-                                        1000,
-                                        'Backend Developer',
-                                        1000,
-                                        'Frontend Developer',
-                                        1000,
-                                    ]}
-                                    wrapper="span"
-                                    speed={20}
-                                    repeat={Infinity}
-                                />
-                            </BlueText>
-                        </motion.p>
+                        {" "}
+                        <BlueText>
+                            <TypeAnimation
+                                sequence={[
+                                    'Software Engineer',
+                                    1000,
+                                    'Backend Developer',
+                                    1000,
+                                    'Frontend Developer',
+                                    1000,
+                                ]}
+                                wrapper="span"
+                                speed={20}
+                                repeat={Infinity}
+                            />
+                        </BlueText>
                     </Heading>
                     <ParaText as="p" top="1.5rem" bottom="2.5rem" responsivealign="center">
                         With over three years of experience across freelance and corporate environments, I’ve mastered the art of building scalable web and mobile solutions. I specialize in turning complex requirements into seamless digital experiences through fast-paced research and a deep understanding of modern frameworks. I thrive in collaborative teams, consistently pushing the boundaries of my growth to deliver nothing less than excellence.
@@ -91,7 +95,13 @@ const Showcase = () => {
                     </FlexContainer>
                 </motion.div>
                 <FlexContainer justify="flex-end">
-                    <ShowcaseParticleContainer as={motion.div} variants={fadeInRightVariant} initial="hidden" whileInView="visible">
+                    <ShowcaseParticleContainer
+                        as={motion.div}
+                        variants={fadeInRightVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.35 }}
+                    >
                         <ShowcaseImageCard background={ShowcaseImg}>
                             <img src={ShowcaseImg} alt="showcase" loading="lazy" />
                         </ShowcaseImageCard>

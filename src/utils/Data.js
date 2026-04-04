@@ -25,7 +25,7 @@ import resturant from '../assets/projects/resturant.webp';
 import odoo from '../assets/achievements/odoo.webp';
 
 export const FrontSkills = [
-    { tech: 'HTML', icon: <SiHtml5 /> },
+    { tech: 'HTML5', icon: <SiHtml5 /> },
     { tech: 'CSS3', icon: <SiCss3 /> },
     { tech: 'Javascript', icon: <SiJavascript /> },
     { tech: 'Typescript', icon: <SiTypescript /> },
