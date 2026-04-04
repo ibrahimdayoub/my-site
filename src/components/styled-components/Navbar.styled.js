@@ -60,18 +60,23 @@ export const MainNav = styled.ul`
   flex-direction: column;
   justify-content: center;
 
-  transform: ${({ $open }) =>
-    $open ? "translateY(0)" : "translateY(-20px)"};
+  max-height: ${({ $open }) => ($open ? "300px" : "0")};
+  overflow: hidden;
 
   opacity: ${({ $open }) => ($open ? 1 : 0)};
-  pointer-events: ${({ $open }) => ($open ? "all" : "none")};
+  transform: ${({ $open }) =>
+    $open ? "translateY(0)" : "translateY(-10px)"};
 
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: 
+    max-height 0.5s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
 
   @media (min-width: 768px) {
+    max-height: none;
+    overflow: visible;
     transform: none;
     opacity: 1;
-    pointer-events: all;
 
     margin-right: 25px;
     flex-direction: row;
@@ -89,7 +94,7 @@ export const NavLi = styled.li`
   &:nth-child(1) { margin-top: 25px; transition-delay: 0.1s; }
   &:nth-child(2) { transition-delay: 0.2s; }
   &:nth-child(3) { transition-delay: 0.3s; }
-  &:nth-child(4) { transition-delay: 0.5s; }
+  &:nth-child(4) { margin-bottom: 25px; transition-delay: 0.5s; }
 
   @media (min-width: 768px) {
     transform: none;
@@ -97,6 +102,7 @@ export const NavLi = styled.li`
     margin: 10px auto;
 
     &:nth-child(1) { margin: 10px auto}
+    &:nth-child(4) { margin: 10px auto}
   }
 `;
 
