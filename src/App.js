@@ -81,7 +81,7 @@ function App() {
                     height: "40px",
                     borderRadius: "100%",
                     position: "fixed",
-                    bottom: "50px",
+                    bottom: "75px",
                     right: "25px",
                     border: "1px solid #607d8b",
                     display: "flex",
@@ -92,6 +92,7 @@ function App() {
                 >
                   <IconContainer color="blue" size="1rem" responsivesize2="1rem"><FaArrowUp /></IconContainer>
                 </Button>
+                <SpaceParent />
               </Container>
               <Footer />
             </>

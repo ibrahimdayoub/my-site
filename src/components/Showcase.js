@@ -34,9 +34,11 @@ const Showcase = () => {
                                 sequence={[
                                     'Software Engineer',
                                     1000,
-                                    'Backend Developer',
+                                    'Full-Stack Developer',
                                     1000,
-                                    'Frontend Developer',
+                                    'Back-End Developer',
+                                    1000,
+                                    'Front-End Developer',
                                     1000,
                                 ]}
                                 wrapper="span"

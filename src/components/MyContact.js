@@ -80,16 +80,16 @@ const MyContact = () => {
             onSubmit={sendEmail}
           >
             <PaddingContainer bottom="1.5rem">
-              <FormLabel>Name:</FormLabel>
-              <FormInput name="from_name" value={contact.from_name} onChange={handleChange} type="text" placeholder="Enter your name" required />
+              {/* <FormLabel>Name:</FormLabel> */}
+              <FormInput name="from_name" value={contact.from_name} onChange={handleChange} type="text" placeholder="Put your hero name..." required />
             </PaddingContainer>
             <PaddingContainer bottom="1.5rem">
-              <FormLabel>Email:</FormLabel>
-              <FormInput name="from_email" value={contact.from_email} onChange={handleChange} type="email" placeholder="Enter your email" required />
+              {/* <FormLabel>Email:</FormLabel> */}
+              <FormInput name="from_email" value={contact.from_email} onChange={handleChange} type="email" placeholder="Drop your lightning email..." required />
             </PaddingContainer>
             <PaddingContainer bottom="1.5rem">
-              <FormLabel>Message:</FormLabel>
-              <FormInput name="message" value={contact.message} onChange={handleChange} as="textarea" rows="5" placeholder="Enter your message" required />
+              {/* <FormLabel>Message:</FormLabel> */}
+              <FormInput name="message" value={contact.message} onChange={handleChange} as="textarea" rows="5" placeholder="Type your magic words..." required />
             </PaddingContainer>
             {
               isOk ?

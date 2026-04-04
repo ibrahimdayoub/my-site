@@ -11,6 +11,7 @@ export const ContactForm = styled.form`
 
 export const FormLabel = styled.p`
   color: ${({ theme }) => theme.colors.para_text_color};
+  font-size: 14px;
   padding-bottom: 10px;
 `;
 

@@ -43,9 +43,10 @@ export const Socials = styled.div`
 
 export const Copyright = styled.div`
   color:#fff;
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 1px;
 
   @media ${({ theme }) => theme.breakpoints.mobile} {
-    font-size: 14px;
+    font-size: 12px;
   }
 `;

@@ -74,7 +74,7 @@ export const TopProjects = [
         live_link: null,
         demo_link: "https://youtu.be/dWa0VzdyeFo",
         image: beroTalker,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
     {
@@ -85,7 +85,7 @@ export const TopProjects = [
         live_link: "https://drive.google.com/file/d/16V3vBjXSdRQ_WNSWVS6MouE8Lj_NfSq4/view?usp=sharing",
         demo_link: "https://youtu.be/BExEKLQOeNY",
         image: beroTasker,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
     {
@@ -96,7 +96,7 @@ export const TopProjects = [
         live_link: "https://reimagined.art",
         related_link: "https://github.com/ibrahimdayoub/nextjs-directus-page-builder",
         image: reimagined,
-        role: "Backend Developer",
+        role: "Back-End Developer",
         is_secret: false
     },
     {
@@ -106,7 +106,7 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://nia.me",
         image: nia,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
     {
@@ -116,7 +116,7 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://deebaajmc.com",
         image: deebaaj,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
     {
@@ -126,7 +126,7 @@ export const TopProjects = [
         source_code: null,
         live_link: null,
         image: oab,
-        role: "Front End Developer",
+        role: "Front-End Developer",
         is_secret: false
     },
     {
@@ -136,7 +136,7 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://tmc-iraq.com",
         image: tmc,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
     {
@@ -146,7 +146,7 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://eyeengineer.com",
         image: eyeengineer,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
     {
@@ -156,7 +156,7 @@ export const TopProjects = [
         source_code: null,
         live_link: "https://germ-ac.com",
         image: germac,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
     {
@@ -166,7 +166,7 @@ export const TopProjects = [
         source_code: "https://github.com/ibrahimdayoub/osum",
         live_link: null,
         image: osum,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
     {
@@ -176,7 +176,7 @@ export const TopProjects = [
         source_code: "https://github.com/ibrahimdayoub/compastudent",
         live_link: null,
         image: compastudent,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
 ];
@@ -199,7 +199,7 @@ export const MoreProjects = [
         source_code: null,
         live_link: "https://play.google.com/store/apps/details?id=com.rareweb.shamlift",
         image: shamLifts,
-        role: "Back End Developer",
+        role: "Back-End Developer",
         is_secret: false
     },
     {
@@ -209,7 +209,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/sky-msg",
         live_link: null,
         image: chat,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
     {
@@ -219,7 +219,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/my-blog",
         live_link: null,
         image: blog,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
     {
@@ -229,7 +229,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/its-weather",
         live_link: null,
         image: weather,
-        role: "Front End Developer",
+        role: "Front-End Developer",
         is_secret: false
     },
     {
@@ -239,7 +239,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-1",
         live_link: null,
         image: gym,
-        role: "Front End Developer",
+        role: "Front-End Developer",
         is_secret: false
     },
     {
@@ -249,7 +249,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-2",
         live_link: null,
         image: resturant,
-        role: "Full Stack Developer",
+        role: "Full-Stack Developer",
         is_secret: false
     },
     {
@@ -259,7 +259,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-3",
         live_link: null,
         image: null,
-        role: "Back End Developer",
+        role: "Back-End Developer",
         is_secret: false
     },
     {
@@ -269,7 +269,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-4",
         live_link: null,
         image: null,
-        role: "Back End Developer",
+        role: "Back-End Developer",
         is_secret: false
     },
     {
@@ -279,7 +279,7 @@ export const MoreProjects = [
         source_code: "https://github.com/ibrahimdayoub/freelance-5",
         live_link: null,
         image: null,
-        role: "Back End Developer",
+        role: "Back-End Developer",
         is_secret: false
     },
 ];
