@@ -153,7 +153,7 @@ export const Heading = styled(PaddingContainer)`
 `
 
 export const BlueText = styled.span`
-  color: ${({ theme }) => theme.colors.secondary};
+  color:  ${({ $error, theme }) => $error ? theme.colors.error : theme.colors.secondary};
 `
 
 export const ParaText = styled(PaddingContainer)`

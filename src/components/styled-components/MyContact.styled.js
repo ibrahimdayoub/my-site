@@ -9,28 +9,24 @@ export const ContactForm = styled.form`
   }
 `;
 
-export const FormLabel = styled.p`
-  color: ${({ theme }) => theme.colors.para_text_color};
-  font-size: 14px;
-  padding-bottom: 10px;
-`;
-
 export const FormInput = styled.input`
   width: 100%;
   background-color: ${({ theme }) => theme.colors.primary_light};
-  border:1px solid ${({ theme }) => theme.colors.gray};
+  border: 1px solid ${({ $error, theme }) => $error ? theme.colors.error : theme.colors.gray};
   color: ${({ theme }) => theme.colors.para_text_color};
   border-radius: 5px;
   padding: 15px;
   transition: all 0.5s;
 
   &::placeholder{
-    color: ${({ theme }) => theme.colors.para_text_color};
+    color: ${({ $error, theme }) => $error ? theme.colors.error : theme.colors.para_text_color};
+    font-size: 14px;
+    transition: all 0.5s;
   }
 
   &:focus {
     outline: none;  
-    border-color: ${({ theme }) => theme.colors.secondary};
+    border-color: ${({ $error, theme }) => $error ? theme.colors.error_dark : theme.colors.secondary};
     box-shadow: none;
   }
 `;

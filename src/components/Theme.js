@@ -5,18 +5,20 @@ export const theme = {
         secondary: '#7eadfc',
         white: '#fff',
         black: '#000',
-        gray:'#607c8a40',
+        gray: '#607c8a40',
         para_text_color: '#dcdcdc',
+        error: '#ff6b6b',
+        error_dark: '#c92a2a',
     },
-    fonts:{
-        family:'DM Sans',
-        weight:{
+    fonts: {
+        family: 'DM Sans',
+        weight: {
             regular: 400,
             medium: 500,
             bold: 700,
         }
     },
-    breakpoints:{
+    breakpoints: {
         mobile: '(max-width: 720px)',
     }
 }

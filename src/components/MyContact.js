@@ -2,47 +2,104 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { PaddingContainer, Heading, BlueText, FlexContainer, IconContainer, ButtonAlt } from './styled-components/Global.styled'
-import { ContactForm, FormLabel, FormInput } from './styled-components/MyContact.styled'
+import { ContactForm, FormInput } from './styled-components/MyContact.styled'
 import { fadeInTopVariant, fadeInBottomVariant } from '../utils/Variants';
 import { FaPaperPlane, FaSpinner } from 'react-icons/fa';
 
 const MyContact = () => {
   const [contact, setContact] = useState({
-    from_name: "",
-    from_email: "",
+    fromName: "",
+    fromEmail: "",
     message: ""
-  })
-  const [isOk, setIsOk] = useState(false)
-  const [loading, setLoading] = useState(false)
+  });
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({});
+  const [message, setMessage] = useState({
+    text: "",
+    type: "success"
+  });
+
+  const validationRules = {
+    fromName: {
+      validate: (val) => val.trim() !== "",
+      message: "Don't forget your name!"
+    },
+    fromEmail: {
+      validate: (val) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val),
+      message: "This email looks off!"
+    },
+    message: {
+      validate: (val) => val.length >= 10,
+      message: "Say a bit more..."
+    }
+  };
 
   const handleChange = (e) => {
-    setContact({
-      ...contact,
-      [e.target.name]: e.target.value
-    })
-  }
+    const { name, value } = e.target;
 
-  const sendEmail = (e) => {
-    e.preventDefault()
-    setLoading(true)
-    setIsOk(false)
-    console.log(contact);
-    emailjs.send('service_vfreky9', 'template_yt24kr5', contact, 'itEePDD3EQajkwde5')
-      .then((result) => {
-        console.log(result.text);
-        setContact({
-          from_name: "",
-          from_email: "",
-          message: ""
-        })
-        setIsOk(true)
-        setLoading(false)
+    setContact((prev) => ({
+      ...prev,
+      [name]: value
+    }));
 
-        setTimeout(() => setIsOk(false), 5000);
-      }, (error) => {
-        console.log(error.text);
+    setErrors((prev) => {
+      const isValid = validationRules[name].validate(value);
+      const newErrors = { ...prev };
+
+      if (isValid) delete newErrors[name];
+      else newErrors[name] = validationRules[name].message;
+
+      return newErrors;
+    });
+  };
+
+  const validate = () => {
+    let newErrors = {};
+
+    for (const key in validationRules) {
+      if (!validationRules[key].validate(contact[key])) {
+        newErrors[key] = validationRules[key].message;
+      }
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    if (!validate()) return;
+
+    setLoading(true);
+
+    try {
+      const result = await emailjs.send(
+        'service_vfreky9',
+        'template_yt24kr5',
+        contact,
+        'itEePDD3EQajkwde5'
+      );
+
+      console.log("Email.js Res:", result.text);
+      setMessage({ text: "Your message has been sent successfully, Thank!", type: "success" })
+    } catch (error) {
+      console.error("Email.js error:", error);
+      setMessage({ text: "Something went wrong, try again.", type: "error" })
+    } finally {
+      setContact({
+        fromName: "",
+        fromEmail: "",
+        message: ""
       });
-  }
+      setLoading(false);
+      setTimeout(() => setMessage({
+        text: "",
+        type: "success"
+      }), 5000);
+    }
+  };
+
   return (
     <PaddingContainer id="my-contact" left="1%" right="1%">
       <Heading
@@ -80,32 +137,28 @@ const MyContact = () => {
             onSubmit={sendEmail}
           >
             <PaddingContainer bottom="1.5rem">
-              {/* <FormLabel>Name:</FormLabel> */}
-              <FormInput name="from_name" value={contact.from_name} onChange={handleChange} type="text" placeholder="Put your hero name..." required />
+              <FormInput name="fromName" value={contact.fromName} onChange={handleChange} type="text" placeholder={errors.fromName || "What should I call you?"} $error={errors.fromName} />
             </PaddingContainer>
             <PaddingContainer bottom="1.5rem">
-              {/* <FormLabel>Email:</FormLabel> */}
-              <FormInput name="from_email" value={contact.from_email} onChange={handleChange} type="email" placeholder="Drop your lightning email..." required />
+              <FormInput name="fromEmail" value={contact.fromEmail} onChange={handleChange} type="email" placeholder={errors.fromEmail || "Where can I reach you?"} $error={errors.fromEmail} />
             </PaddingContainer>
             <PaddingContainer bottom="1.5rem">
-              {/* <FormLabel>Message:</FormLabel> */}
-              <FormInput name="message" value={contact.message} onChange={handleChange} as="textarea" rows="5" placeholder="Type your magic words..." required />
+              <FormInput name="message" value={contact.message} onChange={handleChange} as="textarea" rows="5" placeholder={errors.message || "Tell me what's on your mind..."} $error={errors.message} />
             </PaddingContainer>
             {
-              isOk ?
-                <Heading
-                  as={motion.h5}
-                  variants={fadeInBottomVariant}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.35 }}
-                  size="h5"
-                  align="center"
-                  bottom="2rem"
-                >
-                  <BlueText style={{ fontWeight: "normal" }}> Your message has been successfully sent, I will respond as soon as possible, Thank!</BlueText>
-                </Heading> :
-                null
+              message.text &&
+              <Heading
+                as={motion.h5}
+                variants={fadeInBottomVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.35 }}
+                size="h5"
+                align="center"
+                bottom="2rem"
+              >
+                <BlueText style={{ fontWeight: "normal" }} $error={message.type === "error"}> {message.text}</BlueText>
+              </Heading>
             }
             <FlexContainer justify="center" responsiveFlex>
               <ButtonAlt
@@ -123,7 +176,7 @@ const MyContact = () => {
                 <IconContainer color="blue" size="1rem">
                   {
                     loading ?
-                      <FaSpinner /> :
+                      <FaSpinner className="spin" /> :
                       <FaPaperPlane />
                   }
                 </IconContainer>
