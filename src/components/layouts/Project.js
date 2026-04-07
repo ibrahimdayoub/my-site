@@ -21,7 +21,7 @@ const Project = ({ project, index, rowReverse }) => {
                 </FlexContainer>
                 {
                     project.description ?
-                        <ParaText bottom="0.5rem" responsivealign="center"
+                        <ParaText as="p" bottom="0.5rem" responsivealign="center"
                             dangerouslySetInnerHTML={{ __html: project.description }}
                         />
                         :

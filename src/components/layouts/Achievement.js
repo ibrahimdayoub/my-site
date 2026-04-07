@@ -21,7 +21,7 @@ const Achievement = ({ achievement, rowReverse }) => {
                 </FlexContainer>
                 {
                     achievement.description ?
-                        <ParaText bottom="0.5rem" responsivealign="center"
+                        <ParaText as="p" bottom="0.5rem" responsivealign="center"
                             dangerouslySetInnerHTML={{ __html: achievement.description }}
                         />
                         :

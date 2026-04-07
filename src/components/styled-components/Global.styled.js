@@ -158,8 +158,8 @@ export const BlueText = styled.span`
 
 export const ParaText = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.para_text_color};
-  line-height: 1.5rem;
   text-align: justify;
+  line-height: 1.75;
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
     text-align: ${({ responsivealign }) => responsivealign};
