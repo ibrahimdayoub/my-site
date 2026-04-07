@@ -20,13 +20,17 @@ export const FormInput = styled.input`
 
   // UX Fixes
   font-family: inherit;
-  font-size: 14px; 
+  font-size: 14px !important; 
   line-height: 1.5;
   resize: vertical;
 
+  & {
+    font-size: 14px !important;
+  }
+
   &::placeholder {
     color: ${({ $error, theme }) => $error ? theme.colors.error : theme.colors.para_text_color};
-    font-size: 14px;
+    font-size: 14px !important;
     transition: all 0.5s;
   }
 
