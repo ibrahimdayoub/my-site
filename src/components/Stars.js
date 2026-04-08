@@ -29,7 +29,7 @@ const Stars = () => {
         resize();
 
         // Generate stars with random motion + twinkle properties
-        const starsCount = 50;
+        const starsCount = 35;
         const stars = [];
 
         for (let i = 0; i < starsCount; i++) {

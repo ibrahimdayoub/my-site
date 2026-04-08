@@ -89,7 +89,6 @@ export const NavLi = styled.li`
   transform: ${({ $open }) => $open ? "translateY(0)" : "translateY(-10px)"};
   opacity: ${({ $open }) => ($open ? 1 : 0)};
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  letter-spacing: 1px;
 
   &:nth-child(1) { margin-top: 25px; transition-delay: 0.1s; }
   &:nth-child(2) { transition-delay: 0.2s; }

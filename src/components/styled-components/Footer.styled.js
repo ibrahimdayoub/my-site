@@ -44,7 +44,6 @@ export const Socials = styled.div`
 export const Copyright = styled.div`
   color:#fff;
   font-size: 14px;
-  letter-spacing: 1px;
 
   @media ${({ theme }) => theme.breakpoints.mobile} {
     font-size: 12px;

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { PaddingContainer, Heading, BlueText, FlexContainer, IconContainer, ButtonAlt } from './styled-components/Global.styled'
-import { ContactForm, FormInput } from './styled-components/MyContact.styled'
+import { ContactForm, FormArea, FormInput } from './styled-components/MyContact.styled'
 import { fadeInTopVariant, fadeInBottomVariant } from '../utils/Variants';
 import { FaPaperPlane, FaSpinner } from 'react-icons/fa';
 
@@ -143,7 +143,7 @@ const MyContact = () => {
               <FormInput name="fromEmail" value={contact.fromEmail} onChange={handleChange} type="email" placeholder={errors.fromEmail || "Where can I reach you?"} $error={errors.fromEmail} />
             </PaddingContainer>
             <PaddingContainer bottom="1.5rem">
-              <FormInput name="message" value={contact.message} onChange={handleChange} as="textarea" rows="5" placeholder={errors.message || "Tell me what's on your mind..."} $error={errors.message} />
+              <FormArea name="message" value={contact.message} onChange={handleChange} rows="5" placeholder={errors.message || "Tell me what's on your mind..."} $error={errors.message} />
             </PaddingContainer>
             {
               message.text &&
