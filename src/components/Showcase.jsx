@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { PaddingContainer, FlexContainer, Heading, BlueText, ParaText, Particle, Button, IconContainer, FlexContainerAlt } from './styled-components/Global.styled';
 import { ShowcaseImageCard, ShowcaseParticleContainer, IconContainerAlt } from './styled-components/Showcase.styles';
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
@@ -8,25 +8,24 @@ import { FaCloudDownloadAlt } from 'react-icons/fa';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import ShowcaseImg from '../assets/showcase-img.webp';
 import ParticleImg from '../assets/particle.webp';
-// import Resume from "../assets/Ibrahim-Dayoub-Software-Engineer.pdf.pdf"
 
 const Showcase = () => {
     const Resume = "./Ibrahim-Dayoub-Software-Engineer.pdf";
 
     return (
-        <PaddingContainer left="1%" right="1%" responsiveLeft="1rem" responsiveRight="1rem">
-            <FlexContainerAlt responsivealign="center" fullWidthChild>
+        <PaddingContainer $left="1%" $right="1%" $responsiveleft="1rem" $responsiveright="1rem">
+            <FlexContainerAlt $responsivealign="center" $fullwidthchild>
                 <motion.div
                     variants={fadeInLeftVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.35 }}
                 >
-                    <Heading as="h4" size="h4" top="0.25rem" bottom="0.5rem" responsivealign="center">Hello!</Heading>
-                    <Heading as="h2" size="h2" top="0.25rem" bottom="1rem" responsivealign="center">
+                    <Heading as="h4" $size="h4" $top="0.25rem" $bottom="0.5rem" $responsivealign="center">Hello!</Heading>
+                    <Heading as="h2" $size="h2" $top="0.25rem" $bottom="1rem" $responsivealign="center">
                         I'm <BlueText>Ibrahim Dayoub</BlueText>
                     </Heading>
-                    <Heading as="h3" size="h3" responsivealign="center">
+                    <Heading as="h3" $size="h3" $responsivealign="center">
                         I'm a
                         {" "}
                         <BlueText>
@@ -47,11 +46,11 @@ const Showcase = () => {
                             />
                         </BlueText>
                     </Heading>
-                    <ParaText as="p" top="1.5rem" bottom="2.5rem" responsivealign="center">
+                    <ParaText as="p" $top="1.5rem" $bottom="2.5rem" $responsivealign="center">
                         With over three years of experience across freelance and corporate environments, I’ve mastered the art of building scalable web and mobile solutions. I specialize in turning complex requirements into seamless digital experiences through fast-paced research and a deep understanding of modern frameworks. I thrive in collaborative teams, consistently pushing the boundaries of my growth to deliver nothing less than excellence.
                     </ParaText>
-                    <FlexContainer responsiveFlex justify="space-between" align="center" gap="5px">
-                        <FlexContainer gap="20px" responsivegap2="5px" responsiveFlex>
+                    <FlexContainer $responsiveflex $justify="space-between" $align="center" $gap="5px">
+                        <FlexContainer $gap="20px" $responsivegap2="5px" $responsiveflex>
                             <IconContainerAlt
                                 href='https://linkedin.com/in/ibrahimdayoub'
                                 target='_blank'
@@ -89,14 +88,14 @@ const Showcase = () => {
                             download
                             href={Resume}
                             style={{ display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}
-                            responsivepadding2="0.25rem 0.5rem"
+                            $responsivepadding2="0.25rem 0.5rem"
                         >
                             <span style={{ marginRight: "5px" }}>Resume</span>
-                            <IconContainer color="blue" size="1.5rem"><FaCloudDownloadAlt /></IconContainer>
+                            <IconContainer $color="blue" $size="1.5rem"><FaCloudDownloadAlt /></IconContainer>
                         </Button>
                     </FlexContainer>
                 </motion.div>
-                <FlexContainer justify="flex-end">
+                <FlexContainer $justify="flex-end">
                     <ShowcaseParticleContainer
                         as={motion.div}
                         variants={fadeInRightVariant}
@@ -104,12 +103,12 @@ const Showcase = () => {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.35 }}
                     >
-                        <ShowcaseImageCard background={ShowcaseImg}>
+                        <ShowcaseImageCard $background={ShowcaseImg}>
                             <img src={ShowcaseImg} alt="showcase" loading="lazy" />
                         </ShowcaseImageCard>
-                        <Particle src={ParticleImg} initialTop="-40px" initialLeft="20px" rotate="60deg" delay="-1" />
-                        <Particle src={ParticleImg} initialTop="120px" initialRight="-80px" rotate="40deg" delay="-2" />
-                        <Particle src={ParticleImg} initialBottom="10px" initialLeft="-10px" rotate="50deg" delay="-3" />
+                        <Particle src={ParticleImg} $initialtop="-40px" $initialleft="20px" $rotate="60deg" $delay="-1" />
+                        <Particle src={ParticleImg} $initialtop="120px" $initialright="-80px" $rotate="40deg" $delay="-2" />
+                        <Particle src={ParticleImg} $initialbottom="10px" $initialleft="-10px" $rotate="50deg" $delay="-3" />
                     </ShowcaseParticleContainer>
                 </FlexContainer>
             </FlexContainerAlt>

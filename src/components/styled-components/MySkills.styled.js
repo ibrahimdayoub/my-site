@@ -65,7 +65,7 @@ export const SkillsTabsContainer = styled.div`
 
 export const SkillsTabButton = styled.button`
 	width:20%;
-	border: 1px solid ${({ active, theme }) => active ? "transparent" : theme.colors.gray};
+	border: 1px solid ${({ $active, theme }) => $active ? "transparent" : theme.colors.gray};
 	padding: 1rem;
 	border-radius: 0.5rem;
 	display: flex;
@@ -76,7 +76,7 @@ export const SkillsTabButton = styled.button`
 	color:white;
 	cursor:pointer; 
 	transition: all 0.5s linear;
-	background-color: ${({ active, theme }) => active ? theme.colors.secondary : theme.colors.primary_light};
+	background-color: ${({ $active, theme }) => $active ? theme.colors.secondary : theme.colors.primary_light};
 
 	&:hover {
 		background-color: ${({ theme }) => theme.colors.secondary};
@@ -111,6 +111,5 @@ export const SkillsTabButton = styled.button`
         overflow: hidden;
         text-overflow: ellipsis;
         width: 100%;
-        // display: block;
 	}
 `;

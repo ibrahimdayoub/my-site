@@ -5,7 +5,8 @@ import { FaAward, FaBars, FaCode, FaPaperPlane, FaProjectDiagram, FaTimes } from
 import MyLogo from "../assets/logo.webp";
 
 const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false)
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <Bar $open={openMenu} display={openMenu ? "flex" : "none"}>
       <NavBarToggle onClick={() => setOpenMenu(!openMenu)}>
@@ -19,25 +20,25 @@ const Navbar = () => {
       <MainNav $open={openMenu}>
         <NavLi $open={openMenu}>
           <NavLink href="#my-skills">
-            <IconContainerAlt color="blue" size="1.25rem" style={{ marginRight: "0.5rem" }} ><FaCode /></IconContainerAlt>
+            <IconContainerAlt $color="blue" $size="1.25rem" style={{ marginRight: "0.5rem" }} ><FaCode /></IconContainerAlt>
             Skills
           </NavLink>
         </NavLi>
         <NavLi $open={openMenu}>
           <NavLink href="#my-projects">
-            <IconContainerAlt color="blue" size="1.25rem" style={{ marginRight: "0.5rem" }} ><FaProjectDiagram /></IconContainerAlt>
+            <IconContainerAlt $color="blue" $size="1.25rem" style={{ marginRight: "0.5rem" }} ><FaProjectDiagram /></IconContainerAlt>
             Projects
           </NavLink>
         </NavLi>
         <NavLi $open={openMenu}>
           <NavLink href="#my-achievements">
-            <IconContainerAlt color="blue" size="1.25rem" style={{ marginRight: "0.5rem" }} ><FaAward /></IconContainerAlt>
+            <IconContainerAlt $color="blue" $size="1.25rem" style={{ marginRight: "0.5rem" }} ><FaAward /></IconContainerAlt>
             Achievements
           </NavLink>
         </NavLi>
         <NavLi $open={openMenu}>
           <NavLink href="#my-contact">
-            <IconContainerAlt color="blue" size="1.25rem" style={{ marginRight: "0.5rem" }} ><FaPaperPlane /></IconContainerAlt>
+            <IconContainerAlt $color="blue" $size="1.25rem" style={{ marginRight: "0.5rem" }} ><FaPaperPlane /></IconContainerAlt>
             Contact
           </NavLink>
         </NavLi>

@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useRef } from "react";
 
 const Stars = () => {
@@ -29,7 +28,7 @@ const Stars = () => {
         resize();
 
         // Generate stars with random motion + twinkle properties
-        const starsCount = 35;
+        const starsCount = 50;
         const stars = [];
 
         for (let i = 0; i < starsCount; i++) {

@@ -1,7 +1,7 @@
-import { LoaderLogo, LoaderParent, LoadingBar } from './styled-components/Loader.styled'
-import MyLogo from "../assets/logo.webp"
-import { motion } from 'framer-motion'
-import { zoomInVariant } from '../utils/Variants'
+import { motion } from 'framer-motion';
+import { LoaderLogo, LoaderParent, LoadingBar } from './styled-components/Loader.styled';
+import { zoomInVariant } from '../utils/Variants';
+import MyLogo from "../assets/logo.webp";
 
 const Loader = () => {
   return (
@@ -22,4 +22,4 @@ const Loader = () => {
   )
 }
 
-export default Loader
+export default Loader;

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { PaddingContainer, Heading, BlueText, FlexContainer, IconContainer, ButtonAlt } from './styled-components/Global.styled'
+import { PaddingContainer, Heading, BlueText, FlexContainer, IconContainer, ButtonAlt } from './styled-components/Global.styled';
 import { ContactForm, FormArea, FormInput } from './styled-components/MyContact.styled'
 import { fadeInTopVariant, fadeInBottomVariant } from '../utils/Variants';
 import { FaPaperPlane, FaSpinner } from 'react-icons/fa';
@@ -101,15 +101,15 @@ const MyContact = () => {
   };
 
   return (
-    <PaddingContainer id="my-contact" left="1%" right="1%">
+    <PaddingContainer id="my-contact" $left="1%" $right="1%">
       <Heading
         as={motion.h4}
         variants={fadeInTopVariant}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.35 }}
-        size="h4"
-        align="center"
+        $size="h4"
+        $align="center"
       >
         MY CONTACT
       </Heading>
@@ -119,15 +119,15 @@ const MyContact = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.35 }}
-        size="h2"
-        align="center"
-        top="0.5rem"
+        $size="h2"
+        $align="center"
+        $top="0.5rem"
       >
         Contact
         <BlueText> me here</BlueText>
       </Heading>
-      <PaddingContainer top="2.5rem">
-        <FlexContainer justify="center">
+      <PaddingContainer $top="2.5rem">
+        <FlexContainer $justify="center">
           <ContactForm
             as={motion.form}
             variants={fadeInBottomVariant}
@@ -136,13 +136,13 @@ const MyContact = () => {
             viewport={{ once: true, amount: 0.35 }}
             onSubmit={sendEmail}
           >
-            <PaddingContainer bottom="1.5rem">
+            <PaddingContainer $bottom="1.5rem">
               <FormInput name="fromName" value={contact.fromName} onChange={handleChange} type="text" placeholder={errors.fromName || "What should I call you?"} $error={errors.fromName} />
             </PaddingContainer>
-            <PaddingContainer bottom="1.5rem">
+            <PaddingContainer $bottom="1.5rem">
               <FormInput name="fromEmail" value={contact.fromEmail} onChange={handleChange} type="email" placeholder={errors.fromEmail || "Where can I reach you?"} $error={errors.fromEmail} />
             </PaddingContainer>
-            <PaddingContainer bottom="1.5rem">
+            <PaddingContainer $bottom="1.5rem">
               <FormArea name="message" value={contact.message} onChange={handleChange} rows="5" placeholder={errors.message || "Tell me what's on your mind..."} $error={errors.message} />
             </PaddingContainer>
             {
@@ -153,14 +153,14 @@ const MyContact = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.35 }}
-                size="h5"
-                align="center"
-                bottom="2rem"
+                $size="h5"
+                $align="center"
+                $bottom="2rem"
               >
                 <BlueText style={{ fontWeight: "normal" }} $error={message.type === "error"}> {message.text}</BlueText>
               </Heading>
             }
-            <FlexContainer justify="center" responsiveFlex>
+            <FlexContainer $justify="center" $responsiveflex>
               <ButtonAlt
                 type='submit'
                 disabled={loading}
@@ -173,7 +173,7 @@ const MyContact = () => {
                   cursor: loading ? 'not-allowed' : 'pointer'
                 }}
               >
-                <IconContainer color="blue" size="1rem">
+                <IconContainer $color="blue" $size="1rem">
                   {
                     loading ?
                       <FaSpinner className="spin" /> :
@@ -190,4 +190,4 @@ const MyContact = () => {
   )
 }
 
-export default MyContact
+export default MyContact;

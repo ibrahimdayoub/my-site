@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion'
-import { FlexContainer, Heading, PaddingContainer, IconContainer, ParaText, BlueText } from './styled-components/Global.styled'
-import { SkillsCardContainer, SkillsCard, SkillsTabsContainer, SkillsTabButton } from './styled-components/MySkills.styled'
-import { fadeInTopVariant, fadeInBottomVariant, flipVariant } from '../utils/Variants'
-import { FrontSkills, BackSkills, DatabaseSkills, ToolSkills } from '../utils/Data'
+import { motion, AnimatePresence } from 'framer-motion';
 import { HiCode, HiDatabase, HiLightningBolt, HiPuzzle } from 'react-icons/hi';
+import { FlexContainer, Heading, PaddingContainer, IconContainer, ParaText, BlueText } from './styled-components/Global.styled';
+import { SkillsCardContainer, SkillsCard, SkillsTabsContainer, SkillsTabButton } from './styled-components/MySkills.styled';
+import { fadeInTopVariant, fadeInBottomVariant, flipVariant } from '../utils/Variants';
+import { FrontSkills, BackSkills, DatabaseSkills, ToolSkills } from '../utils/Data';
 
 const MySkills = () => {
-  const [activeTab, setActiveTab] = useState('Frontend')
+  const [$activeTab, setActiveTab] = useState('Frontend');
 
   const data = [
     {
@@ -29,7 +29,7 @@ const MySkills = () => {
   ];
 
   const getActiveData = () => {
-    switch (activeTab) {
+    switch ($activeTab) {
       case 'Frontend': return FrontSkills;
       case 'Backend': return BackSkills;
       case 'Databases': return DatabaseSkills;
@@ -39,8 +39,8 @@ const MySkills = () => {
   };
 
   return (
-    <PaddingContainer id="my-skills" left="1%" right="1%" responsiveLeft="1rem" responsiveRight="1rem">
-      <FlexContainer responsiveDirection="column-reverse" responsiveFlex fullWidthChild>
+    <PaddingContainer id="my-skills" $left="1%" $right="1%" $responsiveleft="1rem" $responsiveright="1rem">
+      <FlexContainer $responsivedirection="column-reverse" $responsiveflex $fullwidthchild>
         <motion.div
           variants={fadeInBottomVariant}
           initial="hidden"
@@ -52,7 +52,7 @@ const MySkills = () => {
               <SkillsTabButton
                 key={tab.title}
                 title={tab.title}
-                active={activeTab === tab.title}
+                $active={$activeTab === tab.title}
                 onClick={() => setActiveTab(tab.title)}
               >
                 {tab.icon}
@@ -60,8 +60,8 @@ const MySkills = () => {
               </SkillsTabButton>
             ))}
           </SkillsTabsContainer>
-          <SkillsCardContainer /*layout*/>
-            <AnimatePresence mode='wait'>
+          <SkillsCardContainer>
+            <AnimatePresence mode='sync'>
               {getActiveData().map((skill) => (
                 <SkillsCard
                   key={skill.tech}
@@ -72,10 +72,10 @@ const MySkills = () => {
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.35 }}
                 >
-                  <IconContainer size="1.5rem" responsivesize2="1.5rem" color="blue">
+                  <IconContainer $size="1.5rem" $responsivesize2="1.5rem" $color="blue">
                     {skill.icon}
                   </IconContainer>
-                  <Heading as="h5" size="h5" weight="300">{skill.tech}</Heading>
+                  <Heading as="h5" $size="h5" $weight="300">{skill.tech}</Heading>
                 </SkillsCard>
               ))}
             </AnimatePresence>
@@ -87,15 +87,15 @@ const MySkills = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.35 }}
         >
-          <Heading as="h4" size="h4" responsivealign="center">MY SKILLS</Heading>
-          <Heading as="h2" size="h2" top="0.5rem" responsivealign="center">
+          <Heading as="h4" $size="h4" $responsivealign="center">MY SKILLS</Heading>
+          <Heading as="h2" $size="h2" $top="0.5rem" $responsivealign="center">
             What
             <BlueText> I can do</BlueText>
           </Heading>
-          <ParaText as="p" top="2rem" bottom="1.5rem" responsivealign="center">
-            As a <b>Full-stack Developer</b>, I specialize in crafting high-performance front-end experiences. By leveraging <b>JavaScript</b> and <b>React.js</b>, I build responsive, dynamic user interfaces that are as functional as they are visually compelling. With a deep mastery of <b>Redux</b> and modern <b>CSS frameworks</b>, I transform complex designs into interactive, fluid web applications.
+          <ParaText as="p" $top="2rem" $bottom="1.5rem" $responsivealign="center">
+            As a <b>Full-stack Developer</b>, I specialize in crafting high-performance front-end experiences. By leveraging <b>JavaScript</b> and <b>React.js</b>, I build responsive, dynamic user interfaces that are as functional as they are visually compelling. With a deep mastery of <b>Redux</b> and modern <b>CSS frameworks</b>, I transform complex designs into inter$active, fluid web applications.
           </ParaText>
-          <ParaText as="p" responsivealign="center">
+          <ParaText as="p" $responsivealign="center">
             On the server side, I architect robust back-end systems using <b>Node.js</b> and <b>Laravel</b>. My expertise spans both <b>Relational</b> and <b>NoSQL</b> databases, enabling me to design efficient schemas, build secure APIs, and manage data workflows that scale. I don’t just write code; I build the digital backbone that powers seamless user experiences.
           </ParaText>
         </motion.div>
@@ -104,4 +104,4 @@ const MySkills = () => {
   )
 }
 
-export default MySkills
+export default MySkills;

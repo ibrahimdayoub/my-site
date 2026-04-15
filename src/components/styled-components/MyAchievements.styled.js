@@ -6,14 +6,14 @@ export const AchievementContentContainer = styled.div`
 
 export const AchievementImageContainer = styled.div`
   display: flex;
-  justify-content: ${({ justify }) => justify};
+  justify-content: ${({ $justify }) => $justify};
 `;
 
 export const SkillCard = styled.span`
   display: inline-block;
   margin:0.1rem;
   // background-color: ${({ theme }) => theme.colors.gray}; 
-  background-color: ${(props) => props.bg || props.theme.colors.gray}; 
+  background-color: ${({ theme, $bg }) => $bg || theme.colors.gray}; 
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 4px;

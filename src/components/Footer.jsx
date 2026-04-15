@@ -1,4 +1,4 @@
-import { FaEnvelope, FaPhoneAlt, FaGithub, FaLinkedin, FaPlay, FaYoutube, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { Footer, Socials, Copyright } from "./styled-components/Footer.styled";
 
 const FooterComponent = () => {

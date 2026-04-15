@@ -2,36 +2,35 @@ import { PaddingContainer, Heading, FlexContainer, ParaText, IconContainer, Butt
 import { ProjectContentContainer, ProjectImageContainer, TechStackCard, ProjectImage, ProjectImageLink, } from '../styled-components/MyProjects.styled';
 import { FaGithub, FaLink, FaPenAlt, FaPlay, FaMagic } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { theme } from '../Theme';
+import { theme } from '../../utils/Theme';
 import { zoomInVariant, blurVariant } from '../../utils/Variants';
 
-const Project = ({ project, index, rowReverse }) => {
+const Project = ({ project, index, $rowreverse }) => {
     return (
-        <FlexContainer rowReverse={rowReverse ? true : false} fullWidthChild>
+        <FlexContainer $rowreverse={$rowreverse ? true : false} $fullwidthchild>
             <ProjectContentContainer
                 as={motion.div}
-                // variants={rowReverse ? fadeInRightVariant : fadeInLeftVariant}
                 variants={zoomInVariant}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.35 }}
             >
                 <FlexContainer>
-                    <Heading as="h3" size="h3" bottom="0.5rem" responsivealign="center">{index + 1}. {project.name}</Heading>
+                    <Heading as="h3" $size="h3" $bottom="0.5rem" $responsivealign="center">{index + 1}. {project.name}</Heading>
                 </FlexContainer>
                 {
                     project.description ?
-                        <ParaText as="p" bottom="0.5rem" responsivealign="center"
+                        <ParaText as="p" $bottom="0.5rem" $responsivealign="center"
                             dangerouslySetInnerHTML={{ __html: project.description }}
                         />
                         :
                         null
                 }
                 <FlexContainer>
-                    <Heading as="h5" size="h5" top="0.5rem" bottom="0.5rem" responsivealign="center" style={{ color: theme.colors.secondary, textTransform: "uppercase" }}> <FaPenAlt style={{ margin: "0px 5px -2px 0px" }} /> {project.role}</Heading>
+                    <Heading as="h5" $size="h5" $top="0.5rem" $bottom="0.5rem" $responsivealign="center" style={{ color: theme.colors.secondary, textTransform: "uppercase" }}> <FaPenAlt style={{ margin: "0px 5px -2px 0px" }} /> {project.role}</Heading>
                 </FlexContainer>
-                <PaddingContainer top="0.5rem">
-                    <FlexContainer gap="0.5rem" responsiveFlex responsivejustify="center" style={{ flexWrap: "wrap" }}>
+                <PaddingContainer $top="0.5rem">
+                    <FlexContainer $gap="0.5rem" $responsiveflex $responsivejustify="center" style={{ flexWrap: "wrap" }}>
                         {
                             project.tools.map((tool, index) => {
                                 return (
@@ -41,36 +40,36 @@ const Project = ({ project, index, rowReverse }) => {
                         }
                     </FlexContainer>
                 </PaddingContainer>
-                <FlexContainer gap="0.5rem" responsiveFlex responsivejustify="center" style={{ flexWrap: "wrap" }}>
+                <FlexContainer $gap="0.5rem" $responsiveflex $responsivejustify="center" style={{ flexWrap: "wrap" }}>
                     {
                         project.source_code ?
-                            <ButtonAlt2 href={project.source_code} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
+                            <ButtonAlt2 href={project.source_code} target='_blank' $setmxauto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                                 <span style={{ marginRight: "5px" }}>Code</span>
-                                <IconContainer color="blue" responsiveSize="0.75rem" size="1rem"><FaGithub /></IconContainer>
+                                <IconContainer $color="blue" $responsivesize="0.75rem" $size="1rem"><FaGithub /></IconContainer>
                             </ButtonAlt2> :
                             null
                     }
                     {
                         project.live_link ?
-                            <ButtonAlt2 href={project.live_link} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
+                            <ButtonAlt2 href={project.live_link} target='_blank' $setmxauto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                                 <span style={{ marginRight: "5px" }}>Link</span>
-                                <IconContainer color="blue" responsiveSize="0.75rem" size="1rem"><FaLink /></IconContainer>
+                                <IconContainer $color="blue" $responsivesize="0.75rem" $size="1rem"><FaLink /></IconContainer>
                             </ButtonAlt2> :
                             null
                     }
                     {
                         project.related_link ?
-                            <ButtonAlt2 href={project.related_link} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
+                            <ButtonAlt2 href={project.related_link} target='_blank' $setmxauto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                                 <span style={{ marginRight: "5px" }}>Related</span>
-                                <IconContainer color="blue" responsiveSize="0.75rem" size="1rem"><FaMagic /></IconContainer>
+                                <IconContainer $color="blue" $responsivesize="0.75rem" $size="1rem"><FaMagic /></IconContainer>
                             </ButtonAlt2> :
                             null
                     }
                     {
                         project.demo_link ?
-                            <ButtonAlt2 href={project.demo_link} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
+                            <ButtonAlt2 href={project.demo_link} target='_blank' $setmxauto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                                 <span style={{ marginRight: "5px" }}>Demo</span>
-                                <IconContainer color="blue" responsiveSize="0.75rem" size="1rem"><FaPlay /></IconContainer>
+                                <IconContainer $color="blue" $responsivesize="0.75rem" $size="1rem"><FaPlay /></IconContainer>
                             </ButtonAlt2> :
                             null
                     }
@@ -79,9 +78,8 @@ const Project = ({ project, index, rowReverse }) => {
             {
                 project.image ?
                     <ProjectImageContainer
-                        justify={rowReverse ? "flex-start" : "flex-end"}
+                        $justify={$rowreverse ? "flex-start" : "flex-end"}
                         as={motion.div}
-                        // variants={rowReverse ? fadeInLeftVariant : fadeInRightVariant}
                         variants={blurVariant}
                         initial="hidden"
                         whileInView="visible"
@@ -92,7 +90,7 @@ const Project = ({ project, index, rowReverse }) => {
                                 src={project.image}
                                 alt={project.image?.split("/")[3]?.split(".")[0]}
                                 loading="lazy"
-                                secret={project.is_secret}
+                                $secret={project.is_$secret}
                             />
                         </ProjectImageLink>
                     </ProjectImageContainer> :

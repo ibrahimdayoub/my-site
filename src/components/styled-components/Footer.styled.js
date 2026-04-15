@@ -18,7 +18,6 @@ export const Footer = styled.footer`
   }
 `;
 
-
 export const Socials = styled.div`
   display: flex;
   flex-wrap: wrap;

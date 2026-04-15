@@ -1,5 +1,5 @@
-import { FaFigma, FaGitAlt } from 'react-icons/fa';
-import { SiBootstrap, SiCss3, SiDirectus, SiExpo, SiExpress, SiGithub, SiHtml5, SiJavascript, SiLaravel, SiMongodb, SiNestjs, SiNextdotjs, SiNodedotjs, SiPhp, SiPostgresql, SiPostman, SiPrisma, SiReact, SiSqlite, SiStrapi, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { FaDocker, FaFigma, FaGitAlt } from 'react-icons/fa';
+import { SiBootstrap, SiCss3, SiDirectus, SiExpo, SiExpress, SiGithub, SiGitlab, SiHtml5, SiJavascript, SiLaravel, SiMongodb, SiNestjs, SiNextdotjs, SiNodedotjs, SiOpslevel, SiPhp, SiPostgresql, SiPostman, SiPrisma, SiReact, SiSqlite, SiStrapi, SiTailwindcss, SiTypescript, SiVercel, SiVisualstudiocode } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import { DiMysql } from "react-icons/di";
 
@@ -56,13 +56,14 @@ export const DatabaseSkills = [
 ];
 
 export const ToolSkills = [
+    { tech: 'VS Code', icon: <SiVisualstudiocode /> },
     { tech: 'Git', icon: <FaGitAlt /> },
     { tech: 'GitHub', icon: <SiGithub /> },
+    { tech: 'GitLab', icon: <SiGitlab /> }, 
     { tech: 'Postman', icon: <SiPostman /> },
+    { tech: 'Docker', icon: <FaDocker /> },
+    { tech: 'Odoo', icon: < SiOpslevel /> },
     { tech: 'Figma', icon: <FaFigma /> },
-    // { tech: 'Odoo', icon: <FaOdoo /> },
-    // { tech: 'Docker', icon: <FaDocker /> },
-    // { tech: 'Vercel', icon: <SiVercel /> }
 ];
 
 export const TopProjects = [
@@ -75,7 +76,7 @@ export const TopProjects = [
         demo_link: "https://youtu.be/dWa0VzdyeFo",
         image: beroTalker,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Productivity Suite",
@@ -86,7 +87,7 @@ export const TopProjects = [
         demo_link: "https://youtu.be/BExEKLQOeNY",
         image: beroTasker,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Digital Arts Website",
@@ -97,7 +98,7 @@ export const TopProjects = [
         related_link: "https://github.com/ibrahimdayoub/nextjs-directus-page-builder",
         image: reimagined,
         role: "Back-End Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "General Trading Website",
@@ -107,7 +108,7 @@ export const TopProjects = [
         live_link: "https://nia.me",
         image: nia,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Marketing Consultation Website",
@@ -117,17 +118,17 @@ export const TopProjects = [
         live_link: "https://deebaajmc.com",
         image: deebaaj,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "ATM Interfaces",
         tools: ["HTML", "CSS", "Javascript"],
-        description: "Developed OAB at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: Interactive and highly intuitive ATM user interfaces for Oman Arab Bank to elevate the overall customer banking experience.",
+        description: "Developed OAB at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: Inter$active and highly intuitive ATM user interfaces for Oman Arab Bank to elevate the overall customer banking experience.",
         source_code: null,
         live_link: null,
         image: oab,
         role: "Front-End Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Medical Equipment Store",
@@ -137,7 +138,7 @@ export const TopProjects = [
         live_link: "https://tmc-iraq.com",
         image: tmc,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Educational Engineering Platform",
@@ -147,7 +148,7 @@ export const TopProjects = [
         live_link: "https://eyeengineer.com",
         image: eyeengineer,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Medical Consultation Platform",
@@ -157,7 +158,7 @@ export const TopProjects = [
         live_link: "https://germ-ac.com",
         image: germac,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Employment & Freelancing Platform",
@@ -167,7 +168,7 @@ export const TopProjects = [
         live_link: null,
         image: osum,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Lecture Scheduling System",
@@ -177,7 +178,7 @@ export const TopProjects = [
         live_link: null,
         image: compastudent,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
 ];
 
@@ -190,7 +191,7 @@ export const MoreProjects = [
         live_link: "https://packagist.org/packages/devs/initvel",
         image: initvel,
         role: "Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Elevator Maintenance Application",
@@ -200,7 +201,7 @@ export const MoreProjects = [
         live_link: "https://play.google.com/store/apps/details?id=com.rareweb.shamlift",
         image: shamLifts,
         role: "Back-End Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Real-Time Chat Application",
@@ -210,7 +211,7 @@ export const MoreProjects = [
         live_link: null,
         image: chat,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Blog Post Platform",
@@ -220,7 +221,7 @@ export const MoreProjects = [
         live_link: null,
         image: blog,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Weather Forecast Website",
@@ -230,7 +231,7 @@ export const MoreProjects = [
         live_link: null,
         image: weather,
         role: "Front-End Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Gym and Fitness Website",
@@ -240,7 +241,7 @@ export const MoreProjects = [
         live_link: null,
         image: gym,
         role: "Front-End Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Food Ordering and Restaurant Website",
@@ -250,7 +251,7 @@ export const MoreProjects = [
         live_link: null,
         image: resturant,
         role: "Full-Stack Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Library Management System",
@@ -260,7 +261,7 @@ export const MoreProjects = [
         live_link: null,
         image: null,
         role: "Back-End Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "Clothing Store Platform",
@@ -270,7 +271,7 @@ export const MoreProjects = [
         live_link: null,
         image: null,
         role: "Back-End Developer",
-        is_secret: false
+        is_$secret: false
     },
     {
         name: "University Housing Management System",
@@ -280,7 +281,7 @@ export const MoreProjects = [
         live_link: null,
         image: null,
         role: "Back-End Developer",
-        is_secret: false
+        is_$secret: false
     },
 ];
 
