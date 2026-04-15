@@ -46,7 +46,7 @@ const Project = ({ project, index, rowReverse }) => {
                         project.source_code ?
                             <ButtonAlt2 href={project.source_code} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                                 <span style={{ marginRight: "5px" }}>Code</span>
-                                <IconContainer color="blue" size="1rem"><FaGithub /></IconContainer>
+                                <IconContainer color="blue" responsiveSize="0.75rem" size="1rem"><FaGithub /></IconContainer>
                             </ButtonAlt2> :
                             null
                     }
@@ -54,7 +54,7 @@ const Project = ({ project, index, rowReverse }) => {
                         project.live_link ?
                             <ButtonAlt2 href={project.live_link} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                                 <span style={{ marginRight: "5px" }}>Link</span>
-                                <IconContainer color="blue" size="1rem"><FaLink /></IconContainer>
+                                <IconContainer color="blue" responsiveSize="0.75rem" size="1rem"><FaLink /></IconContainer>
                             </ButtonAlt2> :
                             null
                     }
@@ -62,7 +62,7 @@ const Project = ({ project, index, rowReverse }) => {
                         project.related_link ?
                             <ButtonAlt2 href={project.related_link} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                                 <span style={{ marginRight: "5px" }}>Related</span>
-                                <IconContainer color="blue" size="1rem"><FaMagic /></IconContainer>
+                                <IconContainer color="blue" responsiveSize="0.75rem" size="1rem"><FaMagic /></IconContainer>
                             </ButtonAlt2> :
                             null
                     }
@@ -70,7 +70,7 @@ const Project = ({ project, index, rowReverse }) => {
                         project.demo_link ?
                             <ButtonAlt2 href={project.demo_link} target='_blank' setMXAuto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>
                                 <span style={{ marginRight: "5px" }}>Demo</span>
-                                <IconContainer color="blue" size="1rem"><FaPlay /></IconContainer>
+                                <IconContainer color="blue" responsiveSize="0.75rem" size="1rem"><FaPlay /></IconContainer>
                             </ButtonAlt2> :
                             null
                     }

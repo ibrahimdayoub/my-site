@@ -19,6 +19,7 @@ export const TechStackCard = styled.span`
   font-size: 14px;
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
+    font-size:12px;
     padding: 0.25rem 0.5rem;
   }
 

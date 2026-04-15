@@ -159,9 +159,10 @@ export const BlueText = styled.span`
 export const ParaText = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.para_text_color};
   text-align: justify;
-  line-height: 1.75;
+  line-height: 1.5;
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
+    font-size:14px;
     text-align: ${({ responsivealign }) => responsivealign};
   }
 `
@@ -198,8 +199,8 @@ export const IconContainer = styled.div`
   
   font-size: ${({ size }) => size};
 
-  @media(max-width: 350px) {
-    font-size: ${({ responsivesize2 }) => responsivesize2};
+  @media ${({ theme }) => theme.breakpoints.mobile}{
+    font-size: ${({ responsiveSize }) => responsiveSize};
   }
 `
 
@@ -274,7 +275,6 @@ export const ButtonAlt = styled.button`
 
 export const ButtonAlt2 = styled.a`
   display: inline-block;
-  font-size:16px;
   width: max-content;
   padding: 0.5rem 1rem;
   color: ${({ theme }) => theme.colors.white};
@@ -293,6 +293,6 @@ export const ButtonAlt2 = styled.a`
   @media ${({ theme }) => theme.breakpoints.mobile}{
     margin: 0 ${({ setMXAuto }) => setMXAuto ? 'auto' : 0};
     padding: 0.25rem 0.5rem;
-    font-size:14px;
+    font-size:12px;
   }
 `

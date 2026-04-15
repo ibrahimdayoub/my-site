@@ -21,6 +21,7 @@ export const SkillCard = styled.span`
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
     padding: 0.25rem 0.5rem;
+    font-size: 12px;
   }
 
   @media(max-width: 350px) {

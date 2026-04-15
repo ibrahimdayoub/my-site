@@ -75,12 +75,12 @@ export const SkillsTabButton = styled.button`
 	gap:5px;
 	color:white;
 	cursor:pointer; 
-	transition: all 0.5s ease;
+	transition: all 0.5s linear;
 	background-color: ${({ active, theme }) => active ? theme.colors.secondary : theme.colors.primary_light};
 
 	&:hover {
-    background-color: ${({ theme }) => theme.colors.secondary};
-    border: transparent;
+		background-color: ${({ theme }) => theme.colors.secondary};
+		border: transparent;
   	}
 
 	@media ${({ theme }) => theme.breakpoints.mobile}{
