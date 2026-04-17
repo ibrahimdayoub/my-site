@@ -52,52 +52,53 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-        <MainBody>
-          <Stars />
-          {
-            isLoading ?
-              <Loader /> :
-              <>
-                <Container>
-                  <Navbar />
-                  <SpaceParent />
-                  <Showcase />
-                  <SpaceParent />
-                  <MySkills />
-                  <SpaceParent />
-                  <MyProjects />
-                  <SpaceParent />
-                  <MyAchievements />
-                  <SpaceParent />
-                  <MyContact />
-                  <SpaceParent />
-                  <Button
-                    style={{
-                      visibility: isVisible ? 'visible' : 'hidden',
-                      // padding: matches ? "5px" : "10px",
-                      // width: matches ? "30px" : "50px",
-                      // height: matches ? "30px" : "50px",
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "100%",
-                      position: "fixed",
-                      bottom: "75px",
-                      right: "25px",
-                      border: "1px solid #607d8b",
-                      display: "flex",
-                      justifyContent: "center",
-                      zIndex: "1000",
-                    }}
-                    onClick={scrollToTop}
-                  >
-                    <IconContainer $color="blue" $size="1rem" $responsivesize2="1rem"><FaArrowUp /></IconContainer>
-                  </Button>
-                  <SpaceParent />
-                </Container>
-                <Footer />
-              </>
-          }
-        </MainBody>
+      <MainBody>
+        <Stars />
+        {
+          isLoading ?
+            <Loader /> :
+            <>
+              <Container>
+                <Navbar />
+                <SpaceParent />
+                <Showcase />
+                <SpaceParent />
+                <MySkills />
+                <SpaceParent />
+                <MyProjects />
+                <SpaceParent />
+                <MyAchievements />
+                <SpaceParent />
+                <MyContact />
+                <SpaceParent />
+                <Button
+                  style={{
+                    visibility: isVisible ? 'visible' : 'hidden',
+                    // padding: matches ? "5px" : "10px",
+                    // width: matches ? "30px" : "50px",
+                    // height: matches ? "30px" : "50px",
+                    width: "40px",
+                    height: "40px",
+                    borderRadius: "100%",
+                    position: "fixed",
+                    bottom: "75px",
+                    right: "25px",
+                    background: theme.colors.primary_light,
+                    border: "1px solid " + theme.colors.gray,
+                    display: "flex",
+                    justifyContent: "center",
+                    zIndex: "1000",
+                  }}
+                  onClick={scrollToTop}
+                >
+                  <IconContainer $color="blue" $size="1rem" $responsivesize2="1rem"><FaArrowUp /></IconContainer>
+                </Button>
+                <SpaceParent />
+              </Container>
+              <Footer />
+            </>
+        }
+      </MainBody>
     </ThemeProvider>
   );
 }

@@ -11,8 +11,6 @@ export const AchievementImageContainer = styled.div`
 
 export const SkillCard = styled.span`
   display: inline-block;
-  margin:0.1rem;
-  // background-color: ${({ theme }) => theme.colors.gray}; 
   background-color: ${({ theme, $bg }) => $bg || theme.colors.gray}; 
   color: #fff;
   padding: 0.5rem 1rem;
@@ -20,7 +18,7 @@ export const SkillCard = styled.span`
   font-size: 14px;
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
-    padding: 0.25rem 0.5rem;
+    padding: 0.35rem 0.5rem;
     font-size: 12px;
   }
 

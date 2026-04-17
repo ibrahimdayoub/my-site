@@ -18,7 +18,7 @@ const floatingPlusPulse = (deg) => keyframes`
 export const MainBody = styled.div`
   overflow: hidden;
   position: relative;
-  background-color: #0b0f1a;
+  background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const Container = styled.div`
@@ -33,7 +33,7 @@ export const FlexContainer = styled.div`
   margin-right: ${({$mRight}) => $mRight || 0};
   gap: ${({ $gap }) => $gap};
   flex-direction: ${({ $rowreverse }) => $rowreverse ? 'row-reverse' : 'row'};
-  background: ${({ $hasbg }) => $hasbg ? "#131b3080" : null};
+  background: ${({ $hasbg,theme }) => $hasbg ? theme.colors.primary_light : null};
   padding: ${({ $hasbg }) => $hasbg ? '25px' : null};
   border-radius: ${({ $hasbg }) => $hasbg ? '10px' : null};
 
@@ -164,6 +164,7 @@ export const Particle = styled.img`
   animation: ${({$rotate}) => floatingPlusPulse($rotate)} 4s ease-in-out infinite;
   animation-direction: alternate;
   opacity:0.15;
+  filter: blur(1px);
 
   @media (max-width: 767px) {
     width: 15%;
@@ -224,7 +225,7 @@ export const Button = styled.a`
   transition: all 0.3s ease; 
 
   &:hover{
-    color: ${({ theme }) => theme.colors.primary_light};
+    color: ${({ theme }) => theme.colors.background};
     background-color: ${({ theme }) => theme.colors.white};
   }
 
@@ -250,7 +251,7 @@ export const ButtonAlt = styled.button`
   transition: all 0.3s ease; 
 
   &:hover{
-    color: ${({ theme }) => theme.colors.primary_light};
+    color: ${({ theme }) => theme.colors.background};
     background-color: ${({ theme }) => theme.colors.white};
   }
 
@@ -273,7 +274,7 @@ export const ButtonAlt2 = styled.a`
   font-size: 14px;
 
   &:hover{
-    color: ${({ theme }) => theme.colors.primary_light};
+    color: ${({ theme }) => theme.colors.background};
     background-color: ${({ theme }) => theme.colors.white};
   }
 

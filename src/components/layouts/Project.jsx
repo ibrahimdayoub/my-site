@@ -1,6 +1,6 @@
 import { PaddingContainer, Heading, FlexContainer, ParaText, IconContainer, ButtonAlt2, } from '../styled-components/Global.styled';
 import { ProjectContentContainer, ProjectImageContainer, TechStackCard, ProjectImage, ProjectImageLink, } from '../styled-components/MyProjects.styled';
-import { FaGithub, FaLink, FaPenAlt, FaPlay, FaMagic } from 'react-icons/fa';
+import { FaGithub, FaLink, FaPlay, FaMagic, FaBriefcase } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { theme } from '../../utils/Theme';
 import { zoomInVariant, blurVariant } from '../../utils/Variants';
@@ -26,11 +26,11 @@ const Project = ({ project, index, $rowreverse }) => {
                         :
                         null
                 }
-                <FlexContainer>
-                    <Heading as="h5" $size="h5" $top="0.5rem" $bottom="0.5rem" $responsivealign="center" style={{ color: theme.colors.secondary, textTransform: "uppercase" }}> <FaPenAlt style={{ margin: "0px 5px -2px 0px" }} /> {project.role}</Heading>
-                </FlexContainer>
+                <ParaText as="p" $top="0.25rem" $bottom="0.25rem" $responsivealign="center" style={{ color: theme.colors.secondary }}>
+                    <FaBriefcase style={{ margin: "0px 2px -2px 0px" }} /> {project.role}
+                </ParaText>
                 <PaddingContainer $top="0.5rem">
-                    <FlexContainer $gap="0.5rem" $responsiveflex $responsivejustify="center" style={{ flexWrap: "wrap" }}>
+                    <FlexContainer $responsivegap="0.25rem" $gap="0.5rem" $responsiveflex $responsivejustify="center" style={{ flexWrap: "wrap" }}>
                         {
                             project.tools.map((tool, index) => {
                                 return (
@@ -40,7 +40,7 @@ const Project = ({ project, index, $rowreverse }) => {
                         }
                     </FlexContainer>
                 </PaddingContainer>
-                <FlexContainer $gap="0.5rem" $responsiveflex $responsivejustify="center" style={{ flexWrap: "wrap" }}>
+                <FlexContainer $responsivegap="0.25rem" $gap="0.5rem" $responsiveflex $responsivejustify="center" style={{ flexWrap: "wrap" }}>
                     {
                         project.source_code ?
                             <ButtonAlt2 href={project.source_code} target='_blank' $setmxauto_ style={{ marginTop: "1rem", display: "flex", gap: "5px", alignItems: "center", textDecoration: "none" }}>

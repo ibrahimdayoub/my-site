@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const ShowcaseImageCard = styled.div`
-  border: 1px solid #29385a;
+  border: 1px solid ${({ theme }) => theme.colors.gray};
   width: 250px;
   height: 250px;
   border-radius: 100%;
   position: relative;
   overflow: hidden;
-  background: #2a385b26;
+  background: ${({ theme }) => theme.colors.primary_light};
   display:flex;
   justify-content:center;
   align-items:center;
