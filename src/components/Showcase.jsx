@@ -79,9 +79,10 @@ const Showcase = () => {
                                 phoneNumber="+963997791807"
                                 accountName="Ibrahim Dayoub"
                                 avatar={ShowcaseImg}
-                                placeholder="Say Hello!"
-                                statusMessage="Typically replies within 1 day"
-                                chatMessage="Hello!"
+                                placeholder="Type your message here..."
+                                statusMessage="Online - Replies within 1 hour"
+                                chatMessage="Hello! How can I help you today?"
+                                messageDelay={0.75}
                             />
                         </FlexContainer>
                         <Button

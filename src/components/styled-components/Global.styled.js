@@ -28,12 +28,12 @@ export const Container = styled.div`
 
 export const FlexContainer = styled.div`
   display: flex;
-  justify-content: ${({$justify}) => $justify || ''};
-  align-items: ${({$align}) => $align || ''};
-  margin-right: ${({$mRight}) => $mRight || 0};
+  justify-content: ${({ $justify }) => $justify || ''};
+  align-items: ${({ $align }) => $align || ''};
+  margin-right: ${({ $mRight }) => $mRight || 0};
   gap: ${({ $gap }) => $gap};
   flex-direction: ${({ $rowreverse }) => $rowreverse ? 'row-reverse' : 'row'};
-  background: ${({ $hasbg,theme }) => $hasbg ? theme.colors.primary_light : null};
+  background: ${({ $hasbg, theme }) => $hasbg ? theme.colors.primary_light : null};
   padding: ${({ $hasbg }) => $hasbg ? '25px' : null};
   border-radius: ${({ $hasbg }) => $hasbg ? '10px' : null};
 
@@ -45,7 +45,7 @@ export const FlexContainer = styled.div`
     margin-right: 0px;
     display: ${({ $responsiveflex }) => $responsiveflex ? 'flex' : 'block'};
     flex-direction: ${({ $responsivedirection }) => $responsivedirection};
-    justify-content: ${({$responsivejustify}) => $responsivejustify || ''};
+    justify-content: ${({ $responsivejustify }) => $responsivejustify || ''};
     gap: ${({ $responsivegap }) => $responsivegap};
       padding: ${({ $hasbg }) => $hasbg ? '25px 10px 10px 10px' : null};
   }
@@ -57,8 +57,8 @@ export const FlexContainer = styled.div`
 
 export const FlexContainerAlt = styled.div`
   display: flex;
-  justify-content: ${({$justify}) => $justify | ''};
-  align-items: ${({$align}) => $align || ''};
+  justify-content: ${({ $justify }) => $justify | ''};
+  align-items: ${({ $align }) => $align || ''};
   gap:25px;
 
   & > div {
@@ -67,7 +67,7 @@ export const FlexContainerAlt = styled.div`
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
     flex-direction: column-reverse;
-    align-items: ${({$responsivealign}) => $responsivealign || ''};
+    align-items: ${({ $responsivealign }) => $responsivealign || ''};
   }
 `
 
@@ -123,19 +123,19 @@ export const Heading = styled(PaddingContainer)`
 
   @media(max-width: 350px) {
     font-size: ${({ $size }) => {
-      switch ($size) {
-        case 'h1':
-          return '2.25rem';
-        case 'h2':
-          return '1.5rem';
-        case 'h3':
-          return '1.25rem';
-        case 'h4':
-          return '0.5625rem';
-        default:
-          return;
-        }
-      }};
+    switch ($size) {
+      case 'h1':
+        return '2.25rem';
+      case 'h2':
+        return '1.5rem';
+      case 'h3':
+        return '1.25rem';
+      case 'h4':
+        return '0.5625rem';
+      default:
+        return;
+    }
+  }};
     }
   }
 `
@@ -161,9 +161,9 @@ export const Particle = styled.img`
   left: ${({ $initialleft }) => $initialleft};
   right: ${({ $initialright }) => $initialright};
   bottom: ${({ $initialbottom }) => $initialbottom};
-  animation: ${({$rotate}) => floatingPlusPulse($rotate)} 4s ease-in-out infinite;
+  animation: ${({ $rotate }) => floatingPlusPulse($rotate)} 3.5s ease-in-out infinite;
   animation-direction: alternate;
-  opacity:0.15;
+  opacity:0.1;
   filter: blur(1px);
 
   @media (max-width: 767px) {

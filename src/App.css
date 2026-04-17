@@ -55,6 +55,12 @@
   .styles-module_chatHeader__gaeOA {
     background-color: #7eadfc !important;
   }
+
+  .styles-module_chatHeader__gaeOA .styles-module_avatar__afcc4 img{
+    padding: 1px;
+    background: #ffffff40;
+    object-fit: contain;
+  }
   
   /* Spin Animation */
   .spin {
