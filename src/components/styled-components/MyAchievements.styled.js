@@ -20,7 +20,7 @@ export const SkillCard = styled.span`
   @media ${({ theme }) => theme.breakpoints.mobile}{
     padding: 0.35rem 0.5rem;
     font-size: 12px;
-  }
+  } 
 
   @media(max-width: 350px) {
     margin:0.05rem;

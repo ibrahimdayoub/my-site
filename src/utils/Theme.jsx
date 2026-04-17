@@ -2,11 +2,11 @@ export const theme = {
     colors: {
         background: '#02050c',
         primary: '#0f172a',
-        primary_light: '#070a11',
+        primary_light: '#131e2f33',
         secondary: '#7eadfc',
         white: '#ffffff',
         black: '#000000',
-        gray: '#0c1119',
+        gray: '#7eadfc1a',
         para_text_color: '#dcdcdc',
         error: '#ff6b6b',
         error_dark: '#c92a2a',

@@ -35,6 +35,7 @@ export const FlexContainer = styled.div`
   flex-direction: ${({ $rowreverse }) => $rowreverse ? 'row-reverse' : 'row'};
   background: ${({ $hasbg, theme }) => $hasbg ? theme.colors.primary_light : null};
   padding: ${({ $hasbg }) => $hasbg ? '25px' : null};
+  border: ${({ $hasbg, theme }) => $hasbg ? '1px solid '+theme.colors.gray : null};
   border-radius: ${({ $hasbg }) => $hasbg ? '10px' : null};
 
   & > div {
@@ -164,7 +165,7 @@ export const Particle = styled.img`
   animation: ${({ $rotate }) => floatingPlusPulse($rotate)} 3.5s ease-in-out infinite;
   animation-direction: alternate;
   opacity:0.1;
-  filter: blur(1px);
+  // filter: blur(1px);
 
   @media (max-width: 767px) {
     width: 15%;
@@ -280,7 +281,7 @@ export const ButtonAlt2 = styled.a`
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
     margin: 0 ${({ $setMXAuto }) => $setMXAuto ? 'auto' : 0};
-    padding: 0.25rem 0.5rem;
+    padding: 0.35rem 0.5rem;
     font-size:12px;
   }
 `
