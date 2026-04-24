@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { FaChevronDown } from 'react-icons/fa';
 import { PaddingContainer, Heading, BlueText } from './styled-components/Global.styled';
 import { fadeInTopVariant, fadeInBottomVariant } from '../utils/Variants';
 import { TopProjects, MoreProjects } from "../utils/Data"
-import { FaChevronDown } from 'react-icons/fa';
 import Project from './layouts/Project';
 
 const MyProjects = () => {
@@ -32,7 +32,7 @@ const MyProjects = () => {
                 $responsivealign="center"
             >
                 What
-                <BlueText>I've built <span style={{ fontSize: "16px" }}>({TopProjects.length})</span></BlueText>
+                <BlueText> I've built <span style={{ fontSize: "16px" }}>({TopProjects.length})</span></BlueText>
             </Heading>
             {TopProjects.map((project, index) => {
                 return (
@@ -75,4 +75,4 @@ const MyProjects = () => {
     )
 }
 
-export default MyProjects
+export default MyProjects;

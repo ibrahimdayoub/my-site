@@ -8,6 +8,7 @@ import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import Showcase from './components/Showcase';
 import MySkills from './components/MySkills';
+import MyStats from './components/MyStats';
 import MyProjects from './components/MyProjects';
 import MyAchievements from './components/MyAchievements';
 import MyContact from './components/MyContact';
@@ -66,6 +67,8 @@ function App() {
                 <MySkills />
                 <SpaceParent />
                 <MyProjects />
+                <SpaceParent />
+                <MyStats />
                 <SpaceParent />
                 <MyAchievements />
                 <SpaceParent />

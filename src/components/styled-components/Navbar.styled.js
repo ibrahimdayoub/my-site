@@ -93,7 +93,7 @@ export const NavLi = styled.li`
   &:nth-child(1) { margin-top: 25px; transition-delay: 0.1s; }
   &:nth-child(2) { transition-delay: 0.2s; }
   &:nth-child(3) { transition-delay: 0.3s; }
-  &:nth-child(4) { margin-bottom: 25px; transition-delay: 0.5s; }
+  &:nth-child(5) { margin-bottom: 25px; transition-delay: 0.5s; }
 
   @media (min-width: 768px) {
     transform: none;
@@ -101,7 +101,7 @@ export const NavLi = styled.li`
     margin: 10px auto;
 
     &:nth-child(1) { margin: 10px auto}
-    &:nth-child(4) { margin: 10px auto}
+    &:nth-child(5) { margin: 10px auto}
   }
 `;
 

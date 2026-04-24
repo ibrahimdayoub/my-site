@@ -10,7 +10,7 @@ import ShowcaseImg from '../assets/showcase-img.webp';
 import ParticleImg from '../assets/particle.webp';
 
 const Showcase = () => {
-    const Resume = "./Ibrahim-Dayoub-Software-Engineer.pdf";
+    const Resume = "./Ibrahim-Dayoub-Resume.pdf";
 
     return (
         <PaddingContainer $left="1%" $right="1%" $responsiveleft="1rem" $responsiveright="1rem">
@@ -47,7 +47,7 @@ const Showcase = () => {
                         </BlueText>
                     </Heading>
                     <ParaText as="p" $top="1.5rem" $bottom="2.5rem" $responsivealign="center">
-                        With over three years of experience across freelance and corporate environments, I’ve mastered the art of building scalable web and mobile solutions. I specialize in turning complex requirements into seamless digital experiences through fast-paced research and a deep understanding of modern frameworks. I thrive in collaborative teams, consistently pushing the boundaries of my growth to deliver nothing less than excellence.
+                        Solution-oriented Full-Stack Engineer with <b>3+ years</b> of experience delivering scalable digital ecosystems. Expert at transforming complex business logic into seamless user experiences using modern frameworks. Proven track record in fast-paced environments, focusing on robust architecture, team collaboration, and high-standard execution.
                     </ParaText>
                     <FlexContainer $responsiveflex $justify="space-between" $align="center" $gap="5px">
                         <FlexContainer $gap="20px" $responsivegap2="5px" $responsiveflex>

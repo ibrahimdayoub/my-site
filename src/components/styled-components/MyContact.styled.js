@@ -16,7 +16,7 @@ const sharedStyles = css`
   color: ${({ theme }) => theme.colors.para_text_color};
   border-radius: 5px;
   padding: 15px;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
   font-family: inherit;
   font-size: 14px;
   line-height: 1.5;

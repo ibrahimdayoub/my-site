@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { IconContainerAlt } from './styled-components/Global.styled';
 import { Bar, Logo, Hamburger, MainNav, NavBarToggle, NavLi, NavLink } from './styled-components/Navbar.styled';
-import { FaAward, FaBars, FaCode, FaPaperPlane, FaProjectDiagram, FaTimes } from 'react-icons/fa';
+import { FaAward, FaBars, FaChartLine, FaCode, FaPaperPlane, FaProjectDiagram, FaTimes } from 'react-icons/fa';
 import MyLogo from "../assets/logo.webp";
 
 const Navbar = () => {
@@ -28,6 +28,12 @@ const Navbar = () => {
           <NavLink href="#my-projects">
             <IconContainerAlt $color="blue" $size="1.25rem" style={{ marginRight: "0.5rem" }} ><FaProjectDiagram /></IconContainerAlt>
             Projects
+          </NavLink>
+        </NavLi>
+        <NavLi $open={openMenu}>
+          <NavLink href="#my-stats">
+            <IconContainerAlt $color="blue" $size="1.25rem" style={{ marginRight: "0.5rem" }} ><FaChartLine /></IconContainerAlt>
+            Stats
           </NavLink>
         </NavLi>
         <NavLi $open={openMenu}>

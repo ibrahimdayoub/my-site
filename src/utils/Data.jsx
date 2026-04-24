@@ -1,4 +1,4 @@
-import { FaDocker, FaFigma, FaGitAlt } from 'react-icons/fa';
+import { FaDocker, FaFigma, FaGitAlt, FaRocket, FaCogs, FaProjectDiagram, FaHandshake } from 'react-icons/fa';
 import { SiBootstrap, SiCss3, SiDirectus, SiExpo, SiExpress, SiGithub, SiGitlab, SiHtml5, SiJavascript, SiLaravel, SiMongodb, SiNestjs, SiNextdotjs, SiNodedotjs, SiOpslevel, SiPhp, SiPostgresql, SiPostman, SiPrisma, SiReact, SiSqlite, SiStrapi, SiTailwindcss, SiTypescript, SiVercel, SiVisualstudiocode } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import { DiMysql } from "react-icons/di";
@@ -59,7 +59,7 @@ export const ToolSkills = [
     { tech: 'VS Code', icon: <SiVisualstudiocode /> },
     { tech: 'Git', icon: <FaGitAlt /> },
     { tech: 'GitHub', icon: <SiGithub /> },
-    { tech: 'GitLab', icon: <SiGitlab /> }, 
+    { tech: 'GitLab', icon: <SiGitlab /> },
     { tech: 'Postman', icon: <SiPostman /> },
     { tech: 'Docker', icon: <FaDocker /> },
     { tech: 'Odoo', icon: < SiOpslevel /> },
@@ -123,7 +123,7 @@ export const TopProjects = [
     {
         name: "ATM Interfaces",
         tools: ["HTML", "CSS", "Javascript"],
-        description: "Developed OAB at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: Inter$active and highly intuitive ATM user interfaces for Oman Arab Bank to elevate the overall customer banking experience.",
+        description: "Developed OAB at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: Interactive and highly intuitive ATM user interfaces for Oman Arab Bank to elevate the overall customer banking experience.",
         source_code: null,
         live_link: null,
         image: oab,
@@ -297,5 +297,36 @@ export const Achievements = [
         credentialId: "0001071460",
         skills: ["Odoo Development", "Javascript", "Python", "PostgreSQL"],
         color: "#7b5475"
+    }
+];
+
+export const Stats = [
+    {
+        id: 1,
+        number: "3+",
+        title: "Hustle Years",
+        description: "No breaks, no shortcuts",
+        icon: <FaRocket />
+    },
+    {
+        id: 2,
+        number: "15+",
+        title: "Tech Stack",
+        description: "Tools I've actually shipped with",
+        icon: <FaCogs />
+    },
+    {
+        id: 3,
+        number: "20+",
+        title: "Projects Live",
+        description: "Built from zero to launch",
+        icon: <FaProjectDiagram />
+    },
+    {
+        id: 4,
+        number: "10+",
+        title: "Happy Clients",
+        description: "Trust that kept coming back",
+        icon: <FaHandshake />
     }
 ];

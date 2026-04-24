@@ -93,10 +93,13 @@ const MySkills = () => {
             <BlueText> I can do</BlueText>
           </Heading>
           <ParaText as="p" $top="2rem" $bottom="1.5rem" $responsivealign="center">
-            As a <b>Full-stack Developer</b>, I specialize in crafting high-performance front-end experiences. By leveraging <b>JavaScript</b> and <b>React.js</b>, I build responsive, dynamic user interfaces that are as functional as they are visually compelling. With a deep mastery of <b>Redux</b> and modern <b>CSS frameworks</b>, I transform complex designs into interactive, fluid web applications.
+            <b>Front-End Specialist:</b> Engineering high-performance, responsive UIs with React.js and Redux, transforming complex designs into fluid, interactive experiences using modern CSS frameworks.
           </ParaText>
-          <ParaText as="p" $responsivealign="center">
-            On the server side, I architect robust back-end systems using <b>Node.js</b> and <b>Laravel</b>. My expertise spans both <b>Relational</b> and <b>NoSQL</b> databases, enabling me to design efficient schemas, build secure APIs, and manage data workflows that scale. I don’t just write code; I build the digital backbone that powers seamless user experiences.
+          <ParaText as="p" $bottom="1.5rem" $responsivealign="center">
+            <b>Back-End Architect:</b> Designing robust server-side systems with Node.js and Laravel, focusing on scalable database schemas (SQL/NoSQL) and secure, efficient API workflows.
+          </ParaText>
+          <ParaText as="p" $bottom="1.5rem" $responsivealign="center">
+            <b>System Visionary:</b> Building the "digital backbone" of applications by bridging the gap between scalable back-end architecture and seamless, production-ready user experiences.
           </ParaText>
         </motion.div>
       </FlexContainer>
