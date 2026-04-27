@@ -35,8 +35,8 @@ export const ProjectImageLink = styled.a`
   overflow:hidden;
   border-radius: 7.5px;
   opacity:0.75;
-  box-shadow: 1px 1px 5px 1px ${({ theme }) => theme.colors.gray};
-	background-color: ${({ theme }) => theme.colors.secondary};
+  border: 1px solid ${({ theme }) => theme.colors.gray};
+	background-color: ${({ theme }) => theme.colors.primary_light};
 
   filter: ${({ $secret }) => $secret ? 'blur(2px)' : 'none'};
 

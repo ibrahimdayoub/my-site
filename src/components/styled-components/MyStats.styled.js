@@ -55,6 +55,7 @@ export const StatCard = styled.div`
       left: unset;
       transform: translate(0%, -50%);
       font-size: 75px;
+      opacity: 0.5;
     }
   }
 `;
