@@ -15,39 +15,6 @@ export const StatsGrid = styled.div`
   }
 `;
 
-export const StatCardX = styled.div`
-  position: relative;
-  padding: 2.5rem;
-  text-align: center;
-  background-color: ${({ theme }) => theme.colors.primary_light}; 
-  border: 1px solid ${({ theme }) => theme.colors.gray};
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  z-index: 1;
-
-  .bg-icon {
-    position: absolute;
-    top: -10px;
-    right: -20px;
-    font-size: 125px;
-    color: ${({ theme }) => theme.colors.secondary};
-    opacity: 0.01;
-    z-index: -1;
-    transition: all 0.25s ease;
-    pointer-events: none;
-  }
-
-  &:hover .bg-icon {
-    opacity: 0.025;
-    transform: scale(1.25) translate(-50%, 25%);
-  }
-
-  @media ${({ theme }) => theme.breakpoints.mobile} {
-    padding: 1.5rem;
-  }
-`;
-
 export const StatCard = styled.div`
   position: relative;
   padding: 2.5rem;
@@ -67,24 +34,27 @@ export const StatCard = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 125px;
-    color: ${({ theme }) => theme.colors.secondary};
-    opacity: 0;
+    font-size: 135px;
+    color: ${({ theme }) => theme.colors.gray};
+    opacity: 0.1;
     z-index: -1;
     transition: all 0.35s ease;
     pointer-events: none;
   }
 
   &:hover .bg-icon {
-    opacity: 0.025;
+    opacity: 0.2;
   }
 
   @media ${({ theme }) => theme.breakpoints.mobile} {
     padding: 1.5rem;
     
     .bg-icon {
-      left: 80%;
-      font-size: 100px;
+      top: 50%;
+      right: 10px;
+      left: unset;
+      transform: translate(0%, -50%);
+      font-size: 75px;
     }
   }
 `;
@@ -102,4 +72,5 @@ export const StatNumber = styled.h2`
 export const StatTitle = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-size: 1rem;
+  text-transform: uppercase;
 `;

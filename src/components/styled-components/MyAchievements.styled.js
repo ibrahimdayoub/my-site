@@ -18,8 +18,8 @@ export const SkillCard = styled.span`
   font-size: 14px;
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
-    padding: 0.35rem 0.5rem;
-    font-size: 12px;
+    font-size:12px;
+    padding: 0.5rem 0.5rem;
   } 
 
   @media(max-width: 350px) {
@@ -40,7 +40,7 @@ export const AchievementImageLink = styled.a`
     width: 100%;
     height: 250px;
     margin:0 auto;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 `
 

@@ -93,6 +93,7 @@ export const NavLi = styled.li`
   &:nth-child(1) { margin-top: 25px; transition-delay: 0.1s; }
   &:nth-child(2) { transition-delay: 0.2s; }
   &:nth-child(3) { transition-delay: 0.3s; }
+  &:nth-child(4) { transition-delay: 0.4s; }
   &:nth-child(5) { margin-bottom: 25px; transition-delay: 0.5s; }
 
   @media (min-width: 768px) {
@@ -110,7 +111,7 @@ export const NavLink = styled.a`
   display: flex;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.secondary}; 
-  transition:1s;
+  transition:0.35s;
 
   @media (min-width: 768px) {    
     margin: 0px 10px;
@@ -127,7 +128,7 @@ export const Logo = styled.img`
   margin-left: 15px;
 
   @media (min-width: 768px) {    
-    width: 150px;
+    width: 125px;
     margin-top: 50px;
   }
 `

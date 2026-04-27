@@ -7,7 +7,7 @@ import { zoomInVariant, flipVariant } from '../../utils/Variants';
 
 const Achievement = ({ achievement, $rowreverse }) => {
     return (
-        <FlexContainer $rowreverse={$rowreverse ? true : false} $fullwidthchild $hasbg>
+        <FlexContainer $responsiveflex={true} $responsivedirection="column-reverse" $rowreverse={$rowreverse ? true : false} $fullwidthchild $hasbg>
             <AchievementContentContainer
                 as={motion.div}
                 variants={zoomInVariant}
@@ -37,8 +37,8 @@ const Achievement = ({ achievement, $rowreverse }) => {
                         <FaAward style={{ margin: "0px 2px -2px 0px" }} /> {achievement.issuer}
                     </ParaText>
                 </Container>
-                <PaddingContainer $top="0.5rem">
-                    <FlexContainer $responsivegap="0.25rem" $gap="0.5rem" $responsiveflex $responsivejustify="center" style={{ flexWrap: "wrap" }}>
+                <PaddingContainer $top="0.75rem">
+                    <FlexContainer $responsivegap="0.35rem" $gap="0.5rem" $responsiveflex $responsivejustify="center" style={{ flexWrap: "wrap" }}>
                         {
                             achievement.skills.map((tool, index) => {
                                 return (

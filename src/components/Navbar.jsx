@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { IconContainerAlt } from './styled-components/Global.styled';
 import { Bar, Logo, Hamburger, MainNav, NavBarToggle, NavLi, NavLink } from './styled-components/Navbar.styled';
-import { FaAward, FaBars, FaChartLine, FaCode, FaPaperPlane, FaProjectDiagram, FaTimes } from 'react-icons/fa';
+import { FaAward, FaChartLine, FaCode, FaPaperPlane, FaProjectDiagram } from 'react-icons/fa';
 import MyLogo from "../assets/logo.webp";
 
 const Navbar = () => {

@@ -29,7 +29,7 @@ const MyAchievements = () => {
                 $responsivealign="center"
             >
                 What
-                <BlueText> I've earned <span style={{ fontSize: "16px" }}>({Achievements.length})</span></BlueText>
+                <BlueText> I've earned {/*<span style={{ fontSize: "16px" }}>({Achievements.length})</span>*/}</BlueText>
             </Heading>
             {Achievements.map((achievement, index) => (
                 <PaddingContainer key={index} $top="2.5rem" $bottom="2.5rem">

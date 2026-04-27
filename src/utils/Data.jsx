@@ -1,5 +1,5 @@
-import { FaDocker, FaFigma, FaGitAlt, FaRocket, FaCogs, FaProjectDiagram, FaHandshake } from 'react-icons/fa';
-import { SiBootstrap, SiCss3, SiDirectus, SiExpo, SiExpress, SiGithub, SiGitlab, SiHtml5, SiJavascript, SiLaravel, SiMongodb, SiNestjs, SiNextdotjs, SiNodedotjs, SiOpslevel, SiPhp, SiPostgresql, SiPostman, SiPrisma, SiReact, SiSqlite, SiStrapi, SiTailwindcss, SiTypescript, SiVercel, SiVisualstudiocode } from 'react-icons/si';
+import { FaDocker, FaFigma, FaGitAlt, FaRocket, FaProjectDiagram, FaUserTie, FaCode } from 'react-icons/fa';
+import { SiBootstrap, SiCss3, SiDirectus, SiExpo, SiExpress, SiGithub, SiGitlab, SiHtml5, SiJavascript, SiLaravel, SiMongodb, SiNestjs, SiNextdotjs, SiNodedotjs, SiOpslevel, SiPhp, SiPostgresql, SiPostman, SiPrisma, SiReact, SiSqlite, SiStrapi, SiTailwindcss, SiTypescript, SiVisualstudiocode } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import { DiMysql } from "react-icons/di";
 
@@ -83,7 +83,8 @@ export const TopProjects = [
         tools: ["Typescript", "React Native", "Expo", "Nativewind Css", "Clerk", "NodeJs", "ExpressJs", "MongoDB", "Mongoose"],
         description: "Developed Bero Tasker: A modern, high-performance mobile application for managing tasks and notes, featuring a seamless user interface and secure authentication.",
         source_code: "https://github.com/ibrahimdayoub/tasker-frontend",
-        live_link: "https://drive.google.com/file/d/16V3vBjXSdRQ_WNSWVS6MouE8Lj_NfSq4/view?usp=sharing",
+        live_link: null,
+        download_link: "https://drive.google.com/file/d/16V3vBjXSdRQ_WNSWVS6MouE8Lj_NfSq4/view?usp=sharing",
         demo_link: "https://youtu.be/BExEKLQOeNY",
         image: beroTasker,
         role: "Full-Stack Developer",
@@ -159,27 +160,7 @@ export const TopProjects = [
         image: germac,
         role: "Full-Stack Developer",
         is_$secret: false
-    },
-    {
-        name: "Employment & Freelancing Platform",
-        tools: ["JavaScript", "ReactJS", "Redux Toolkit", "Tailwind CSS", "NodeJS", "ExpressJS", "Socket.IO", "Mongoose", "MongoDB"],
-        description: "Developed OSUM: A professional networking platform built to connect job seekers with freelancers, bridging the gap between talent and market opportunities.",
-        source_code: "https://github.com/ibrahimdayoub/osum",
-        live_link: null,
-        image: osum,
-        role: "Full-Stack Developer",
-        is_$secret: false
-    },
-    {
-        name: "Lecture Scheduling System",
-        tools: ["JavaScript", "ReactJS", "Bootstrap", "Laravel", "MySQL"],
-        description: "Designed CompaStudent: A management system for academic scheduling, classroom bookings, and efficient rescheduling of university appointments.",
-        source_code: "https://github.com/ibrahimdayoub/compastudent",
-        live_link: null,
-        image: compastudent,
-        role: "Full-Stack Developer",
-        is_$secret: false
-    },
+    }
 ];
 
 export const MoreProjects = [
@@ -201,6 +182,26 @@ export const MoreProjects = [
         live_link: "https://play.google.com/store/apps/details?id=com.rareweb.shamlift",
         image: shamLifts,
         role: "Back-End Developer",
+        is_$secret: false
+    },
+    {
+        name: "Employment & Freelancing Platform",
+        tools: ["JavaScript", "ReactJS", "Redux Toolkit", "Tailwind CSS", "NodeJS", "ExpressJS", "Socket.IO", "Mongoose", "MongoDB"],
+        description: "Developed OSUM: A professional networking platform built to connect job seekers with freelancers, bridging the gap between talent and market opportunities.",
+        source_code: "https://github.com/ibrahimdayoub/osum",
+        live_link: null,
+        image: osum,
+        role: "Full-Stack Developer",
+        is_$secret: false
+    },
+    {
+        name: "Lecture Scheduling System",
+        tools: ["JavaScript", "ReactJS", "Bootstrap", "Laravel", "MySQL"],
+        description: "Designed CompaStudent: A management system for academic scheduling, classroom bookings, and efficient rescheduling of university appointments.",
+        source_code: "https://github.com/ibrahimdayoub/compastudent",
+        live_link: null,
+        image: compastudent,
+        role: "Full-Stack Developer",
         is_$secret: false
     },
     {
@@ -313,7 +314,7 @@ export const Stats = [
         number: "15+",
         title: "Tech Stack",
         description: "Tools I've actually shipped with",
-        icon: <FaCogs />
+        icon: <FaCode />
     },
     {
         id: 3,
@@ -327,6 +328,6 @@ export const Stats = [
         number: "10+",
         title: "Happy Clients",
         description: "Trust that kept coming back",
-        icon: <FaHandshake />
+        icon: <FaUserTie />
     }
 ];

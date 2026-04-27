@@ -48,7 +48,7 @@ export const FlexContainer = styled.div`
     flex-direction: ${({ $responsivedirection }) => $responsivedirection};
     justify-content: ${({ $responsivejustify }) => $responsivejustify || ''};
     gap: ${({ $responsivegap }) => $responsivegap};
-      padding: ${({ $hasbg }) => $hasbg ? '25px 10px 10px 10px' : null};
+      padding: ${({ $hasbg }) => $hasbg ? '25px 10px' : null};
   }
 
   @media(max-width: 350px) {  
@@ -267,7 +267,7 @@ export const ButtonAlt2 = styled.a`
   width: max-content;
   padding: 0.5rem 1rem;
   color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.primary_light};
+  background-color: ${({ theme }) => theme.colors.secondary};
   border: 1px solid ${({ theme }) => theme.colors.gray};
   border-radius: 5px;
   cursor: pointer;
@@ -275,8 +275,7 @@ export const ButtonAlt2 = styled.a`
   font-size: 14px;
 
   &:hover{
-    color: ${({ theme }) => theme.colors.background};
-    background-color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.primary_light};
   }
 
   @media ${({ theme }) => theme.breakpoints.mobile}{
