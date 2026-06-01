@@ -1,4 +1,4 @@
-import { FaDocker, FaFigma, FaGitAlt, FaRocket, FaProjectDiagram, FaUserTie, FaCode } from 'react-icons/fa';
+import { FaDocker, FaFigma, FaGitAlt, FaRocket, FaProjectDiagram, FaUserTie, FaCode, FaEnvelope, FaGithub, FaLinkedin, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 import { SiBootstrap, SiCss3, SiDirectus, SiExpo, SiExpress, SiGithub, SiGitlab, SiHtml5, SiJavascript, SiLaravel, SiMongodb, SiNestjs, SiNextdotjs, SiNodedotjs, SiOpslevel, SiPhp, SiPostgresql, SiPostman, SiPrisma, SiReact, SiSqlite, SiStrapi, SiTailwindcss, SiTypescript, SiVisualstudiocode } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import { DiMysql } from "react-icons/di";
@@ -165,9 +165,9 @@ export const TopProjects = [
 
 export const MoreProjects = [
     {
-        name: "Laravel Multilingual Library",
+        name: "Laravel Multilingual Package",
         tools: ["PHP", "Laravel", "Composer"],
-        description: "Developed Initvel at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: A specialized Laravel library designed to manage and streamline multilingual application support with ease.",
+        description: "Developed Initvel at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: A specialized Laravel package designed to manage and streamline multilingual application support with ease.",
         source_code: "https://github.com/ibrahimdayoub/devs-initvel",
         live_link: "https://packagist.org/packages/devs/initvel",
         image: initvel,
@@ -330,4 +330,32 @@ export const Stats = [
         description: "Trust that kept coming back",
         icon: <FaUserTie />
     }
+];
+
+export const SocialLinks = [
+    {
+        href: 'https://wa.me/963997791807',
+        icon: FaWhatsapp,
+        label: 'WhatsApp',
+    },
+    {
+        href: 'mailto:ibrahimdayoub619@gmail.com',
+        icon: FaEnvelope,
+        label: 'Email',
+    },
+    {
+        href: 'https://github.com/ibrahimdayoub',
+        icon: FaGithub,
+        label: 'GitHub',
+    },
+    {
+        href: 'https://www.linkedin.com/in/ibrahimdayoub',
+        icon: FaLinkedin,
+        label: 'LinkedIn',
+    },
+    {
+        href: 'https://www.youtube.com/@ibrahimdayoub619',
+        icon: FaYoutube,
+        label: 'YouTube',
+    },
 ];

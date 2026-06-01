@@ -3,14 +3,14 @@ import { TypeAnimation } from 'react-type-animation';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { PaddingContainer, FlexContainer, Heading, BlueText, ParaText, Particle, Button, IconContainer, FlexContainerAlt } from './styled-components/Global.styled';
 import { ShowcaseImageCard, ShowcaseParticleContainer, IconContainerAlt } from './styled-components/Showcase.styles';
-import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
+import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import ShowcaseImg from '../assets/showcase-img.webp';
 import ParticleImg from '../assets/particle.webp';
 
 const Showcase = () => {
-    const Resume = "./Ibrahim-Dayoub-Resume.pdf";
+    const Resume = "./Ibrahim_Dayoub_Software_Engineer_Resume.pdf";
 
     return (
         <PaddingContainer $left="1%" $right="1%" $responsiveleft="1rem" $responsiveright="1rem">
