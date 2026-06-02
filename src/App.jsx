@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Button, Container, IconContainer, MainBody } from './components/styled-components/Global.styled';
+import { Button, ButtonAlt, Container, IconContainer, MainBody } from './components/styled-components/Global.styled';
 import { SpaceParent } from './components/styled-components/Space.styled';
-import { FaArrowUp } from 'react-icons/fa';
+import { FaArrowDown, FaArrowUp } from 'react-icons/fa';
 import { theme } from './utils/Theme';
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
@@ -18,38 +18,50 @@ import "./App.css";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isBottomVisible, setIsBottomVisible] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
-  const [matches, setMatches] = useState(window.matchMedia("(max-width: 350px)").matches)
 
   const toggleVisibility = () => {
-    if (window.scrollY > 250) {
+    const scrolled = window.scrollY;
+    const viewportHeight = window.innerHeight;
+    const fullHeight = document.documentElement.scrollHeight;
+
+    // Appear when user scrolls down more than 250px
+    if (scrolled > 250) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
     }
-  }
+
+    // Disappear when user is close to the bottom (less than 250px remaining)
+    if (fullHeight - (scrolled + viewportHeight) > 250) {
+      setIsBottomVisible(true);
+    } else {
+      setIsBottomVisible(false);
+    }
+  };
+
   const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const scrollToBottom = () => {
     window.scrollTo({
-      top: 0,
+      top: document.documentElement.scrollHeight,
       behavior: 'smooth'
     });
-  }
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
     return () => {
       window.removeEventListener('scroll', toggleVisibility);
     };
-  }, [])
+  }, []);
 
   setTimeout(() => {
     setIsLoading(false)
   }, 2500);
-
-  useEffect(() => {
-    window
-      .matchMedia("(max-width: 350px)")
-      .addEventListener('change', e => setMatches(e.matches));
-  }, []);
 
   return (
     <ThemeProvider theme={theme}>
@@ -74,28 +86,42 @@ function App() {
                 <SpaceParent />
                 <MyContact />
                 <SpaceParent />
-                <Button
+                {/* Scroll to Top Button */}
+                <ButtonAlt
                   style={{
                     visibility: isVisible ? 'visible' : 'hidden',
-                    // padding: matches ? "5px" : "10px",
-                    // width: matches ? "30px" : "50px",
-                    // height: matches ? "30px" : "50px",
                     width: "40px",
                     height: "40px",
                     borderRadius: "100%",
                     position: "fixed",
-                    bottom: "75px",
+                    bottom: "125px",
                     right: "25px",
-                    background: theme.colors.primary_light,
-                    border: "1px solid " + theme.colors.gray,
                     display: "flex",
                     justifyContent: "center",
                     zIndex: "1000",
                   }}
                   onClick={scrollToTop}
                 >
-                  <IconContainer $color="blue" $size="1rem" $responsivesize2="1rem"><FaArrowUp /></IconContainer>
-                </Button>
+                  <IconContainer $color="blue" $size="1rem"><FaArrowUp /></IconContainer>
+                </ButtonAlt>
+                {/* Scroll to Bottom Button */}
+                <ButtonAlt
+                  style={{
+                    visibility: isBottomVisible ? 'visible' : 'hidden',
+                    width: "40px",
+                    height: "40px",
+                    borderRadius: "100%",
+                    position: "fixed",
+                    bottom: "75px",
+                    right: "25px",
+                    display: "flex",
+                    justifyContent: "center",
+                    zIndex: "1000",
+                  }}
+                  onClick={scrollToBottom}
+                >
+                  <IconContainer $color="blue" $size="1rem"><FaArrowDown /></IconContainer>
+                </ButtonAlt>
                 <SpaceParent />
               </Container>
               <Footer />

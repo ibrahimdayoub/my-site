@@ -126,20 +126,15 @@ const FooterC = () => {
                     onClick={handleDownloadPortfolioPDF}
                     disabled={isExporting}
                     style={{
-                        display: 'flex',
-                        gap: '8px',
-                        alignItems: 'center',
-                        cursor: isExporting ? 'not-allowed' : 'pointer',
+                        display: "flex",
+                        gap: "10px",
+                        alignItems: "center",
+                        padding: "10px",
                         opacity: isExporting ? 0.75 : 1,
+                        cursor: isExporting ? 'not-allowed' : 'pointer'
                     }}
                     $responsivepadding2="0.5rem 1rem"
                 >
-                    <span>
-                        {isExporting
-                            ? 'Generating PDF'
-                            : 'Export Portfolio'}
-                    </span>
-
                     <IconContainer $color="blue" $size="1rem">
                         {isExporting ? (
                             <FaSpinner className="spin" />
@@ -147,6 +142,11 @@ const FooterC = () => {
                             <FaCloudDownloadAlt />
                         )}
                     </IconContainer>
+                    <span>
+                        {isExporting
+                            ? 'Generating PDF'
+                            : 'Export Portfolio'}
+                    </span>
                 </ButtonAlt>
             )}
         </Footer>

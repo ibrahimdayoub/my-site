@@ -7,7 +7,7 @@ export const Footer = styled.footer`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 25px;
   border-top: 1px solid ${({ theme }) => theme.colors.gray};
 
   @media ${({ theme }) => theme.breakpoints.mobile} {
