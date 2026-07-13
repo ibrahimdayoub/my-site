@@ -47,7 +47,7 @@ const Showcase = () => {
                         </BlueText>
                     </Heading>
                     <ParaText as="p" $top="1.5rem" $bottom="2.5rem" $responsivealign="center">
-                        Solution-oriented Full-Stack Engineer with <b>3+ years</b> of experience delivering scalable digital ecosystems. Expert at transforming complex business logic into seamless user experiences using modern frameworks. Proven track record in fast-paced environments, focusing on robust architecture, team collaboration, and high-standard execution.
+                        Solution-oriented Full-Stack Engineer with <b>4+ years</b> of experience delivering scalable digital ecosystems. Expert at transforming complex business logic into seamless user experiences using modern frameworks. Proven track record in fast-paced environments, focusing on robust architecture, team collaboration, and high-standard execution.
                     </ParaText>
                     <FlexContainer $responsiveflex $justify="space-between" $align="center" $gap="5px">
                         <FlexContainer $gap="20px" $responsivegap2="5px" $responsiveflex>

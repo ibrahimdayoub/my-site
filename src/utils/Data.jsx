@@ -3,6 +3,7 @@ import { SiBootstrap, SiCss3, SiDirectus, SiExpo, SiExpress, SiGithub, SiGitlab,
 import { TbBrandReactNative } from 'react-icons/tb';
 import { DiMysql } from "react-icons/di";
 
+import almasraf from '../assets/projects/almasraf.webp';
 import beroTalker from '../assets/projects/bero-talker.webp';
 import beroTasker from '../assets/projects/bero-tasker.webp';
 import reimagined from '../assets/projects/reimagined.webp';
@@ -67,6 +68,15 @@ export const ToolSkills = [
 ];
 
 export const TopProjects = [
+    {
+        name: "Digital Banking Portal",
+        tools: ["Laravel", "Tailwind CSS", "Nova", "MySQL"],
+        description: "Re-engineered financial platform at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: Completely rebuilt a legacy banking portal from scratch, modernizing its architecture and UI to deliver a seamless digital experience.",
+        live_link: "https://almasraf.ae",
+        image: almasraf,
+        role: "Full-Stack Developer",
+        is_$secret: false
+    },
     {
         name: "Real-Time Chat Application",
         tools: ["Typescript", "NextJs", "React Query", "Zustand", "Nativewind Css", "Socket.IO", "NestJs", "PostgreSQL", "Prisma"],
@@ -304,7 +314,7 @@ export const Achievements = [
 export const Stats = [
     {
         id: 1,
-        number: "3+",
+        number: "4+",
         title: "Hustle Years",
         description: "No breaks, no shortcuts",
         icon: <FaRocket />

@@ -1,7 +1,7 @@
 # Hi there, I'm Ibrahim Dayoub! 👋
 
 ### 🚀 Full-Stack Software Engineer | Lead Solution Architect
-I am a passionate Software Engineer with 3+ years of experience in building scalable web and mobile solutions. My expertise spans across modern JavaScript frameworks, robust backend systems, and enterprise ERP implementations.
+I am a passionate Software Engineer with 4+ years of experience in building scalable web and mobile solutions. My expertise spans across modern JavaScript frameworks, robust backend systems, and enterprise ERP implementations.
 
 ---
 
