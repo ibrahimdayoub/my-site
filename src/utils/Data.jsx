@@ -71,7 +71,7 @@ export const TopProjects = [
     {
         name: "Digital Banking Portal",
         tools: ["Laravel", "Tailwind CSS", "Nova", "MySQL"],
-        description: "Re-engineered financial platform at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: Completely rebuilt a legacy banking portal from scratch, modernizing its architecture and UI to deliver a seamless digital experience.",
+        description: "Re-engineered Almasraf at <b><u><a href='https://aratech.ae' target='_blank'>Aratech</a></u></b>: Completely rebuilt a legacy banking portal from scratch, modernizing its architecture and UI to deliver a seamless digital experience.",
         live_link: "https://almasraf.ae",
         image: almasraf,
         role: "Full-Stack Developer",
